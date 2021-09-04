@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+.vertical-timeline::before,
+.vertical-timeline::after {
+  background-color: rgb(7, 148, 241) !important;
+}
+    .card-vertical{
+        padding: 1rem;
+        border: 3px solid rgb(7, 148, 241);
+        background-color: #E8F0F2;
+        border-radius: 10px;
+        height:auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .card-vertical::hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+.vertical-timeline-element-title{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1vh;
+
+}
+.vertical-timeline-element-subtitle{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1vh;
+}
+/* .card-vertical{
+  
+}   */
+.imagess{
+    width:70%;
+    height:70%;
+    /* height:300px; */
+}
+.vertical-timeline-element--work{
+    width:100%;
+    overflow-x: hidden;
+}
+.bu-cont{
+    display:flex;
+}
+.bu{
+    border: none;
+    background-color: rgb(7, 148, 241);
+    position: relative;
+    padding: 5px 20px;
+    margin:10px 10px 10px 0px;
+    float: left;
+    border-radius: 8px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    color: #FFF;
+    text-decoration: none;	
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+.tot_cara img{
+    height:500px;
+    margin:20px;
+    
+}
+@media only screen and (max-width: 900px) {
+    .tot_cara img{
+        height:auto;
+        
+    }
+    }
+
+.modal_whole{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.modal_whole img{
+    height:20rem;
+    max-width: 100%;
+}
+.modal_whole p{
+    padding:2rem;
+    height:30vh;
+    overflow: auto;
+}
+

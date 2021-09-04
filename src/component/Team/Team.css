@@ -1,0 +1,119 @@
+.heading {
+    padding: 15px;
+  }
+  .our-team{
+      overflow: hidden;
+      position: relative;
+      margin:4vh 0;
+  }
+  
+  .our-team:after{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgba(43, 193, 234, 0.6);
+      position: absolute;
+      top: -100%;
+      left: 0;
+      opacity: 0;
+      transition: all 0.8s ease 0s;
+  }
+  
+  .our-team:hover:after{
+      top: 0;
+      opacity: 1;
+  }
+  .our-team img{
+      width: 100%;
+      height: 400px;
+  
+  }
+  
+  .our-team .social{
+      width: 100%;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      position: absolute;
+      top: -50%;
+      left: 0;
+      z-index: 1;
+      transform: translateY(-50%) ;
+      transition: all 0.8s ease 0s;
+  }
+  
+  .our-team:hover .social{ top: 50%; }
+  
+  .our-team .social li { display: inline-block; }
+  
+  .our-team .social li a i{
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      background-color: #0b579f;
+      font-size: 15px;
+      color: #fff;
+      margin: 0 5px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      transition: all 0.5s ease 0s;
+  }
+  .our-team .social li a i:hover {
+     background: linear-gradient(to right, #7851a9 0%, #0b579f 100%);
+     color: #fff;
+     transform: scale(1.5);
+  }
+  .our-team .team-content{
+      width: 100%;
+      padding: 20px 25px;
+      background: #fff;
+      border-bottom: 3px solid #0b579f;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+  }
+  
+  .our-team:hover .team-content{ background-color: #f9f9f9; }
+  
+  .our-team .team-content:before{
+      content: "";
+      width: 100%;
+      border-top: 60px solid transparent;
+      position: absolute;
+      top:  -60px;
+      left: 0;
+  }
+  
+  .our-team:hover .team-content:before{ border-right-color: #f9f9f9; }
+  
+  .our-team .team-content:after{
+      content: "";
+      width: 3px;
+      height: 50%;
+      background: #0b579f;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+  }
+  
+  .our-team .title{
+      font-size: 18px;
+      color: #333;
+      margin: 0;
+  }
+  
+  .our-team .post{
+      display: block;
+      font-size: 12px;
+      font-weight: 400;
+      color: #888;
+      margin-top: 3px;
+  }
+  
+  @media only screen and (max-width: 990px){
+      .our-team{ margin-bottom: 30px; }
+  }

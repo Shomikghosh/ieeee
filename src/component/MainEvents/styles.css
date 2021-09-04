@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple');
+
+.content_whole{
+    margin:0 3rem;
+    max-width: 100%;
+}
+.content_main{
+    
+            font-family: 'Barlow', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content:center;
+            width:100%;
+            height: 100%;
+            padding:0.5rem 1rem;
+            border-radius:10px;
+            border: 5px solid rgb(7, 148, 241);
+            background-color: #E8F0F2;
+            
+}
+@media only screen and (max-width: 1000px) {
+    .content_main{
+         padding:2rem ;
+    }
+   
+}
+@media only screen and (max-width: 1000px) {
+    .content_main{
+       padding:1rem ;
+   }
+  
+   
+}
+.content_head{
+    font-weight: 600;
+    color: rgb(7, 148, 241);
+    font-family: 'Rancho';
+    font-size:4rem;
+    margin-bottom: 2rem;
+}
