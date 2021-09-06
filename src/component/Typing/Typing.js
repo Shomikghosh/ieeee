@@ -20,7 +20,7 @@ function Typing() {
           .start();
     }, [])
     return (
-        <MainContainer data-aos="fade-left" data-aos-duration="2000">
+        <MainContainer data-aos="fade-down" data-aos-duration="2000">
             <div id="typing_id" className="total_type">Experience the joy of learning with IEEE-SJCE</div>
             <div className="imagine">IMAGINE! INNOVATE! INSPIRE!</div>
             <div className="many_activity">IEEE-SJCE conducts many events regularly for students to gain knowledge and encourages them to take active part in all of them. </div>
