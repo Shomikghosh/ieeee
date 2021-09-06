@@ -58,20 +58,20 @@ function Header({active}) {
      return (
         <MainContainer scrollState={scrollState} active={active}>
             <div className='header__left'>
-                <div className='logo'> <a href="/react/web/"><img src={Logo} alt="logo"/></a></div> 
+                <div className='logo'> <a href="/"><img src={Logo} alt="logo"/></a></div> 
                 <div className="ieee">
                         <span className="a">IEEE-</span>
                         <span className="b">SJCE</span>
                     </div>
                     <div className="navbar">
-                      <a href="/react/web/" className={active==="home"?"active":"non-active"}>Home</a><hr/>
+                      <a href="/" className={active==="home"?"active":"non-active"}>Home</a><hr/>
                       <div className="dropdown">
                         <button className={active==="boards"?"active dropbtn":"non-active dropbtn"}  onClick={handleBoardsClick}>Boards
                           <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
-                          <a href="/react/web/boards#web"><img src={Code} alt="code"/>Web-Development Board</a>
-                          <a href="/react/web/boards#editorial"><img src={Pencil} alt="pencil"/>Editorial Board</a>
+                          <a href="/boards#web"><img src={Code} alt="code"/>Web-Development Board</a>
+                          <a href="/boards#editorial"><img src={Pencil} alt="pencil"/>Editorial Board</a>
                         </div>
                       </div>
                       <div className="dropdown">
@@ -79,24 +79,24 @@ function Header({active}) {
                           <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
-                          <a href="/react/web/societies#student"><img src={Shield} alt="shield"/>Student Branch</a>
-                          <a href="/react/web/societies#eds"><img src={Dashboard} alt="dashboard"/>Electron Devices Society</a>
-                          <a href="/react/web/societies#wie"><img src={Female} alt="female"/>Womens in Engineering</a>
-                          <a href="/react/web/societies#rs"><img src={Cog} alt="cogs"/>Robotics Society</a>
+                          <a href="/societies#student"><img src={Shield} alt="shield"/>Student Branch</a>
+                          <a href="/societies#eds"><img src={Dashboard} alt="dashboard"/>Electron Devices Society</a>
+                          <a href="/societies#wie"><img src={Female} alt="female"/>Womens in Engineering</a>
+                          <a href="/societies#rs"><img src={Cog} alt="cogs"/>Robotics Society</a>
                         </div>
                       </div><div className="dropdown">
                         <button  className={active==="teams"?"active dropbtn":"non-active dropbtn"}  onClick={handleTeamClick}>Team
                           <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
-                          <a href="/react/web/team#ec"><img src={Bulls} alt="bulls"/>Executive Commitee</a>
-                          <a href="/react/web/team#mc"><img src={Users} alt="users"/>Membership Commitee</a>
-                          <a href="/react/web/team#s"><img src={Sort} alt="sort"/>Societies</a>
-                          <a href="/react/web/team#b"><img src={Task} alt="task"/>Boards</a>
+                          <a href="/team#ec"><img src={Bulls} alt="bulls"/>Executive Commitee</a>
+                          <a href="/team#mc"><img src={Users} alt="users"/>Membership Commitee</a>
+                          <a href="/team#s"><img src={Sort} alt="sort"/>Societies</a>
+                          <a href="/team#b"><img src={Task} alt="task"/>Boards</a>
                         </div>
                       </div>
-                      <a href="/react/web/gallery" className={active==="gallery"?"active":"non-active"}>Gallery</a>
-                      <a href="/react/web/contact" className={active==="contact"?"active":"non-active"}>Contact</a><hr/>
+                      <a href="/gallery" className={active==="gallery"?"active":"non-active"}>Gallery</a>
+                      <a href="/contact" className={active==="contact"?"active":"non-active"}>Contact</a><hr/>
                       <div className="dropdown">
                         <button className="dropbtn" style={{pointerEvents:"none"}}>Fests
                           <img src={Drop} alt="dropdwn"/>
