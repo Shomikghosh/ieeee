@@ -18,6 +18,7 @@ function Contact() {
         <>
             <Header active="contact"/>
             <ContactHeading id="web">CONTACT US </ContactHeading> 
+            <StyledHr/>
             <ContactFlexDiv>
                 <div>
                 <form
@@ -70,6 +71,14 @@ function Contact() {
         </>
     )
 }
+const StyledHr = styled.hr`
+    margin: 0 auto 4vh auto;
+    width: 5rem;
+    border: none;
+    border-top: 3px dotted #384158;
+    height: 1px;
+`;
+
 const FourContact = styled.div`
     width: 100vw;
     margin:2vh auto;
@@ -188,7 +197,7 @@ const ContactHeading = styled.div`
     align-items: center;
     justify-content: center;
     font-size: 4rem;
-    color: #7289da;
+    color:rgb(7, 148, 241);
     text-align: center;
     @media only screen and (max-width: 780px) {
     font-size: 2.5rem;
