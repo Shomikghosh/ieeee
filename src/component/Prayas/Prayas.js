@@ -26,7 +26,7 @@ function Prayas() {
             <div className="middle-container">
                 <div className="prayas-videos" >
                     <img src={Prayas1} alt="teaching" className="instr" />
-                    <video controls muted autoplay width="300" >
+                    <video controls muted autoPlay width="300" >
                                     <source src={Prayass} type="video/mp4"/>
                     </video>
                     <img src={Prayas2} alt="teaching" className="instr"/>
@@ -110,6 +110,8 @@ const FourPointerPrayas = styled.div`
     .middle-container{
         .prayas-videos{
             display:flex;
+            align-items: center;
+                    justify-content: center;
             @media only screen and (max-width: 780px) {
                     flex-direction: column;
                 }
@@ -118,12 +120,14 @@ const FourPointerPrayas = styled.div`
                     padding:3rem;
                     @media only screen and (max-width: 780px) {
                         width:100%;
+                        padding:1rem 0;
                 }
                 }
                 >video{
-                    width:34%;  
-                    text-align:center;
-                    vertical-align:middle;
+                    width:34%; 
+                    display: flex;
+                    /* text-align:center; */
+                    /* vertical-align:middle; */
                     @media only screen and (max-width: 780px) {
                         width:100%;
                 }
@@ -145,7 +149,7 @@ const HeadingTimeline = styled.div`
   justify-content: center;
   font-size: 4rem;
   flex-direction: column;
-  color: #7289da;
+  color:rgb(7, 148, 241);
   text-align: center;
   @media only screen and (max-width: 780px) {
     font-size: 2.5rem;
@@ -155,12 +159,12 @@ const MainContainer = styled.div`
     width: 100vw;
     padding:0 15vw;
     background: url(${BangaloreBg}) repeat ;
-    margin:2vh auto;
+    padding:2vh auto;
     >hr{
-    margin: 0 auto 2vh auto;
+      margin: 0 auto 4vh auto;
     width:5rem;
     border:none;
-    border-top:1px dotted #384158;
+    border-top:3px solid #384158;
     height:1px;
 
   } 

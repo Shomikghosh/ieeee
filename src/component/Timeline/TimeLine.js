@@ -63,8 +63,8 @@ function TimeLine() {
           <hr/>
          <VerticalTimeline >
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020-2021"
+          className="vertical-timeline-element--work"
+            date="March 2021"
             contentStyle={{boxShadow:'none' }}
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={<img style={{width:"100%"}} src={Logo} alt="logo"/>}
@@ -82,14 +82,14 @@ function TimeLine() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020-2021"
+            date="March 2021"
             contentStyle={{boxShadow:'none' }}
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={<img style={{width:"100%"}} src={Logo} alt="logo"/>}
           >
             <div className="card-vertical"  style={{boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}}>
             <h3 className="vertical-timeline-element-title">Orientation Day 2021</h3>
-            <h4 className="vertical-timeline-element-subtitle"> 26th Oct 2020</h4>
+            <h4 className="vertical-timeline-element-subtitle"> 9th March 2021</h4>
             <img className="imagess" src={orientation1} alt="tux"/>
             <div className="bu-cont">
               <button className="bu" onClick={onOpenModal}>View Details</button>
@@ -111,7 +111,8 @@ function TimeLine() {
                 </p>
               </div>
             </Modal>
-            <Modal open={open1} onClose={onCloseModal1} center>
+            <Modal open={open1} onClose={onCloseModal1} center>                
+              <div className="image_modal">
                 <Carousel showThumbs={false}
                     showStatus={false}
                     dynamicHeight={false}
@@ -133,6 +134,7 @@ function TimeLine() {
                       <img src={orientation5} alt="orien"/>
                     </div>
                   </Carousel>
+                  </div>
             </Modal>
 
             <Modal open={open2} onClose={onCloseModal2} center>
@@ -156,27 +158,29 @@ function TimeLine() {
               </div>
             </Modal>
             <Modal open={open3} onClose={onCloseModal3} center>
-                <Carousel showThumbs={false}
-                    showStatus={false}
-                    dynamicHeight={false}
-                    >
-                    <div className="tot_cara">
-                      <img src={funday1} alt="orien"/>
-                    </div>
-                    <div className="tot_cara">
-                      <img src={funday2} alt="orien"/>
-                    </div>
-                    <div className="tot_cara">
-                      <img src={funday3} alt="orien"/>
-                    </div>
+                <div className="image_modal">
+                  <Carousel showThumbs={false}
+                      showStatus={false}
+                      dynamicHeight={false}
+                      >
+                      <div className="tot_cara">
+                        <img src={funday1} alt="orien"/>
+                      </div>
+                      <div className="tot_cara">
+                        <img src={funday2} alt="orien"/>
+                      </div>
+                      {/* <div className="tot_cara">
+                        <img src={funday3} alt="orien"/>
+                      </div> */}
 
-                    <div className="tot_cara">
-                      <img src={funday4} alt="orien"/>
-                    </div>
-                    <div className="tot_cara">
-                      <img src={funday5} alt="orien"/>
-                    </div>
-                  </Carousel>
+                      <div className="tot_cara">
+                        <img src={funday4} alt="orien"/>
+                      </div>
+                      <div className="tot_cara">
+                        <img src={funday5} alt="orien"/>
+                      </div>
+                    </Carousel>
+                </div>
             </Modal>
       </MainContainer>
     )
@@ -192,7 +196,7 @@ const HeadingTimeline = styled.div`
   justify-content: center;
   font-size: 4rem;
   flex-direction: column;
-  color: #7289da;
+  color:rgb(7, 148, 241);
   text-align: center;
   @media only screen and (max-width: 780px) {
     font-size: 2.5rem;
@@ -207,7 +211,7 @@ const MainContainer = styled.div`
     margin: 0 auto 4vh auto;
     width:5rem;
     border:none;
-    border-top:1px dotted #384158;
+    border-top:3px solid #384158;
     height:1px;
 
   }

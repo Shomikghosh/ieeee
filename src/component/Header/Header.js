@@ -15,6 +15,7 @@ import Task from '../../assests/icons/tasks-solid.svg'
 import Sort from '../../assests/icons/sort-amount-down-solid.svg'
 import Magic from '../../assests/icons/magic-solid.svg'
 import Links from '../../assests/icons/link-solid.svg' 
+import Drop from '../../assests/images/213124_f0d7_icon.png'
 function Header({active}) {
     const [scrollState, setScrollState] = useState("top")
 
@@ -97,8 +98,8 @@ function Header({active}) {
                       <a href="/react/web/gallery" className={active==="gallery"?"active":"non-active"}>Gallery</a>
                       <a href="/react/web/contact" className={active==="contact"?"active":"non-active"}>Contact</a><hr/>
                       <div className="dropdown">
-                        <button className="dropbtn">Fests
-                          <i className="fa fa-caret-down"></i>
+                        <button className="dropbtn" style={{pointerEvents:"none"}}>Fests
+                          <img src={Drop} alt="dropdwn"/>
                         </button>
                         <div className="dropdown-content" style={{marginLeft:'-100px',width:'150px'}}>
                           <a href="http://www.ieeesjce.com/cyberia/home.php" target="_blank" rel="noreferrer"><img src={Magic} alt="task"/>Cyberia</a>
@@ -166,20 +167,20 @@ const MainContainer = styled.div`
             transition: font-size 1s;
             margin-left: 1rem;
             >.a{
-                color:#4B6587;
+                color:${({ scrollState }) => scrollState==='top'? 'white' : '#4B6587'} ;
                 text-shadow: ${({ scrollState }) => scrollState==='top'? '1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000' : 'none'} ;
             }
             
             >.b{
-                color: #29C1ED;
+                color:${({ scrollState }) => scrollState==='top'? '#1E3163' : 'rgb(7, 148, 241)'} ;
                 text-shadow:  ${({ scrollState }) => scrollState==='top'? '1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000' : 'none'} ;
             }
         }
           >.navbar {
             margin-left:auto;
             >.active{
-              color:#293B5F;
-              border-bottom: 4px solid #293B5F; 
+              color:${({ scrollState }) => scrollState==='top'? '#1E3163' : 'rgb(7, 148, 241)'} ;
+              border-bottom: 4px solid ${({ scrollState }) => scrollState==='top'? '#1E3163' : 'rgb(7, 148, 241)'} ; 
               font-weight: 800; 
             }
             >.non-active{
@@ -235,11 +236,15 @@ const MainContainer = styled.div`
                    }
               }
               >.dropdown .dropbtn {
+                >img{
+                  width:1rem;
+                  justify-content: center;
+                  align-items: center;
+                }
                   font-size: 16px;
                   text-transform: uppercase;
                   border: none;
                   outline: none;
-                  
                   color:${({ scrollState }) => scrollState==='top'? 'white' : 'black'};
                   margin:2vh 2vw;
                   font-weight: 700;
@@ -248,8 +253,8 @@ const MainContainer = styled.div`
                   margin: 0; /* Important for vertical align on mobile phones */
                 }
                 >.dropdown .active{
-                  color:#293B5F;
-                  border-bottom: 4px solid #293B5F; 
+                  color:rgb(7, 148, 241);
+                  border-bottom: 4px solid rgb(7, 148, 241); 
                 }
                 @media only screen and (max-width: 900px) {
                       display: none;

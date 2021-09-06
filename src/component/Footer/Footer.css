@@ -2,7 +2,6 @@
     position:absolute;
     top: 100%;
 } */
-
 /*FOOTER*/
 .footer-pad{
     text-align: left;
@@ -14,7 +13,7 @@
 footer {
     background-color:#0061A8 ;
     color: white;
-    margin-top: 10%;
+    /* margin-top: 5%; */
   }
   
   footer a {
@@ -40,8 +39,15 @@ footer {
   .hit{
     width:50%;
   }
+  .text-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .visit{
     font-size: 1rem;
+    margin-top: 2rem;
   }
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
   .visit_no{
@@ -132,4 +138,6 @@ footer {
   margin:10px 10px;
   border-radius: 50%;
 }
-  
+.navbar__right .sjce{
+  color:rgb(7, 148, 241);
+} 

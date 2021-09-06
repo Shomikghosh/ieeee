@@ -85,7 +85,7 @@ function Footer() {
                 </div>
                 <div className="row">
                     <div className="col-lg-12 copy">
-                        <p className="text-center"> Copyrights © 2021 IEEE-SJCE sDeveloped by the WBD Board at IEEE-SJCE </p>
+                        <p className="text-center"> Copyrights © 2021 IEEE-SJCE | Developed by the WBD Board at IEEE-SJCE </p>
                     </div>
                 </div>
             </div>

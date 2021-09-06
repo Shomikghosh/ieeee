@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import  styled from 'styled-components';
 import documentation from '../../assests/images/documentation.svg'
 import innovation from '../../assests/images/innovation.svg'
@@ -11,19 +11,21 @@ import 'aos/dist/aos.css'
 import Whatwe from '../../assests/images/what_bg.jpg'
 
 function NinePointer() {
-        AOS.init();
+    useEffect(() => {
+       AOS.init();
+    }, [])
     return (
         <MainContainer>
             <HeadingTimeline>What We Stand For</HeadingTimeline>
             <hr/>
             <SubHeading>IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity. IEEE SJCE and its members inspire a global community through its highly cited workshops, seminars, professional and educational activities.</SubHeading>
             <SubMainContainer>
-                 <div  ><img src={documentation} alt="icon"/><div><div className="head">WORKSHOPS</div><div className="rest">Attend seminars and workshops on the most trending and interesting topics led by leading scientists and industry personnel<br/> The major workshops conducted are :<strong>VPM, Soldering and Etching, Robotics.</strong></div></div></div>
-                 <div  ><img src={innovation} alt="icon"/><div><div className="head">SEMINARS</div><div className="rest">IEEE-SJCE conducts many technical talks, seminars and panel discussions during its technical fests.<strong>PAPYRUS</strong>  encourages students to write technical papers.</div></div></div>
-                  <div  ><img src={openness} alt="icon"/><div><div className="head">COMPETITIONS</div><div className="rest">IEEE-SJCE conducts many competitions during its technical fests-TUXEDO and CYBERIA.<br/> Some of the competitions are :<strong>Amaze, Fury road and coding owl.</strong></div></div></div>
-                  <div  ><img src={plugins} alt="icon"/><div><div className="head">ACTIVITIES</div><div className="rest">There are a lot of technical and non technical activities that are undertaken here at IEEE to encourage students to learn in a way which inspires them to do so.</div></div></div>
-                  <div  ><img src={stability} alt="icon"/><div><div className="head">PERSONALITY DEVELOPMENT</div><div className="rest">Soft skills are one of the most important attributes in todays world. We at IEEE aspire to inculcate values that define us as people who are ethically adept and vision driven.</div></div></div>
-                  <div  ><img src={workspace} alt="icon"/><div><div className="head">MAGAZINE</div><div className="rest">We publish three editions of the IEEE Interface magazine, every year :<strong>The Orientation edition, The Tuxedo edition, The Cyberia Edition.</strong></div></div></div>
+                 <div   data-aos="fade-right" data-aos-duration="2000"><img src={documentation} alt="icon"/><div><div className="head">WORKSHOPS</div><div className="rest">Attend seminars and workshops on the most trending and interesting topics led by leading scientists and industry personnel<br/> The major workshops conducted are :<strong>VPM, Soldering and Etching, Robotics.</strong></div></div></div>
+                 <div   data-aos="fade-left" data-aos-duration="2000"><img src={innovation} alt="icon"/><div><div className="head">SEMINARS</div><div className="rest">IEEE-SJCE conducts many technical talks, seminars and panel discussions during its technical fests.<strong>PAPYRUS</strong>  encourages students to write technical papers.</div></div></div>
+                  <div  data-aos="fade-right" data-aos-duration="2000"><img src={openness} alt="icon"/><div><div className="head">COMPETITIONS</div><div className="rest">IEEE-SJCE conducts many competitions during its technical fests-TUXEDO and CYBERIA.<br/> Some of the competitions are :<strong>Amaze, Fury road and coding owl.</strong></div></div></div>
+                  <div   data-aos="fade-left" data-aos-duration="2000"><img src={plugins} alt="icon"/><div><div className="head">ACTIVITIES</div><div className="rest">There are a lot of technical and non technical activities that are undertaken here at IEEE to encourage students to learn in a way which inspires them to do so.</div></div></div>
+                  <div  data-aos="fade-right" data-aos-duration="2000"><img src={stability} alt="icon"/><div><div className="head">PERSONALITY DEVELOPMENT</div><div className="rest">Soft skills are one of the most important attributes in todays world. We at IEEE aspire to inculcate values that define us as people who are ethically adept and vision driven.</div></div></div>
+                  <div   data-aos="fade-left" data-aos-duration="2000"><img src={workspace} alt="icon"/><div><div className="head">MAGAZINE</div><div className="rest">We publish three editions of the IEEE Interface magazine, every year :<strong>The Orientation edition, The Tuxedo edition, The Cyberia Edition.</strong></div></div></div>
             </SubMainContainer>           
         </MainContainer>
     )
@@ -46,7 +48,7 @@ const HeadingTimeline = styled.div`
     justify-content: center;
     font-size: 4rem;
     flex-direction: column;
-    color: #1D5DC3;
+    color:rgb(7, 148, 241);
     text-align: center;
   @media only screen and (max-width: 780px) {
     font-size: 2.5rem;
@@ -61,13 +63,10 @@ const MainContainer = styled.div`
         padding:3em 1em;
     }
     >hr{
-    margin: 0 auto 4vh auto;
+        margin: 0 auto 4vh auto;
     width:5rem;
-    border-color: #1D5DC3;
-    border-width: 5px;
-    border-style:  none;
-    border-top-style: dotted;
-    background-color: white;
+    border:none;
+    border-top:3px solid #384158;
     height:1px;
 
   } 

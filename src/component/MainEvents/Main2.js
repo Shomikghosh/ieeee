@@ -12,8 +12,8 @@ function Main2() {
         <MainContainer>
             <HeadingTimeline>Events</HeadingTimeline>
             <StyledHr/>
-            <SubMain>
-                <div className="content_whole">
+            <SubMain >
+                <div className="content_whole"  data-aos="fade-right" data-aos-duration="2000">
                     <p className="content_main">
                         <h3 classnName="content_head">Simtool 2.0</h3>
 
@@ -45,15 +45,15 @@ function Main2() {
                         </div> 
                     </p>
                 </div>
-                <div>
+                <div  data-aos="fade-left" data-aos-duration="2000">
                     <img src={SIM2} alt="pos"/>
                 </div>
            </SubMain>
-           <SubMain>
-                <div>
+           <SubMain >
+                <div data-aos="fade-right" data-aos-duration="2000">
                     <img src={CN1} alt="pos"/>
                 </div>
-                <div className="content_whole">
+                <div className="content_whole" data-aos="fade-left" data-aos-duration="2000">
                     <p className="content_main">
                         <h3 classnName="content_head">Webinar by Coding Ninja</h3>
                         Internships, Placements and Interviews - do these words make you anxious?! Are you searching for sources to accelerate your preparations to ace those technical interviews?
@@ -73,7 +73,7 @@ function Main2() {
                 </div>
            </SubMain>
            <SubMain>
-                <div className="content_whole">
+                <div className="content_whole" data-aos="fade-right" data-aos-duration="2000">
                     <p className="content_main">
                         <h3 classnName="content_head">Just Code It</h3>
                         To all the geeks out there, it's time to bring out your analytical and problem-solving skills on board. The competitive coding event will comprise of 5 questions with varying levels of difficulty.<br/>
@@ -94,7 +94,7 @@ function Main2() {
                         </div> 
                     </p>
                 </div>
-                <div>
+                <div data-aos="fade-left" data-aos-duration="2000">
                     <img src={CN2} alt="pos"/>
                 </div>
            </SubMain>
@@ -105,7 +105,7 @@ const StyledHr = styled.hr`
     margin: 0 auto 4vh auto;
     width:5rem;
     border:none;
-    border-top:1px dotted #384158;
+    border-top:3px solid #384158;
     height:1px;
 
 `;
@@ -115,7 +115,7 @@ const HeadingTimeline = styled.div`
   justify-content: center;
   font-size: 4rem;
   flex-direction: column;
-  color: #7289da;
+  color:rgb(7, 148, 241);
   text-align: center;
   @media only screen and (max-width: 780px) {
     font-size: 2.5rem;
@@ -173,10 +173,8 @@ const SubMain = styled.div`
                 padding:1rem ;
             }
             >h3{
-                @import url('https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple');
                 font-weight: 600;
                 color: rgb(7, 148, 241);
-                font-family: 'Rancho';
                 font-size:2.8rem;
                 margin-bottom: 2rem;
             }
@@ -215,6 +213,6 @@ const MainContainer = styled.div`
     justify-content: space-evenly;
     align-items: center;
     background: url(${BangaloreBg}) repeat ;
-
+    overflow-x: hidden;
 `;
 export default Main2

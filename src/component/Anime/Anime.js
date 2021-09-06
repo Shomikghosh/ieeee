@@ -46,7 +46,7 @@ function Anime() {
     return (
         <div className="bodyss">
             <div className="containerss">
-                <h2 id="type"><span>Welcome to</span><br/>IEEE-<span className="sjce">SJCE</span></h2>
+                <h2 id="type"><span className="welcome">Welcome to</span><br/>IEEE-<span className="sjce">SJCE</span></h2>
             </div>
         </div>
     )

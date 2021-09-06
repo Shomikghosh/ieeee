@@ -1,7 +1,11 @@
 .team-area .single-item {
     margin-bottom: 30px;
     }
-    
+    @media only screen and (max-width: 780px) {
+        .team-area .single-item {
+            padding:1rem 3rem;
+            }
+        }
     .team-area .item .thumb {
     position: relative;
     overflow: hidden;
@@ -111,7 +115,7 @@
     top: 0;
     width: 50px;
     }
-    
+
     .team-area .info .message a {
     background: #fff none repeat scroll 0 0;
     -webkit-border-radius: 50%;
@@ -125,6 +129,11 @@
     line-height: 50px;
     width: 50px;
     }
+    .team-area .info .message a:hover {
+        color:#fff;
+        background: rgb(25, 103, 177) none repeat scroll 0 0;
+    }
+
     
     .team-area .info .message a i {
     font-weight: 500;

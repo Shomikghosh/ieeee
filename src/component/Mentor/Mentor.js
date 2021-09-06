@@ -134,7 +134,7 @@ const HeadingTimeline = styled.div`
   justify-content: center;
   font-size: 4rem;
   flex-direction: column;
-  color: #7289da;
+  color:rgb(7, 148, 241);
   text-align: center;
   @media only screen and (max-width: 780px) {
     font-size: 2.5rem;
@@ -143,10 +143,10 @@ const HeadingTimeline = styled.div`
 const MainContainer = styled.div`
     background: url(${BangaloreBg}) repeat ;
     >hr{
-    margin: 0 auto 4vh auto;
+        margin: 0 auto 4vh auto;
     width:5rem;
     border:none;
-    border-top:1px dotted #384158;
+    border-top:3px solid #384158;
     height:1px;
 
   } 

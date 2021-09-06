@@ -20,14 +20,16 @@ const TopArrow = styled.div`
     right: 40px;
     border: 1px solid #000;
     background-color: rgba(0, 0, 0, 0.3);
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     z-index: 100;
-
+    &:hover{
+        background-color:rgb(45, 133, 215,0.8);
+    }
     > svg {
         width: 40px;
         height: 40px;

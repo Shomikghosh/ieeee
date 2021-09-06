@@ -25,7 +25,7 @@ function Sponsers() {
         dots: true,
         autoplay:true,
         arrows:false,
-        slidesPerRow:wid>1000?4:2,
+        slidesPerRow:wid>1000?4:1,
         pauseOnHover :false,
         slidesToScroll: 1,
         autoplaySpeed:5000
@@ -72,7 +72,7 @@ function Sponsers() {
     )
 }
 const StyledImg = styled.img`
-        margin:0 1rem;
+        margin:0 auto;
         @media only screen and (max-width: 425px) {
                margin:0 2rem;
          }
@@ -87,7 +87,7 @@ const HeadingTimeline = styled.div`
   justify-content: center;
   font-size: 4rem;
   flex-direction: column;
-  color: #7289da;
+  color:rgb(7, 148, 241);
   text-align: center;
   @media only screen and (max-width: 780px) {
     font-size: 2.5rem;
@@ -102,12 +102,11 @@ const MainContainer = styled.div`
         width: 100vw;
     }
     >hr{
-    margin: 0 auto 4vh auto;
+      margin: 0 auto 4vh auto;
     width:5rem;
     border:none;
-    border-top:1px dotted #384158;
+    border-top:3px solid #384158;
     height:1px;
-
   } 
 `;
 

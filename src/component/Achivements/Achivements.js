@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect}  from 'react'
 import styled from 'styled-components'
 // import CountUp from 'react-countup';
 import AOS from 'aos';
@@ -12,20 +12,22 @@ import Medal from '../../assests/images/medal-solid.svg'
 // import project from '../../assests/activities/project.svg'
 
 function Achivements() {
+    useEffect(() => {
         AOS.init();
+     }, [])
     return (
             <Whole>
               <HeadingTimeline>Achievements</HeadingTimeline>
                 <StyledHr/>
             <MainContainer1>
                     <div>
-                        <div style={{textAlign:'right'}}><p> " The Best Student Branch Website Award " - IEEE Bangalore Section 2019</p><img src={Medal} alt="medal"/></div>
-                        <div style={{textAlign:'right'}}><p>" The Best Student Branch Website Award " - IEEE Bangalore Section 2017</p> <img src={Medal} alt="medal"/></div>
+                        <div data-aos="fade-left" data-aos-duration="2000" style={{textAlign:'right'}}><p className="right"> " The Best Student Branch Website Award " - IEEE Bangalore Section 2019</p><img src={Medal} alt="medal"/></div>
+                        <div data-aos="fade-left" data-aos-duration="2000" style={{textAlign:'right'}}><p className="right">" The Best Student Branch Website Award " - IEEE Bangalore Section 2017</p> <img src={Medal} alt="medal"/></div>
                     </div>
                     <div><img src={Trophy} alt="trop"/></div>
                     <div>
-                        <div><img src={Medal} alt="medal"/><p>" The Best Student Branch Website Award " - IEEE Bangalore Section 2016.</p></div>
-                        <div><img src={Medal} alt="medal"/><p> One of the <br/>nominees for best<br/> practices</p></div>
+                        <div data-aos="fade-right" data-aos-duration="2000"><img src={Medal} alt="medal"/><p className="left">" The Best Student Branch Website Award " - IEEE Bangalore Section 2016.</p></div>
+                        <div data-aos="fade-right" data-aos-duration="2000"><img src={Medal} alt="medal"/><p className="left"> One of the <br/>nominees for best<br/> practices</p></div>
                     </div>
             </MainContainer1>
         </Whole>
@@ -36,10 +38,10 @@ const Whole = styled.div`
 `;
 
 const StyledHr = styled.hr`
-    margin: 0 auto 4vh auto;
+   margin: 0 auto 4vh auto;
     width:5rem;
     border:none;
-    border-top:1px dotted #384158;
+    border-top:3px solid #384158;
     height:1px;
     `;
 
@@ -49,7 +51,7 @@ const HeadingTimeline = styled.div`
   justify-content: center;
   font-size: 4rem;
   flex-direction: column;
-  color: #1D5DC3;
+  color:rgb(7, 148, 241);
   @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
   text-align: center;
   font-family: 'Libre Baskerville', serif;
@@ -59,7 +61,7 @@ const HeadingTimeline = styled.div`
 `;
 const MainContainer1 = styled.div`
     width: 100vw;
-    margin:2vh auto;
+    padding:2vh auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,13 +87,20 @@ const MainContainer1 = styled.div`
            margin:1vh 0;
            box-shadow:0;
            padding:0.1rem;
-           border-radius: 25% 75% 63% 37% / 49% 55% 45% 51% ;
            /* border:groove 5px rgb(7, 148, 241); */
            /* background:hsla(67, 95%, 95%, 1); */
            color:grey;
            >img{
                width: 3rem;
                margin:auto 1rem;
+           }
+           >.left{
+            border-radius: 25% 75% 63% 37% / 49% 55% 45% 51% ;
+            background:hsla(67, 95%, 95%, 1);
+           }
+           >.right{
+            border-radius:71% 29% 27% 73% / 53% 49% 51% 47%;
+            background:hsla(67, 95%, 95%, 1);
            }
        }
    }

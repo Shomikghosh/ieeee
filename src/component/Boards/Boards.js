@@ -6,8 +6,10 @@ import EdGif from '../../assests/images/36542-writing.gif'
 import Magazinee from '../../assests/Magazine/int.jpg'
 import IEEEMagazine from '../../assests/Magazine/IEEE_INTERFACE_2021.pdf'
 import WebP from '../../assests/GALLERY/e1.jpg'
-import EdP from '../../assests/GALLERY/e20.jpg'
+import EdP from '../../assests/GALLERY/e23.jpg'
 
+import Code from '../../assests/icons/code-solid.svg'
+import Pencil from '../../assests/icons/pencil-alt-solid.svg'
 function Board() {
     useEffect(() => {
         if(window.scrollY<=1)
@@ -21,8 +23,9 @@ function Board() {
         <MainContainer>
            <Header active="boards"/>
            <BoardsHeading id="web">BOARDS</BoardsHeading> 
-           <WebDevBoard >
-                <div className="heading" >Web Development Board </div>
+           <hr/>
+           <WebDevBoard data-aos="fade-right" data-aos-duration="1500">
+                <div className="heading" ><img src={Code} alt="code"/> Web Development Board </div>
                 <img className="gif" src={WebGif} alt="web"/>
                 <p>Web Development board, a new wing of IEEE SJCE is an exclusive committee for designing and maintaining website and web pages pertaining to IEEE SJCE, its events and spread its motto. For us, WDB is a place where students from various disciplines of the campus meet together to put their creativity to create and design web pages and host them on web securely.<br/><br/>
                 <img className="photow" src={WebP} alt="web"/>
@@ -30,8 +33,8 @@ function Board() {
                 Over the years, WDB has turned out be an integral part of IEEE SJCE, due to the growing importance of web in recent years as it is shaping up as the best source of information. We, at WDB hope to strengthen the knowledge of web designing and hosting among the students to greater extent and work as a team to bring out web pages to create zing and get overwhelming response from the people on our organization and its events.<br/>
                  </p>
            </WebDevBoard>
-           <EditorialBoard >
-                <div className="heading" id="editorial">EDITORIAL BOARD </div>
+           <EditorialBoard data-aos="fade-left" data-aos-duration="1500">
+                <div className="heading" id="editorial"><img src={Pencil} alt="pencil"/> EDITORIAL BOARD </div>
                 <img src={EdGif} alt="editorial"/>
                <p>At the IEEE EdBoard, we strive to present interesting news and articles, about the latest trends and discoveries in the technology field, while also providing a voice for IEEE-SJCE, its members, and the students.<br/><br/>
                <img className="photow" src={EdP} alt="web"/>
@@ -39,8 +42,9 @@ function Board() {
                 We at IEEE SJCE, are glad and excited to announce the release of our annual magazine 'IEEE Interface 2021' edition!<br/><br/>
                 <br/><br/>
                 </p>
-           </EditorialBoard>
-           <Magazine>
+           </EditorialBoard>      
+           <TotalMagazineHead data-aos="fade-down" data-aos-duration="1500">We at IEEE SJCE, are glad and excited to announce the release of our annual magazine 'IEEE Interface 2021' edition!</TotalMagazineHead>
+           <Magazine data-aos="fade-down" data-aos-duration="1500">
                 <div className="left"> 
                     <img src={Magazinee} alt="magazine"/>
                 </div>
@@ -65,11 +69,24 @@ function Board() {
         </MainContainer>
     )
 }
+const TotalMagazineHead = styled.div`
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding:0 1rem;
+    @media only screen and (max-width: 780px) {
+        font-size: 1rem;
+        padding:0 1rem;
+    }
+`;
+
 const Magazine = styled.div`
     display: flex;
     align-items: center;
     justify-content:center;
     padding: 2vh 10rem;
+    margin-bottom: 4vh;
     @media only screen and (max-width: 900px) {
           padding: 2vh 2rem;
         }
@@ -130,6 +147,14 @@ const Magazine = styled.div`
     }
 `
 const MainContainer = styled.div`
+    overflow-x: hidden;
+    >hr{
+        margin: 0 auto 4vh auto;
+        width:5rem;
+        border:none;
+        border-top:3px solid #384158;
+        height:1px;
+    }
 `;
 
 const EditorialBoard = styled.div`
@@ -138,6 +163,10 @@ const EditorialBoard = styled.div`
         align-items: center;
         justify-content: center;
         font-size: 2rem;
+        >img{
+            width:2.5rem;
+            margin:0 1vw;
+        }
     }
     padding:1rem 5rem;
     >img{
@@ -168,6 +197,10 @@ const WebDevBoard = styled.div`
         align-items: center;
         justify-content: center;
         font-size: 2rem;
+        >img{
+            width:2.5rem;
+            margin:0 1vw;
+        }
     }
     padding:1rem 5rem;
     >.gif{
@@ -193,10 +226,18 @@ const WebDevBoard = styled.div`
 
 
 const BoardsHeading = styled.div`
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    margin:15vh 0 5vh 0;
+ 
+    margin:15vh 0 1vh 0;
+
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color:rgb(7, 148, 241);
+  border-radius: 20px;
+  text-align: center;
+  @media only screen and (max-width: 780px) {
+    font-size: 2.5rem;
+    }
 `;
 export default Board

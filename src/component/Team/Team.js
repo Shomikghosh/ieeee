@@ -73,6 +73,14 @@ import Sort from '../../assests/icons/sort-amount-down-solid.svg'
 import Magic from '../../assests/icons/magic-solid.svg'
 import Links from '../../assests/icons/link-solid.svg' 
 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
+import f1 from '../../assests/teamcarasoul/f1.png'
+import f2 from '../../assests/teamcarasoul/f2.png'
+import f3 from '../../assests/teamcarasoul/f3.JPG'
+import f4 from '../../assests/teamcarasoul/f4.png'
+
 import mail from '../../assests/icons/gmail.svg';
 function Team() {
   useEffect(() => {
@@ -89,11 +97,33 @@ function Team() {
       <MainContainer>
         <HeadingTimeline>Team IEEE-SJCE</HeadingTimeline>
         <hr /><SubHead>Our Team Members who have contributed immensely to our Growth</SubHead>
+        <CaraWhole>
+            <Carousel showThumbs={false}
+                    showStatus={false}
+                    dynamicHeight={false}
+                    // autoPlay={true}	
+                    // interval={5000}
+                    >
+                            <CaraTotal>
+                                <img src={f1} alt="team"/>    
+                            </CaraTotal>
+                            <CaraTotal>
+                                <img src={f2} alt="team"/>    
+                            </CaraTotal>
+                            <CaraTotal>
+                                <img src={f3} alt="team"/>    
+                            </CaraTotal>
+                            <CaraTotal>
+                                <img src={f4} alt="team"/>    
+                            </CaraTotal>
+            </Carousel>
+        </CaraWhole>
+
         
         <CommiteeHeading><img src={Bulls} alt="bulls"/>EXECUTIVE COMMITTEE </CommiteeHeading>
         <div className="container" id="ec">
             <div className="row">
-               <div className="col-md-3 col-sm-6">
+               <div className="col-md-3 col-sm-6"  data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img  src={Abhijeet} alt=""/>
                         <ul className="social">
@@ -106,7 +136,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Bijwal} alt=""/>
                         <ul className="social">
@@ -120,7 +150,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Dada} alt=""/>
                         <ul className="social">
@@ -133,7 +163,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Rohit} alt=""/>
                         <ul className="social">
@@ -149,7 +179,7 @@ function Team() {
             </div>
             <div className="container">
             <div className="row">
-               <div className="col-md-3 col-sm-6">
+               <div className="col-md-3 col-sm-6"  data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Spandana} alt=""/>
                         <ul className="social">
@@ -162,7 +192,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6"  data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Rak} alt=""/>
                         <ul className="social">
@@ -176,7 +206,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6"  data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Gagana} alt=""/>
                         <ul className="social">
@@ -189,7 +219,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6"  data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Chinmaya} alt=""/>
                         <ul className="social">
@@ -208,7 +238,7 @@ function Team() {
             <div className="container">
             <div className="row">
 
-            <div className="col-md-3 col-sm-6">
+            <div className="col-md-3 col-sm-6"  data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Shivraj} alt=""/>
                         <ul className="social">
@@ -220,7 +250,7 @@ function Team() {
                         </div>
                     </div>
                 </div>
-               <div className="col-md-3 col-sm-6">
+               <div className="col-md-3 col-sm-6"  data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Ankit} alt=""/>
                         <ul className="social">
@@ -233,7 +263,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Surendra} alt=""/>
                         <ul className="social">
@@ -247,7 +277,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Hamsini} alt=""/>
                         <ul className="social">
@@ -265,7 +295,7 @@ function Team() {
             <div className="container">
             <div className="row">
 
-            <div className="col-md-3 col-sm-6">
+            <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Mandara} alt=""/>
                         <ul className="social">
@@ -277,7 +307,7 @@ function Team() {
                         </div>
                     </div>
                 </div>
-               <div className="col-md-3 col-sm-6">
+               <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Sparshi} alt=""/>
                         <ul className="social">
@@ -295,7 +325,7 @@ function Team() {
         <div className="container">
             <div className="row">
 
-            <div className="col-md-3 col-sm-6">
+            <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Sushank} alt=""/>
                         <ul className="social">
@@ -307,7 +337,7 @@ function Team() {
                         </div>
                     </div>
                 </div>
-               <div className="col-md-3 col-sm-6">
+               <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={BMK} alt=""/>
                         <ul className="social">
@@ -320,7 +350,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Suyash} alt=""/>
                         <ul className="social">
@@ -334,7 +364,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Amrutha} alt=""/>
                         <ul className="social">
@@ -352,7 +382,7 @@ function Team() {
         <div className="container">
             <div className="row">
 
-            <div className="col-md-3 col-sm-6">
+            <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Srimadh} alt=""/>
                         <ul className="social">
@@ -364,7 +394,7 @@ function Team() {
                         </div>
                     </div>
                 </div>
-               <div className="col-md-3 col-sm-6">
+               <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Poornack} alt=""/>
                         <ul className="social">
@@ -377,7 +407,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Akhil} alt=""/>
                         <ul className="social">
@@ -391,7 +421,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Mukul} alt=""/>
                         <ul className="social">
@@ -408,7 +438,7 @@ function Team() {
             <div className="container">
             <div className="row">
 
-            <div className="col-md-3 col-sm-6">
+            <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Sushma} alt=""/>
                         <ul className="social">
@@ -420,7 +450,7 @@ function Team() {
                         </div>
                     </div>
                 </div>
-               <div className="col-md-3 col-sm-6">
+               <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Sanjay} alt=""/>
                         <ul className="social">
@@ -438,7 +468,7 @@ function Team() {
         <div className="container">
             <div className="row">
 
-            <div className="col-md-3 col-sm-6">
+            <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={ADK} alt=""/>
                         <ul className="social">
@@ -450,7 +480,7 @@ function Team() {
                         </div>
                     </div>
                 </div>
-               <div className="col-md-3 col-sm-6">
+               <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Mahi} alt=""/>
                         <ul className="social">
@@ -463,7 +493,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Chaitra} alt=""/>
                         <ul className="social">
@@ -477,7 +507,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Monisha} alt=""/>
                         <ul className="social">
@@ -494,7 +524,7 @@ function Team() {
             <div className="container">
             <div className="row">
 
-            <div className="col-md-3 col-sm-6">
+            <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Saswathi} alt=""/>
                         <ul className="social">
@@ -506,7 +536,7 @@ function Team() {
                         </div>
                     </div>
                 </div>
-               <div className="col-md-3 col-sm-6">
+               <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Sudhanva} alt=""/>
                         <ul className="social">
@@ -519,7 +549,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Vanditha} alt=""/>
                         <ul className="social">
@@ -539,7 +569,7 @@ function Team() {
         <div className="container">
             <div className="row">
 
-            <div className="col-md-3 col-sm-6">
+            <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Jagdeesh} alt=""/>
                         <ul className="social">
@@ -551,7 +581,7 @@ function Team() {
                         </div>
                     </div>
                 </div>
-               <div className="col-md-3 col-sm-6">
+               <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Meghana} alt=""/>
                         <ul className="social">
@@ -564,7 +594,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Gayat} alt=""/>
                         <ul className="social">
@@ -577,7 +607,7 @@ function Team() {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Raghu} alt=""/>
                         <ul className="social">
@@ -596,7 +626,7 @@ function Team() {
             <div className="container">
             <div className="row">
 
-            <div className="col-md-3 col-sm-6">
+            <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Snehith} alt=""/>
                         <ul className="social">
@@ -608,7 +638,7 @@ function Team() {
                         </div>
                     </div>
                 </div>
-               <div className="col-md-3 col-sm-6">
+               <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Harshith} alt=""/>
                         <ul className="social">
@@ -628,7 +658,7 @@ function Team() {
         <div className="container">
             <div className="row">
 
-            <div className="col-md-3 col-sm-6">
+            <div className="col-md-3 col-sm-6"  data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Ezu} alt=""/>
                         <ul className="social">
@@ -640,7 +670,7 @@ function Team() {
                         </div>
                     </div>
                 </div>
-               <div className="col-md-3 col-sm-6">
+               <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Shomik} alt=""/>
                         <ul className="social">
@@ -659,7 +689,7 @@ function Team() {
         <CommiteeHeading><img src={Pencil} alt="pencil"/>EDITORIAL BOARD </CommiteeHeading>
         <div className="container">
                <div className="row">
-               <div className="col-md-3 col-sm-6">
+               <div className="col-md-3 col-sm-6"  data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Dhan} alt=""/>
                         <ul className="social">
@@ -672,7 +702,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Akshay} alt=""/>
                         <ul className="social">
@@ -686,7 +716,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Manju} alt=""/>
                         <ul className="social">
@@ -699,7 +729,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Suprabhu} alt=""/>
                         <ul className="social">
@@ -715,7 +745,7 @@ function Team() {
                </div>
                <div className="container">
                <div className="row">
-               <div className="col-md-3 col-sm-6">
+               <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Lasitha} alt=""/>
                         <ul className="social">
@@ -728,7 +758,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Hardik} alt=""/>
                         <ul className="social">
@@ -742,7 +772,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Chandana} alt=""/>
                         <ul className="social">
@@ -755,7 +785,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Shukla} alt=""/>
                         <ul className="social">
@@ -771,7 +801,7 @@ function Team() {
                </div>
                <div className="container">
                <div className="row">
-               <div className="col-md-3 col-sm-6">
+               <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={RASHMI} alt=""/>
                         <ul className="social">
@@ -789,6 +819,28 @@ function Team() {
     </>
   );
 }
+const CaraWhole = styled.div`
+        margin:8rem 8rem;
+        @media only screen and (max-width: 1024px) {
+            margin:8rem 5rem;
+        }
+        @media only screen and (max-width: 780px) {
+            margin:8rem 2rem;
+        }
+`;
+
+const CaraTotal = styled.div`
+    >img{
+        height:600px;
+        @media only screen and (max-width: 1024px) {
+            height:400px;
+        }
+        @media only screen and (max-width: 1024px) {
+            height:200px;
+        }
+    }
+`;
+
 const SubHead = styled.div`
     display: flex;
     align-items: center;
@@ -929,9 +981,10 @@ const MainContainer = styled.div`
     margin: 0 auto 4vh auto;
     width: 5rem;
     border: none;
-    border-top: 1px dotted #384158;
+    border-top: 3px dotted #384158;
     height: 1px;
   }
+  overflow-x: hidden;
 `;
 const HeadingTimeline = styled.div`
   display: flex;
@@ -940,7 +993,7 @@ const HeadingTimeline = styled.div`
   font-size: 4rem;
   margin-top: 10vh;
   flex-direction: column;
-  color: #7289da;
+  color:rgb(7, 148, 241);
   text-align: center;
   @media only screen and (max-width: 780px) {
     font-size: 2.5rem;

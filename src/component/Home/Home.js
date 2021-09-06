@@ -14,6 +14,7 @@ import Achivements from '../Achivements/Achivements';
 import MileStone from '../MileStoneEvent/MileStone';
 import Main2 from '../MainEvents/Main2';
 import Anime from '../Anime/Anime';
+import Typing from '../Typing/Typing';
 function Home() {
     useEffect(() => {
         var apps = document.getElementById('apps');
@@ -39,6 +40,7 @@ function Home() {
         <Header active="home"/>
         <Anime/>
         {/* <Writing id="apps"></Writing> */}
+        <Typing/>
         <Main2/>
          <MainContainer>
              <HomePageCarousel/>

@@ -19,21 +19,27 @@
     color:#fff;
     text-shadow: 1px 0 0 #3D087B, 0 -1px 0 #3D087B, 0 1px 0 #3D087B, -1px 0 0 #3D087B;
     text-align: center;
-    font-size: 12vw;
+    font-size: 11vw;
     line-height: 0.6em;
     z-index: 1000;
     font-weight: 900;
 }
 .containerss h2 .sjce{
-    color:rgb(25, 103, 177);
+    color:#1E3163;
     text-shadow: 1px 0 0 #3D087B, 0 -1px 0 #3D087B, 0 1px 0 #3D087B, -1px 0 0 #3D087B;
     text-align: center;
-    font-size: 12vw;
+    font-size: 11vw;
     line-height: 0.6em;
     z-index: 1000;
     letter-spacing: 0em;
     font-weight: 900;
 }
+.containerss h2 .welcome{
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+
+}
+
 .containerss h2 span{
     font-size: 0.2em;
     letter-spacing: 0.4em;

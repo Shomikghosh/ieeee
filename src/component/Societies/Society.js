@@ -9,6 +9,10 @@ import Student from '../../assests/GALLERY/tuxedo_talk.jpeg'
 import EDS from '../../assests/GALLERY/e7.jpg'
 import WIE from '../../assests/GALLERY/e8.jpg'
 import Robo from '../../assests/GALLERY/g1.jpeg'
+import Cog from '../../assests/icons/cogs-solid.svg'
+import Female from '../../assests/icons/female-solid.svg'
+import Shield from '../../assests/icons/shield-alt-solid.svg'
+import Dashboard from '../../assests/icons/tachometer-alt-solid.svg'
 
 function Society() {
     useEffect(() => {
@@ -23,8 +27,9 @@ function Society() {
         <>
           <Header active="societies"/> 
           <SocietyHeading id="web">SOCIETIES</SocietyHeading> 
-          <StudentBranch >
-                <div className="heading" id="student">IEEE SJCE Student branch </div>
+          <StyledHr/>
+          <StudentBranch data-aos="fade-right" data-aos-duration="1500">
+                <div className="heading" id="student"><img src={Shield} alt="shield"/>IEEE SJCE Student branch </div>
                 <img src={StuGif} alt="web"/>
                 <p>IEEE-SJCE Student Branch which started as an elite group 29 years ago, today has sprawled throughout the campus of SJCE, making the students technically more competitive, more professional and enhancing their abilities as an engineer. Since then IEEE-SJCE STUDENT BRANCH, a division under region 10 of IEEE has been known for the immensity with which its members were bestowed. The very success story of it students as professionals into their respective fields after graduations speaketh of its standards.<br/><br/>
                 IEEE-SJCE now has about 330+ members from six fields of engineering: Biotechnology, Computer Science, Electronics & Communication, Electrical & Electronics, Information Science and instrumentation technology. Apart from these many students from various post graduation departments have also subscribed to be the members.<br/><br/>
@@ -35,8 +40,8 @@ function Society() {
                 IEEE-SJCE is also proud of nurturing IEEE-EDS STUDENT CHAPTER. IEEE-SJCE is the only student branch to have gained permission to start this chapter throughout India. IEEE-SJCE also has a Women in Engineering Student Chapter.
                 </p>
            </StudentBranch>
-           <EDSBoard >
-                <div className="heading" id="eds">ELECTRON DEVICES SOCIETY</div>
+           <EDSBoard data-aos="fade-left" data-aos-duration="1500">
+                <div className="heading" id="eds"><img src={Dashboard} alt="dashboard"/>ELECTRON DEVICES SOCIETY</div>
                 <img src={EDSGif} alt="editorial"/>
                <p>
                 <strong>WHO WE ARE?</strong><br/>
@@ -57,8 +62,8 @@ function Society() {
                 VPM gets huge response from all circuit branches, around 120 students attend the project sessions every day for 4 hours VPM played prominent role in generating practical impulse in minds of young budding engineers.
                 </p>
            </EDSBoard>
-           <WIEBoard >
-                <div className="heading" id="wie">WOMEN IN ENGINEERING </div>
+           <WIEBoard data-aos="fade-right" data-aos-duration="1500">
+                <div className="heading" id="wie"><img src={Female} alt="female"/>WOMEN IN ENGINEERING </div>
                 <img src={WIEGif} alt="web"/>
                 <p><strong>IEEE Women in Engineering (WIE)</strong> is a global network of IEEE members and volunteers dedicated to promoting women engineers and scientists, and inspiring girls around the world to follow their academic interests in a career in engineering and science. It is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity. Its goal is to facilitate the recruitment and retention of women in technical disciplines globally. IEEE WIE envisions a vibrant community of IEEE women and men collectively using their diverse talents to innovate for the benefit of humanity.
                 <br/><br/>
@@ -89,8 +94,8 @@ function Society() {
 
                 </p>
            </WIEBoard>
-           <RoboticsBoard >
-                <div className="heading" id="rs">ROBOTICS AND AUTOMATION SOCIETY </div>
+           <RoboticsBoard data-aos="fade-left" data-aos-duration="1500">
+                <div className="heading" id="rs"><img src={Cog} alt="cogs"/>ROBOTICS AND AUTOMATION SOCIETY </div>
                 <img src={RoboGif} alt="editorial"/>
                <p>
                 Robotics and Automation Society(RAS) aims to strive towards the advancement of the theory and practice in Robotics and Automation engineering. It aims to impart conceptual clarity among students in topics related to Robotics and Automation, with a focus on sensors and actuators.
@@ -113,12 +118,25 @@ function Society() {
         </>
     )
 }
+const StyledHr = styled.hr`
+    margin: 0 auto 4vh auto;
+        width:5rem;
+        border:none;
+        border-top:3px solid #384158;
+        height:1px;
+`;
+
 const RoboticsBoard = styled.div`
     .heading{
         display:flex;
         align-items: center;
         justify-content: center;
         font-size: 2rem;
+        >img{
+            width:2.5rem;
+            margin:0 1vw;
+            height:2rem;
+        }
     }
     padding:1rem 5rem;
     >img{
@@ -147,6 +165,11 @@ const WIEBoard = styled.div`
         align-items: center;
         justify-content: center;
         font-size: 2rem;
+        >img{
+            width:2.5rem;
+            margin:0 1vw;
+            height:2rem;
+        }
     }
     padding:1rem 5rem;
     >img{
@@ -177,6 +200,11 @@ const EDSBoard = styled.div`
         align-items: center;
         justify-content: center;
         font-size: 2rem;
+        >img{
+            width:2.5rem;
+            margin:0 1vw;
+            height:2rem;
+        }
     }
     padding:1rem 5rem;
     >img{
@@ -205,6 +233,11 @@ const StudentBranch = styled.div`
         align-items: center;
         justify-content: center;
         font-size: 2rem;
+        >img{
+            width:2.5rem;
+            margin:0 1vw;
+            height:2rem;
+        }
     }
     padding:1rem 5rem;
     >img{
@@ -228,11 +261,15 @@ const StudentBranch = styled.div`
     }
 `;
 const SocietyHeading = styled.div`
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    margin:15vh 0 5vh 0;
+     margin:15vh 0 1vh 0;
+
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 4rem;
+color:rgb(7, 148, 241);
+border-radius: 20px;
+text-align: center;
 `;
 
 export default Society

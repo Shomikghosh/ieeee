@@ -5,8 +5,9 @@ import CN_Workshop from '../../assests/GALLERY/CN_workshop.jpeg'
 import Tuxedo_Talk from '../../assests/GALLERY/tuxedo_talk.jpeg'
 import Prayas_img from '../../assests/GALLERY/prayas_img.jpeg'
 import Soldering from '../../assests/GALLERY/s and e.jpeg'
-import Orientation from '../../assests/GALLERY/orientation_img.jpeg'
+import Orientation from '../../assests/OrientationDay/B.JPG'
 import ImageGallery from 'react-image-gallery';
+import Funday from '../../assests/FunDay/A.JPG'
 import "react-image-gallery/styles/css/image-gallery.css";
 
 
@@ -41,7 +42,35 @@ import vid4 from '../../assests/videos/prayas.mp4'
 
 import BangaloreBg from '../../assests/images/bangalore_bg.jpg'
 
+import orientation1 from '../../assests/OrientationDay/B.JPG'
+import orientation2 from '../../assests/OrientationDay/C.JPG'
+import orientation3 from '../../assests/OrientationDay/DSC02371.JPG'
+import orientation4 from '../../assests/OrientationDay/DSC02384.JPG'
+import orientation5 from '../../assests/OrientationDay/IMG_1442.JPG'
+
+import funday1 from '../../assests/FunDay/A.JPG'
+import funday2 from '../../assests/FunDay/IMG_1156.JPG'
+import funday3 from '../../assests/FunDay/IMG_1183.JPG'
+import funday4 from '../../assests/FunDay/IMG_1254.JPG'
+import funday5 from '../../assests/FunDay/IMG_1304.JPG'
+
+import 'react-responsive-modal/styles.css';
+import { Modal } from 'react-responsive-modal';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
+
 function Gallery() {
+    const [open, setOpen] = useState(false);
+
+    const onOpenModal = () => setOpen(true);
+    const onCloseModal = () => setOpen(false);
+    
+    const [open1, setOpen1] = useState(false);
+
+    const onOpenModal1 = () => setOpen1(true);
+    const onCloseModal1 = () => setOpen1(false);
+
     useEffect(() => {
         if(window.scrollY<=1)
         {
@@ -163,6 +192,56 @@ function Gallery() {
       ];
     return (
         <>
+         <Modal open={open} onClose={onCloseModal} center>                
+              <div className="image_modal">
+                <Carousel showThumbs={false}
+                    showStatus={false}
+                    dynamicHeight={false}
+                    >
+                    <div className="tot_cara">
+                      <img src={orientation1} alt="orien"/>
+                    </div>
+                    <div className="tot_cara">
+                      <img src={orientation2} alt="orien"/>
+                    </div>
+                    <div className="tot_cara">
+                      <img src={orientation3} alt="orien"/>
+                    </div>
+
+                    <div className="tot_cara">
+                      <img src={orientation4} alt="orien"/>
+                    </div>
+                    <div className="tot_cara">
+                      <img src={orientation5} alt="orien"/>
+                    </div>
+                  </Carousel>
+                  </div>
+            </Modal>
+            <Modal open={open1} onClose={onCloseModal1} center>
+                <div className="image_modal">
+                  <Carousel showThumbs={false}
+                      showStatus={false}
+                      dynamicHeight={false}
+                      >
+                      <div className="tot_cara">
+                        <img src={funday1} alt="orien"/>
+                      </div>
+                      <div className="tot_cara">
+                        <img src={funday2} alt="orien"/>
+                      </div>
+                      {/* <div className="tot_cara">
+                        <img src={funday3} alt="orien"/>
+                      </div> */}
+
+                      <div className="tot_cara">
+                        <img src={funday4} alt="orien"/>
+                      </div>
+                      <div className="tot_cara">
+                        <img src={funday5} alt="orien"/>
+                      </div>
+                    </Carousel>
+                </div>
+            </Modal>
             <Header active="gallery"/>
             <MainContainer>
             <HeadingTimeline>Gallery</HeadingTimeline>
@@ -170,6 +249,28 @@ function Gallery() {
             <ImageGallery items={images} />
              <HeadingTimeline>Images</HeadingTimeline>
             <GalleryDiv>
+            <div onClick={onOpenModal}>
+                    <div className="image-hover-image">
+                                        <img src={Orientation}  alt="gallery"/>
+                            </div>
+                        <div className="image-hover-text">
+                        <div className="image-hover-text-bubble">
+                            <div className="image-hover-text-title">Orientation Day</div>
+                            <div className="image-hover-text-rest">Orientation Day was held to introduce freshers to IEEE and to interact with them.</div>
+                        </div>
+                    </div>
+                </div>
+                <div onClick={onOpenModal1}>
+                    <div className="image-hover-image">
+                                        <img src={Funday}  alt="gallery"/>
+                            </div>
+                        <div className="image-hover-text">
+                        <div className="image-hover-text-bubble">
+                            <div className="image-hover-text-title">Fun Day</div>
+                            <div className="image-hover-text-rest">Fun Day was held to have little fun and diversion from their orderly college routine .</div>
+                        </div>
+                    </div>
+                </div>
                 <div >
                     <div className="image-hover-image">
                         <img src={CN_Workshop} alt="gallery"/>
@@ -213,38 +314,27 @@ function Gallery() {
                             <div className="image-hover-text-rest">Workshop held to teach fundamentals of electronics.</div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div className="image-hover-image">
-                                        <img src={Orientation}  alt="gallery"/>
-                            </div>
-                        <div className="image-hover-text">
-                        <div className="image-hover-text-bubble">
-                            <div className="image-hover-text-title">Orientation Day</div>
-                            <div className="image-hover-text-rest">Orientation Day was held to introduce freshers to IEEE and to interact with them.</div>
-                        </div>
-                    </div>
-                </div>
+                </div>    
             </GalleryDiv>
             <HeadingTimeline>Videos</HeadingTimeline>
             <Videos>
-                <div>
-                    <video controls muted autoplay width="300" height="180" data-animate="fadeInDown"
-                        data-delay="200" >
+                <div data-aos="fade-down" data-aos-duration="2000">
+                    <VideoHead>Robotics 11</VideoHead>
+                    <video controls muted autoPlay width="300" height="180"  >
                             <source src={vid1} type="video/mp4"/>
 					</video>
-                    <video controls muted autoplay width="300" height="180" data-animate="fadeInDown"
-                        data-delay="200" >
+                    <VideoHead>Cyberia 19</VideoHead>
+                    <video controls muted autoPlay width="300" height="180"  >
                             <source src={vid2} type="video/mp4"/>
 					</video>
                 </div>
-                <div>
-                <video controls muted autoplay width="300" height="180" data-animate="fadeInDown"
-                        data-delay="200" >
-                            <source src={vid3} type="video/mp4"/>
+                <div data-aos="fade-down" data-aos-duration="2000">
+                    <VideoHead>Codefiesta</VideoHead>
+                    <video controls muted autoPlay width="300" height="180"  >
+                                <source src={vid3} type="video/mp4"/>
 					</video>
-                    <video controls muted autoplay width="300" height="180" data-animate="fadeInDown"
-                        data-delay="200" >
+                    <VideoHead>Prayas</VideoHead>
+                    <video controls muted autoPlay width="300" height="180" >
                             <source src={vid4} type="video/mp4"/>
 					</video>
                 </div>
@@ -253,10 +343,20 @@ function Gallery() {
         </>
     )
 }
+const VideoHead = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color:#0061A8;
+`;
+
 const Videos = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom:4vh;
     justify-content:space-evenly;
     >div{
        
@@ -358,7 +458,7 @@ const HeadingTimeline = styled.div`
   font-size: 4rem;
   margin:10vh auto  0 auto;
   flex-direction: column;
-  color: #7289da;
+  color:rgb(7, 148, 241);
   text-align: center;
   @media only screen and (max-width: 780px) {
     font-size: 2.5rem;
@@ -369,7 +469,7 @@ const MainContainer = styled.div`
     margin: 0 auto 4vh auto;
     width:5rem;
     border:none;
-    border-top:1px dotted #384158;
+    border-top:3px dotted #384158;
     height:1px;
 
   } 

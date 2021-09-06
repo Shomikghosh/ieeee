@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import styled from 'styled-components'
 import BangaloreBg from '../../assests/images/bangalore_bg.jpg'
 import Lec from '../../assests/MileStone/lec.jpg'
@@ -13,8 +13,14 @@ import Exp from '../../assests/MileStone/exp.jpeg'
 import Res from '../../assests/MileStone/res.jpeg'
 import { Modal } from 'react-responsive-modal';
 import 'react-responsive-modal/styles.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 function MileStone() {
+    useEffect(() => {
+        AOS.init();
+     }, [])
+         
     //m1
     const [openm1, setOpenm1] = useState(false);
 
@@ -195,7 +201,7 @@ function MileStone() {
             <StyledHr/>
         <MainContainer>
         <div><LeftContainer>
-                <div>
+                <div data-aos="zoom-in-up" data-aos-duration="2000">
                     <div className="heading">Lecture by EDS</div>
                     <img src={Lec} alt="poster"/>
                     <div className="content">
@@ -215,7 +221,7 @@ function MileStone() {
                     </div>
                     <button onClick={onOpenModalm1}>View Details</button>
                 </div>
-                <div>
+                <div data-aos="zoom-in-up" data-aos-duration="2000">
                     <div className="heading">Code and Simulate</div>
                     <img src={Ard} alt="poster"/>
                     <div className="content">
@@ -258,7 +264,7 @@ function MileStone() {
                 </div> */}
             </LeftContainer>
             <RightContainer>
-                <div>
+                <div data-aos="zoom-in-up" data-aos-duration="2000">
                     <div className="heading">CODEFIESTA by WIE</div>
                     <img src={Codfie} alt="poster"/>
                     <div className="content">
@@ -269,7 +275,7 @@ function MileStone() {
                     </div>
                     <button  onClick={onOpenModalm3}>View Details</button>
                 </div>
-                <div>
+                <div data-aos="zoom-in-up" data-aos-duration="2000">
                     <div className="heading">Snap circuit </div>
                     <img src={Snap} alt="poster"/>
                     <div className="content">
@@ -305,7 +311,7 @@ function MileStone() {
                     </div>
                     <button>View Details</button>
                 </div> */}
-                <div>
+                <div data-aos="zoom-in-up" data-aos-duration="2000">
                     <div className="heading">Image Pro. Workshop </div>
                     <img src={Imp} alt="poster"/>
                     <div className="content">
@@ -317,7 +323,7 @@ function MileStone() {
                     </div>
                     <button onClick={onOpenModalm5}>View Details</button>
                 </div>
-                <div>
+                <div data-aos="zoom-in-up" data-aos-duration="2000">
                     <div className="heading">Alumni Podcast</div>
                     <img src={Alum2} alt="poster"/>
                     <div className="content">
@@ -334,7 +340,7 @@ function MileStone() {
                 </div>
             </LeftContainer>
             <RightContainer>
-            <div>
+            <div data-aos="zoom-in-up" data-aos-duration="2000">
                     <div className="heading">Webinar on Xplore</div>
                     <img src={Exp} alt="poster"/>
                     <div className="content">
@@ -343,7 +349,7 @@ function MileStone() {
                     </div>
                     <button onClick={onOpenModalm7}>View Details</button>
                 </div> 
-            <div>
+            <div data-aos="zoom-in-up" data-aos-duration="2000">
                     <div className="heading">Webinar Alert</div>
                     <img src={Res} alt="poster"/>
                     <div className="content">
@@ -364,7 +370,7 @@ const StyledHr = styled.hr`
     margin: 0 auto 4vh auto;
     width:5rem;
     border:none;
-    border-top:1px dotted #384158;
+    border-top:3px solid #384158;
     height:1px;
 
 `;
@@ -374,7 +380,8 @@ const HeadingTimeline = styled.div`
   justify-content: center;
   font-size: 4rem;
   flex-direction: column;
-  color: #7289da;
+  background: url(${BangaloreBg}) repeat ;
+  color:rgb(7, 148, 241);
   text-align: center;
   @media only screen and (max-width: 780px) {
     font-size: 2.5rem;

@@ -63,8 +63,9 @@
     transition: all 0.1s;
     -webkit-transition: all 0.1s;
 }
+
 .tot_cara img{
-    height:500px;
+    height:450px;
     margin:20px;
     
 }
@@ -91,4 +92,7 @@
     height:30vh;
     overflow: auto;
 }
-
+.image_modal{
+    height:50%;
+    margin-top: 20px;
+}

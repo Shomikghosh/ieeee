@@ -14,7 +14,9 @@ import Team from './component/Team/Team';
 import Gallery from './component/Gallery/Gallery';
 
 function App() {
-  AOS.init();
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   const [appLoading, setApploading] = useState(true)
   window.addEventListener('load', function () {
@@ -31,7 +33,7 @@ function App() {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>   
           <TopButton />
           <Switch>
-            <Route  path='/' component={Home} />
+            <Route  path='/' component={Gallery} />
             {/* <Route   path='/boards'  component={Board} />
             <Route   path='/societies'  component={Society} />
             <Route   path='/contact'  component={Contact} />
