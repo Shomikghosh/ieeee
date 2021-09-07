@@ -13,23 +13,35 @@ import Cog from '../../assests/icons/cogs-solid.svg'
 import Female from '../../assests/icons/female-solid.svg'
 import Shield from '../../assests/icons/shield-alt-solid.svg'
 import Dashboard from '../../assests/icons/tachometer-alt-solid.svg'
+import { useLocation } from 'react-router'
+import queryString from 'query-string'
 
 function Society() {
+    const location = useLocation()
+
+
     useEffect(() => {
-        if(window.scrollY<=1)
-        {
-          window.scrollTo(0, window.scrollY+1);
-        }else{
-          window.scrollTo(0, window.scrollY-1);
+        let val = queryString.parse(location.hash);
+        let parsed = Object.keys(val).at(0)
+        if (parsed) {
+            document.querySelector('#' + parsed).scrollIntoView({ behavior: 'smooth' });
+        } else {
+            if(window.scrollY===0)
+            {
+                window.scrollTo(0,1);
+            }
+            else{
+                 window.scrollTo(0,0);
+            }
         }
     }, [])
     return (
-        <>
+        <MainContainer>
           <Header active="societies"/> 
-          <SocietyHeading id="web">SOCIETIES</SocietyHeading> 
+          <SocietyHeading >SOCIETIES</SocietyHeading> 
           <StyledHr/>
-          <StudentBranch data-aos="fade-right" data-aos-duration="1500">
-                <div className="heading" id="student"><img src={Shield} alt="shield"/>IEEE SJCE Student branch </div>
+          <StudentBranch data-aos="fade-up"  id="student">
+                <div className="heading" ><img src={Shield} alt="shield"/>IEEE SJCE Student branch </div>
                 <img src={StuGif} alt="web"/>
                 <p>IEEE-SJCE Student Branch which started as an elite group 29 years ago, today has sprawled throughout the campus of SJCE, making the students technically more competitive, more professional and enhancing their abilities as an engineer. Since then IEEE-SJCE STUDENT BRANCH, a division under region 10 of IEEE has been known for the immensity with which its members were bestowed. The very success story of it students as professionals into their respective fields after graduations speaketh of its standards.<br/><br/>
                 IEEE-SJCE now has about 330+ members from six fields of engineering: Biotechnology, Computer Science, Electronics & Communication, Electrical & Electronics, Information Science and instrumentation technology. Apart from these many students from various post graduation departments have also subscribed to be the members.<br/><br/>
@@ -40,10 +52,10 @@ function Society() {
                 IEEE-SJCE is also proud of nurturing IEEE-EDS STUDENT CHAPTER. IEEE-SJCE is the only student branch to have gained permission to start this chapter throughout India. IEEE-SJCE also has a Women in Engineering Student Chapter.
                 </p>
            </StudentBranch>
-           <EDSBoard data-aos="fade-left" data-aos-duration="1500">
-                <div className="heading" id="eds"><img src={Dashboard} alt="dashboard"/>ELECTRON DEVICES SOCIETY</div>
+           <EDSBoard data-aos="fade-down"  >
+                <div className="heading" ><img src={Dashboard} alt="dashboard"/>ELECTRON DEVICES SOCIETY</div>
                 <img src={EDSGif} alt="editorial"/>
-               <p>
+               <p id="eds">
                 <strong>WHO WE ARE?</strong><br/>
                 IEEE SJCE EDS has been providing students with the basic electronics knowledge since its inception. It has helped students get more familiarized with electronic components, the various techniques of circuit making and the basics of robot building.<br/><br/>
 
@@ -62,11 +74,11 @@ function Society() {
                 VPM gets huge response from all circuit branches, around 120 students attend the project sessions every day for 4 hours VPM played prominent role in generating practical impulse in minds of young budding engineers.
                 </p>
            </EDSBoard>
-           <WIEBoard data-aos="fade-right" data-aos-duration="1500">
-                <div className="heading" id="wie"><img src={Female} alt="female"/>WOMEN IN ENGINEERING </div>
+           <WIEBoard  data-aos="fade-up" >
+                <div className="heading" ><img src={Female} alt="female" />WOMEN IN ENGINEERING </div>
                 <img src={WIEGif} alt="web"/>
-                <p><strong>IEEE Women in Engineering (WIE)</strong> is a global network of IEEE members and volunteers dedicated to promoting women engineers and scientists, and inspiring girls around the world to follow their academic interests in a career in engineering and science. It is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity. Its goal is to facilitate the recruitment and retention of women in technical disciplines globally. IEEE WIE envisions a vibrant community of IEEE women and men collectively using their diverse talents to innovate for the benefit of humanity.
-                <br/><br/>
+                <p ><strong>IEEE Women in Engineering (WIE)</strong> is a global network of IEEE members and volunteers dedicated to promoting women engineers and scientists, and inspiring girls around the world to follow their academic interests in a career in engineering and science. It is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity. Its goal is to facilitate the recruitment and retention of women in technical disciplines globally. IEEE WIE envisions a vibrant community of IEEE women and men collectively using their diverse talents to innovate for the benefit of humanity.
+                <br/><br id="wie"/>
                 The idea of WIE chapter in IEEE SJCE student branch was conceived and implemented only a couple of years ago. Since its inception, the chapter has been responsible for several activities and initiatives. WIE team have made frequent visits to several organizations to reach out to underprivileged children and educate them about their chances in engineering.
                 <br/><br/>
                 IEEE-SJCE WIE also organises distinguished lectures by women professionals who help in encouraging young girls to strive hard and motivate in achieving excellence in academics and profession. Apart from this, the WIE chapter of the student branch is also involved in organising technical competition and workshops. The team intenda to continue these activities along with implementation of newer ideas.
@@ -94,15 +106,15 @@ function Society() {
 
                 </p>
            </WIEBoard>
-           <RoboticsBoard data-aos="fade-left" data-aos-duration="1500">
-                <div className="heading" id="rs"><img src={Cog} alt="cogs"/>ROBOTICS AND AUTOMATION SOCIETY </div>
+           <RoboticsBoard data-aos="fade-down" >
+                <div className="heading" ><img src={Cog} alt="cogs"/>ROBOTICS AND AUTOMATION SOCIETY </div>
                 <img src={RoboGif} alt="editorial"/>
                <p>
                 Robotics and Automation Society(RAS) aims to strive towards the advancement of the theory and practice in Robotics and Automation engineering. It aims to impart conceptual clarity among students in topics related to Robotics and Automation, with a focus on sensors and actuators.
-                <br/><br/>
+                <br/><br />
                 <strong>ROBOTICS WORKSHOP</strong><br/>
                 As they say our knowledge is volatile in nature until we apply the concept of our knowledge in real time situation. Hence Robotics 8.X, one of the biggest events was conducted by the IEEE-SJCE EDS Chapter.
-                <br/><br/>
+                <br id="rs"/><br/>
                 <img className="photow" src={Robo} alt="web"/>
 
                 IEEE-SJCE, in addition to the above mentioned societies also houses an eccentric Membership Development Committee and a SBMDC wing.
@@ -115,10 +127,15 @@ function Society() {
 
                 </p>
            </RoboticsBoard>
-        </>
+        </MainContainer>
     )
 }
+const MainContainer = styled.div`
+    overflow-x:hidden;
+`;
+
 const StyledHr = styled.hr`
+    
     margin: 0 auto 4vh auto;
         width:5rem;
         border:none;
@@ -127,6 +144,7 @@ const StyledHr = styled.hr`
 `;
 
 const RoboticsBoard = styled.div`
+        overflow-x:hidden;
     .heading{
         display:flex;
         align-items: center;
@@ -156,10 +174,13 @@ const RoboticsBoard = styled.div`
         }
     }
     @media only screen and (max-width: 900px) {
-        padding: 1rem 1rem;
+        padding: 1rem 0.5rem;
     }
 `;
 const WIEBoard = styled.div`
+        overflow-x:hidden;
+
+
     .heading{
         display:flex;
         align-items: center;
@@ -189,12 +210,14 @@ const WIEBoard = styled.div`
         }
     }
     @media only screen and (max-width: 900px) {
-        padding: 1rem 1rem;
+        padding: 1rem 0.5rem;
     }
 `;
 
 
 const EDSBoard = styled.div`
+        overflow-x:hidden;
+
     .heading{
         display:flex;
         align-items: center;
@@ -224,10 +247,12 @@ const EDSBoard = styled.div`
         }
     }
     @media only screen and (max-width: 900px) {
-        padding: 1rem 1rem;
+        padding: 1rem 0.5rem;
     }
 `;
 const StudentBranch = styled.div`
+        overflow-x:hidden;
+
     .heading{
         display:flex;
         align-items: center;
@@ -257,11 +282,13 @@ const StudentBranch = styled.div`
         }
     }
     @media only screen and (max-width: 900px) {
-        padding: 1rem 1rem;
+        padding: 1rem 0.5rem;
     }
 `;
 const SocietyHeading = styled.div`
      margin:15vh 0 1vh 0;
+     overflow-x:hidden;
+
 
 display: flex;
 align-items: center;

@@ -82,14 +82,27 @@ import f3 from '../../assests/teamcarasoul/f3.JPG'
 import f4 from '../../assests/teamcarasoul/f4.png'
 
 import mail from '../../assests/icons/gmail.svg';
+import { useLocation } from 'react-router'
+import queryString from 'query-string'
+
 function Team() {
+    const location = useLocation()
+
   useEffect(() => {
-    if(window.scrollY<=1)
-    {
-      window.scrollTo(0, window.scrollY+1);
-    }else{
-      window.scrollTo(0, window.scrollY-1);
-    }
+    let val = queryString.parse(location.hash);
+        let parsed = Object.keys(val).at(0)
+        if (parsed) {
+            document.querySelector('#' + parsed).scrollIntoView({ behavior: 'smooth' });
+        }else{
+            if(window.scrollY===0)
+            {
+                window.scrollTo(0,1);
+            }
+            else{
+                 window.scrollTo(0,0);
+            }
+           
+        }
 }, [])
   return (
     <>
@@ -171,7 +184,7 @@ function Team() {
                         </ul>
                         <div className="team-content">
                             <h3 className="title">Rohit Niranjanmath</h3>
-                            <span className="post">SAC Coordinator</span>
+                            <span className="post">SAC Co-ordinator</span>
                         </div>
                     </div>
                 </div>
@@ -258,7 +271,7 @@ function Team() {
                         </ul>
                         <div className="team-content">
                             <h3 className="title">Ankit Priyesh</h3>
-                            <span className="post">Chief Student Coordinator</span>
+                            <span className="post">Chief Student Co-ordinator</span>
                         </div>
                     </div>
                 </div>
@@ -272,7 +285,7 @@ function Team() {
                         </ul>
                         <div className="team-content">
                             <h3 className="title">Surendra R Hegde</h3>
-                            <span className="post">Student Coordinator</span>
+                            <span className="post">Student Co-ordinator</span>
                         </div>
                     </div>
                 </div>
@@ -285,7 +298,7 @@ function Team() {
                         </ul>
                         <div className="team-content">
                             <h3 className="title">Hamsini V</h3>
-                            <span className="post">Student Coordinator</span>
+                            <span className="post">Student Co-ordinator</span>
                         </div>
                     </div>
                 </div>
@@ -502,7 +515,7 @@ function Team() {
                         </ul>
                         <div className="team-content">
                             <h3 className="title">Chaitra S</h3>
-                            <span className="post">Event Coordinator</span>
+                            <span className="post">Event Co-ordinator</span>
                         </div>
                     </div>
                 </div>
@@ -515,7 +528,7 @@ function Team() {
                         </ul>
                         <div className="team-content">
                             <h3 className="title">Monisha S R</h3>
-                            <span className="post">Senior Technical Coordinator</span>
+                            <span className="post">Senior Technical Co-ordinator</span>
                         </div>
                     </div>
                 </div>
@@ -558,7 +571,7 @@ function Team() {
                         </ul>
                         <div className="team-content">
                             <h3 className="title">Vanditha M</h3>
-                            <span className="post">Technical Coordinator</span>
+                            <span className="post">Technical Co-ordinator</span>
                         </div>
                     </div>
                 </div>

@@ -17,13 +17,17 @@ function Board() {
 
     useEffect(() => {
         let val = queryString.parse(location.hash);
-        console.log(Object.keys(val).at(0))
         let parsed = Object.keys(val).at(0)
         if (parsed) {
-            console.log(parsed)
             document.querySelector('#' + parsed).scrollIntoView({ behavior: 'smooth' });
         } else {
-            document.querySelector('#web').scrollIntoView({ behavior: 'smooth' });
+            if(window.scrollY===0)
+            {
+                window.scrollTo(0,1);
+            }
+            else{
+                 window.scrollTo(0,0);
+            }
         }
     }, [])
     return (
@@ -31,7 +35,7 @@ function Board() {
             <Header active="boards" />
             <BoardsHeading id="web">BOARDS</BoardsHeading>
             <hr />
-            <WebDevBoard data-aos="fade-right" data-aos-duration="1500">
+            <WebDevBoard data-aos="fade-right" >
                 <div className="heading" ><img src={Code} alt="code" /> Web Development Board </div>
                 <img className="gif" src={WebGif} alt="web" />
                 <p>Web Development board, a new wing of IEEE SJCE is an exclusive committee for designing and maintaining website and web pages pertaining to IEEE SJCE, its events and spread its motto. For us, WDB is a place where students from various disciplines of the campus meet together to put their creativity to create and design web pages and host them on web securely.<br /><br />
@@ -40,18 +44,17 @@ function Board() {
                     Over the years, WDB has turned out be an integral part of IEEE SJCE, due to the growing importance of web in recent years as it is shaping up as the best source of information. We, at WDB hope to strengthen the knowledge of web designing and hosting among the students to greater extent and work as a team to bring out web pages to create zing and get overwhelming response from the people on our organization and its events.<br />
                 </p>
             </WebDevBoard>
-            <EditorialBoard data-aos="fade-left" data-aos-duration="1500">
-                <div className="heading" id="editorial"><img src={Pencil} alt="pencil" /> EDITORIAL BOARD </div>
+            <EditorialBoard data-aos="fade-left" >
+                <div className="heading" ><img src={Pencil} alt="pencil" /> EDITORIAL BOARD </div>
                 <img src={EdGif} alt="editorial" />
-                <p>At the IEEE EdBoard, we strive to present interesting news and articles, about the latest trends and discoveries in the technology field, while also providing a voice for IEEE-SJCE, its members, and the students.<br /><br />
+                <p id="editorial">At the IEEE EdBoard, we strive to present interesting news and articles, about the latest trends and discoveries in the technology field, while also providing a voice for IEEE-SJCE, its members, and the students.<br /><br />
                     <img className="photow" src={EdP} alt="web" />
                     We publish three editions of the IEEE Interface magazine, every year - the Orientation edition, about IEEE-SJCE's events, workshops, etc; the Tuxedo edition, about the Open Source Software Revolution; and, the Cyberia Edition, which covers a wide array of the latest and greatest news related to technology.<br /><br />
-                    We at IEEE SJCE, are glad and excited to announce the release of our annual magazine 'IEEE Interface 2021' edition!<br /><br />
                     <br /><br />
                 </p>
             </EditorialBoard>
-            <TotalMagazineHead data-aos="fade-down" data-aos-duration="1500">We at IEEE SJCE, are glad and excited to announce the release of our annual magazine 'IEEE Interface 2021' edition!</TotalMagazineHead>
-            <Magazine data-aos="fade-down" data-aos-duration="1500">
+            <TotalMagazineHead data-aos="fade-down" >We at IEEE SJCE, are glad and excited to announce the release of our annual magazine 'IEEE Interface 2021' edition!</TotalMagazineHead>
+            <Magazine data-aos="fade-down" >
                 <div className="left">
                     <img src={Magazinee} alt="magazine" />
                 </div>
@@ -63,8 +66,6 @@ function Board() {
                         IEEE Interface 2021
                     </div>
                     <div className="magazine_content">
-                        We at IEEE SJCE, are glad and excited to announce the release of our annual magazine 'IEEE Interface 2021' edition!
-                        <br /><br />
                         We hope you like this edition, packed with articles and knowledge, along with a couple of new additions from the Editorial Board aimed at providing various insights, in light of the recent events surrounding Covid and Mental Health!
                     </div>
                     <div className="magazine-button">
@@ -83,7 +84,7 @@ const TotalMagazineHead = styled.div`
     font-size: 1.5rem;
     padding:0 1rem;
     @media only screen and (max-width: 780px) {
-        font-size: 1rem;
+        font-size: 1.4rem;
         padding:0 1rem;
     }
 `;
@@ -127,6 +128,9 @@ const Magazine = styled.div`
             color: #2D85D7;
             padding:1vh 0;
             font-size: 1.4rem;
+        }
+        >.magazine_content{
+            font-size:1.4rem;
         }
         >.magazine-button{
                 /* display: flex; */
@@ -178,7 +182,7 @@ const EditorialBoard = styled.div`
     padding:1rem 5rem;
     >img{
         float: right;
-        width:20rem;
+        width:25rem;
         max-width: 100%;
     }
     >p{
@@ -193,7 +197,7 @@ const EditorialBoard = styled.div`
         }
     }
     @media only screen and (max-width: 900px) {
-        padding: 1rem 1rem;
+        padding: 1rem 1.5rem;
     }
 `;
 
@@ -212,7 +216,7 @@ const WebDevBoard = styled.div`
     padding:1rem 5rem;
     >.gif{
         float: left;
-        width:20rem;
+        width:25rem;
         max-width: 100%;
     }
     >p{
@@ -227,7 +231,7 @@ const WebDevBoard = styled.div`
         }
     }
     @media only screen and (max-width: 900px) {
-        padding: 1rem 1rem;
+        padding: 1rem 1.5rem;
     }
 `;
 

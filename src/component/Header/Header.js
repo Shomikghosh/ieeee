@@ -43,17 +43,6 @@ function Header({active}) {
         document.removeEventListener("scroll", listener)
       }
     }, [scrollState])   
-    let history = useHistory();
-
-    function handleBoardsClick() {
-      history.push("/boards");
-    }
-    function handleSocietyClick() {
-      history.push("/societies");
-    }
-    function handleTeamClick() {
-      history.push("/team");
-    }
     
      return (
         <MainContainer scrollState={scrollState} active={active}>
@@ -66,7 +55,7 @@ function Header({active}) {
                     <div className="navbar">
                       <a href="/" className={active==="home"?"active":"non-active"}>Home</a><hr/>
                       <div className="dropdown">
-                        <button className={active==="boards"?"active dropbtn":"non-active dropbtn"}  onClick={handleBoardsClick}>Boards
+                        <button className={active==="boards"?"active dropbtn":"non-active dropbtn"} ><a style={{textDecoration:'inherit',color:'inherit'}} href="/boards">Boards</a>
                           <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
@@ -75,17 +64,17 @@ function Header({active}) {
                         </div>
                       </div>
                       <div className="dropdown">
-                        <button  className={active==="societies"?"active dropbtn":"non-active dropbtn"} onClick={handleSocietyClick}>Societies
+                        <button  className={active==="societies"?"active dropbtn":"non-active dropbtn"}><a style={{textDecoration:'inherit',color:'inherit'}} href="/societies">Societies</a>
                           <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
                           <a href="/societies#student"><img src={Shield} alt="shield"/>Student Branch</a>
                           <a href="/societies#eds"><img src={Dashboard} alt="dashboard"/>Electron Devices Society</a>
-                          <a href="/societies#wie"><img src={Female} alt="female"/>Womens in Engineering</a>
+                          <a href="/societies#wie"><img src={Female} alt="female"/>Women in Engineering</a>
                           <a href="/societies#rs"><img src={Cog} alt="cogs"/>Robotics Society</a>
                         </div>
                       </div><div className="dropdown">
-                        <button  className={active==="teams"?"active dropbtn":"non-active dropbtn"}  onClick={handleTeamClick}>Team
+                        <button  className={active==="teams"?"active dropbtn":"non-active dropbtn"} ><a style={{color:'inherit'}} href="/team">Team</a>
                           <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
@@ -98,7 +87,7 @@ function Header({active}) {
                       <a href="/gallery" className={active==="gallery"?"active":"non-active"}>Gallery</a>
                       <a href="/contact" className={active==="contact"?"active":"non-active"}>Contact</a><hr/>
                       <div className="dropdown">
-                        <button className="dropbtn" style={{pointerEvents:"none"}}>Fests
+                        <button className="dropbtn" style={{marginTop:"-7px",pointerEvents:"none"}}>Fests
                           <img src={Drop} alt="dropdwn"/>
                         </button>
                         <div className="dropdown-content" style={{marginLeft:'-100px',width:'150px'}}>
@@ -150,7 +139,7 @@ const MainContainer = styled.div`
         /* margin: 0.5rem 0.5rem 0 0.5rem; */
         padding: 0.5rem;
         >.logo img{
-            width: ${({ scrollState }) => scrollState==='top'? '4rem' : '3.5rem'};
+            width: auto;
             height:${({ scrollState }) => scrollState==='top'? '4rem' : '3.5rem'};
             max-height: 100%;
             transition: height 1s;
@@ -182,10 +171,12 @@ const MainContainer = styled.div`
               color:${({ scrollState }) => scrollState==='top'? '#1E3163' : 'rgb(7, 148, 241)'} ;
               border-bottom: 4px solid ${({ scrollState }) => scrollState==='top'? '#1E3163' : 'rgb(7, 148, 241)'} ; 
               font-weight: 800; 
+              margin-top:2px;
             }
             >.non-active{
               color:${({ scrollState }) => scrollState==='top'? 'white' : 'black'};
               font-weight: 800;
+              margin-top:2px;
             }
             >a{
               font-weight: 800;
@@ -193,7 +184,8 @@ const MainContainer = styled.div`
             >.dropdown {
                 float: left;
                 z-index: 20;
-                margin: 0 1.5vw;
+                margin-right: 3px;
+                /* margin: 0 1.5vw; */
                 /* overflow: hidden; */
                 >.dropdown-content {
                     display: none;
@@ -213,6 +205,9 @@ const MainContainer = styled.div`
                           text-decoration: none;
                           display: block;
                           text-align: left;
+                          &:hover{
+                            color:rgb(7, 148, 241);
+                          }
                         }
                         >.active{
                           color:#8AB6D6;
@@ -229,6 +224,7 @@ const MainContainer = styled.div`
                     >a{
                       display: flex;
                       >img{
+                          height:2rem;
                           width:1.2rem;
                           margin-right: 0.5rem;
                       }
@@ -246,7 +242,6 @@ const MainContainer = styled.div`
                   border: none;
                   outline: none;
                   color:${({ scrollState }) => scrollState==='top'? 'white' : 'black'};
-                  margin:2vh 2vw;
                   font-weight: 700;
                   background-color: inherit;
                   font-family: inherit; /* Important for vertical align on mobile phones */

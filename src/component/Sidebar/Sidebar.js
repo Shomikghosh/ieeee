@@ -83,7 +83,7 @@ function Sidebar() {
                                 <ul style={{display:showDrop2?'block':'none',listStyleType:'none',padding:'0'}}>
                                     <li><a href="/societies#student" style={{color:'white',textDecoration:'none'}}><img src={Shield} alt="shield"/>Student Branch</a></li>
                                     <li><a href="/societies#eds" style={{color:'white',textDecoration:'none'}}><img src={Dashboard} alt="dashboard"/>Electron Devices Society</a></li>
-                                    <li><a href="/societies#wie" style={{color:'white',textDecoration:'none'}}><img src={Female} alt="female"/>Womens in Engineering</a></li>
+                                    <li><a href="/societies#wie" style={{color:'white',textDecoration:'none'}}><img src={Female} alt="female"/>Women in Engineering</a></li>
                                     <li><a href="/societies#rs" style={{color:'white',textDecoration:'none'}}><img src={Cog} alt="cogs"/>Robotics Society</a></li>
                                 </ul>
                             <li className="sub-menu"><a href="javascript:void(0);" onClick={() => setshowDrop3(!showDrop3)}  style={{color:'black'}}>Team</a></li>
