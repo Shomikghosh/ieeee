@@ -45,6 +45,8 @@ const MainContainer = styled.div`
     }
     >.imagine{
         font-size: 2.5rem;
+        font-weight:700;
+        color:rgb(7, 148, 241);
         @media only screen and (max-width: 780px) {
             font-size: 1rem;
         }
