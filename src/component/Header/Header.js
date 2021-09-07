@@ -78,8 +78,8 @@ function Header({active}) {
                           <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
-                          <a href="/team#ec"><img src={Bulls} alt="bulls"/>Executive Commitee</a>
-                          <a href="/team#mc"><img src={Users} alt="users"/>Membership Commitee</a>
+                          <a href="/team#ec"><img src={Bulls} alt="bulls"/>Executive Committee</a>
+                          <a href="/team#mc"><img src={Users} alt="users"/>Membership Committee</a>
                           <a href="/team#s"><img src={Sort} alt="sort"/>Societies</a>
                           <a href="/team#b"><img src={Task} alt="task"/>Boards</a>
                         </div>
@@ -87,7 +87,7 @@ function Header({active}) {
                       <a href="/gallery" className={active==="gallery"?"active":"non-active"}>Gallery</a>
                       <a href="/contact" className={active==="contact"?"active":"non-active"}>Contact</a><hr/>
                       <div className="dropdown">
-                        <button className="dropbtn" style={{display: 'flex',justifyContent:'center',alignItems:'center',marginTop:'-11px',pointerEvents:"none"}}>Fests
+                        <button className="dropbtn" style={{display: 'flex',justifyContent:'center',alignItems:'center',marginTop:'-9px',pointerEvents:"none"}}>Fests
                           <img src={Drop} alt="dropdwn"/>
                         </button>
                         <div className="dropdown-content" style={{marginLeft:'-100px',width:'150px'}}>
@@ -247,9 +247,12 @@ const MainContainer = styled.div`
                   font-family: inherit; /* Important for vertical align on mobile phones */
                   margin: 0; /* Important for vertical align on mobile phones */
                 }
-                >.dropdown .active{
-                  color:rgb(7, 148, 241);
-                  border-bottom: 4px solid rgb(7, 148, 241); 
+                >.dropdown .active{color:rgb(7, 148, 241);
+                  >a{
+                      
+                      border-bottom: 4px solid rgb(7, 148, 241); 
+                  
+                  }
                 }
                 @media only screen and (max-width: 900px) {
                       display: none;
@@ -264,7 +267,7 @@ const MainContainer = styled.div`
             font-size: 16px;
             color: white;
             text-align: center;
-            margin:${({ scrollState }) => scrollState==='top'? '2vh 1.5vw' : '1vh 1.5vw'};
+            margin:${({ scrollState }) => scrollState==='top'? '2vh 1.5vw' : '1.2vh 1.5vw'};
             transition: margin 1s;
             text-decoration: none;
             

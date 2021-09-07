@@ -197,7 +197,7 @@ function MileStone() {
                 </div>
             </Modal>
 
-     <HeadingTimeline>MileStone Events</HeadingTimeline>
+     <HeadingTimeline>Milestone Events</HeadingTimeline>
             <StyledHr/>
         <MainContainer>
         <div><LeftContainer>
