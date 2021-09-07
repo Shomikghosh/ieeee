@@ -267,7 +267,7 @@ const MainContainer = styled.div`
             font-size: 16px;
             color: white;
             text-align: center;
-            margin:${({ scrollState }) => scrollState==='top'? '2vh 1.5vw' : '1.2vh 1.5vw'};
+            margin:${({ scrollState }) => scrollState==='top'? '1.4vh 1.5vw' : '1.2vh 1.5vw'};
             transition: margin 1s;
             text-decoration: none;
             
