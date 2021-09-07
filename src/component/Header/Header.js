@@ -87,7 +87,7 @@ function Header({active}) {
                       <a href="/gallery" className={active==="gallery"?"active":"non-active"}>Gallery</a>
                       <a href="/contact" className={active==="contact"?"active":"non-active"}>Contact</a><hr/>
                       <div className="dropdown">
-                        <button className="dropbtn" style={{marginTop:"-7px",pointerEvents:"none"}}>Fests
+                        <button className="dropbtn" style={{display: 'flex',justifyContent:'center',alignItems:'center',marginTop:'-11px',pointerEvents:"none"}}>Fests
                           <img src={Drop} alt="dropdwn"/>
                         </button>
                         <div className="dropdown-content" style={{marginLeft:'-100px',width:'150px'}}>

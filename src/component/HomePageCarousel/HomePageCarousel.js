@@ -16,7 +16,7 @@ function HomePageCarousel() {
             <Carousel showThumbs={false}
                     showStatus={false}
                     dynamicHeight={false}
-                    autoPlay={true}	
+                    // autoPlay={true}	
                     // interval={10000}
                     >
                     <Sty>
