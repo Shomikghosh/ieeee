@@ -99,9 +99,8 @@ function Society() {
                 A distinguished lecture by a woman scientist from aerospace engineering domain. The main motto of the event was to mark the demise of Indian born women astronaut, Kalpana Chawla. The initiative to organise this event was taken in the year 2018. The chief guest for the event was Dr. Indra Arumugam, Associate Director ISTRAC, ISRO. Glimpse of missions undertaken by ISRO and challenges in completing those missions was given. WIE team aims to continue organising this event annually.
                 <br/><br/>
 
-                <strong>▪ Build and Run</strong><br/>
-                A dual domain online hackathon wherein the participating teams are told to submit solutions to given problems within the deadline. The teams are given options between Coding and Circuit Simulation. In order to encourage girls to be part of the hackathon, rule of having minimum one girl participant in the team is compelled.
-                <br/>
+                <strong>▪ Codefiesta</strong><br/>
+                WIE wing of IEEE brought us CODEFIESTA, an online coding competition sponsored by Sahaj Software. This 3-hour hackathon was open for all students and exciting cash prizes and certificates were provided to the winners. To encourage the participation of girls, special cash prize of 1K was awarded to each of the top 3 participants excluding the girls among top five winners.                <br/>
 
 
                 </p>
