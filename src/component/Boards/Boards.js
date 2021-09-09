@@ -38,10 +38,11 @@ function Board() {
             <WebDevBoard data-aos="fade-right" >
                 <div className="heading" ><img src={Code} alt="code" /> Web Development Board </div>
                 <img className="gif" src={WebGif} alt="web" />
-                <p>Web Development board, a new wing of IEEE SJCE is an exclusive committee for designing and maintaining website and web pages pertaining to IEEE SJCE, its events and spread its motto. For us, WDB is a place where students from various disciplines of the campus meet together to put their creativity to create and design web pages and host them on web securely.<br /><br />
+                <p>Web Development board, a new wing of IEEE-SJCE is an exclusive committee for designing and maintaining the website and web pages of IEEE-SJCE, its events, and spread its motto. For us, WDB is a place where students from various disciplines of the campus meet together to put their creativity to create and design web pages and host them on the web securely.
+<br /><br />
                     <img className="photow" src={WebP} alt="web" />
-                    It also encourages the students in the campus to learn languages for web hosting like HTML, CSS, JavaScript, html(server-side scripting) by conducting many technical sessions on them throughout the year, which are hosted by our core committee members.<br /><br />
-                    Over the years, WDB has turned out be an integral part of IEEE SJCE, due to the growing importance of web in recent years as it is shaping up as the best source of information. We, at WDB hope to strengthen the knowledge of web designing and hosting among the students to greater extent and work as a team to bring out web pages to create zing and get overwhelming response from the people on our organization and its events.<br />
+                    It also encourages the students on the campus to learn languages for web hosting like HTML, CSS, JavaScript, HTML(server-side scripting) by conducting many technical sessions on them throughout the year, which are hosted by our core committee members.<br /><br />
+                    Over the years, WDB has turned out to be an integral part of IEEE-SJCE, due to the growing importance of the web in recent years as it is shaping up as the best source of information. We, at WDB, hope to strengthen the knowledge of web designing and hosting among the students to a greater extent and work as a team to bring out web pages to create zing and get an overwhelming response from the people in our organization and its events.<br />
                 </p>
             </WebDevBoard>
             <EditorialBoard data-aos="fade-left" >

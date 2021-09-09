@@ -20,7 +20,7 @@ function Prayas() {
             <HeadingTimeline>Prayas</HeadingTimeline>
             <hr/>
             <SubHeading>
-            PRAYAS is an outreach program by IEEE SJCE WIE that provides in equitable education outcomes to the underprivileged children. The volunteers visited one Orphanage on a weekly basis to interact with the students there and help them out in their academic activities
+            PRAYAS is an outreach program by IEEE-SJCE WIE that provides inequitable education outcomes to underprivileged children. The volunteers visited one Orphanage every week to interact with the students there and help them out in their academic activities
             </SubHeading>
             <FourPointerPrayas>
             <div className="middle-container">
@@ -43,9 +43,9 @@ function Prayas() {
                 </h2>
                 <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                   <div className="accordion-body">
-                      An effort by our team to provide under privileged a positive learning environment that will help them unleash their potential.<br/>
+                  An effort by our team to provide underprivileged students with a positive learning environment that will help them unleash their potential.<br/>
 												▪ This includes frequent visits to Divya Deepa and Vijaya Educational Institution. <br/>
-												▪ We will be helping the kids with functional English and Extra-curricular activities.<br/><br/>	  
+												▪ We will be helping the kids with functional English and Extracurricular activities.<br/><br/>	  
                   </div>
                 </div>
               </div>

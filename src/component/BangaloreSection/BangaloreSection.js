@@ -19,11 +19,7 @@ function BangaloreSection() {
             <SubHeading>IEEE-SJCE has been successfully recognized by IEEE Bangalore section for completing its Silver Jubilee in flying colours. We have also been able to bag the best website award two times in a row.</SubHeading>
         <ThreeCards>
             <div data-aos="fade-down" data-aos-duration="2000"><h3>HAC-SAC 1.0 VIRTUAL HACK-A-THON</h3>
-            <p>Student Activities Committee, IEEE Bangalore Section in collaboration with IEEE SIGHT is organising a hackathon! It's free, and it's for everyone.
-                Eligible Participants- IEEE Members
-                Categories: Agriculture and Healthcare,
-                Last date to register : 20th October 2020
-                Cash Prizes: 10k, 7.5k and 5k for top three winners.</p>
+            <p>Student Activities Committee, IEEE Bangalore Section in collaboration with IEEE SIGHT is organising a hackathon! It's free, and it's for everyone. Eligible Participants- IEEE Members Categories: Agriculture and Healthcare, Last date to register: 20th October 2020 Cash Prizes: 10k, 7.5k, and 5k for top three winners.</p>
                 <a target="_blank" rel="noreferrer" href='https://docs.google.com/forms/d/e/1FAIpQLSfAAP-OR4AFJLhdfjTfoERi64TG1f003FQwm1Ra4jDOVgsMsQ/closedform'>Click Here</a>
                 </div>
                 <div data-aos="fade-down" data-aos-duration="2000"><h3>IEEEXTREME MOCK CODING CONTEST</h3>
