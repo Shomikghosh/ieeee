@@ -95,7 +95,7 @@ function Sidebar() {
                                 </ul>
                             <li><a href="/gallery"  style={{color:'black'}}>Gallery</a></li>
                             <li><a href="/contact"  style={{color:'black'}}>Contact</a></li>
-                            <li className="sub-menu"><a href="javascript:void(0);"   style={{color:'black'}}>Fests</a></li>
+                            <li className="sub-menu"><a href="javascript:void(0);"  onClick={() => setshowDrop4(!showDrop4)}  style={{color:'black'}}>Fests</a></li>
                              <ul style={{display:showDrop4?'block':'none',listStyleType:'none',padding:'0'}}>
                                     <li ><a href="http://www.ieeesjce.com/cyberia/index.html" style={{color:'white',textDecoration:'none'}}><img src={Magic} alt="task"/>Cyberia</a></li>
                                     <li><a href="http://ieeesjce.com/tuxedo/" style={{color:'white',textDecoration:'none'}}><img src={Links} alt="task"/>Tuxedo</a></li>
