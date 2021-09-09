@@ -44,7 +44,7 @@ import Ezu from '../../assests/team/ezu.jpg'
 import Shomik from '../../assests/team/Shomik.jpg'
 
 import Jagdeesh from '../../assests/team/jag.jpeg'
-import Meghana from '../../assests/team/meghana.png'
+import Meghana from '../../assests/team/meghana.jpg'
 import Gayat from '../../assests/team/gayat.jpeg'
 import Raghu from '../../assests/team/Raghavendra.jpg'
 import Snehith from '../../assests/team/Snehith.jpg'
@@ -52,7 +52,7 @@ import Harshith from '../../assests/team/HARSHITH.jpg'
 
 import Dhan from '../../assests/team/dhan.jpeg'
 import Akshay from '../../assests/team/akshay.jpg'
-import Manju from '../../assests/team/manju.jpeg'
+import Manju from '../../assests/team/manju.jpg'
 import Suprabhu from '../../assests/team/suprabhu.jpeg'
 import Lasitha from '../../assests/team/lasitha.jpg'
 import Hardik from '../../assests/team/hardik.jpg'
@@ -89,7 +89,7 @@ function Team() {
     const location = useLocation()
 
   useEffect(() => {
-    let val = queryString.parse(location.hash);
+        let val = queryString.parse(location.hash);
         let parsed = Object.keys(val).at(0)
         if (parsed) {
             document.querySelector('#' + parsed).scrollIntoView({ behavior: 'smooth' });
@@ -120,9 +120,9 @@ function Team() {
                             <CaraTotal>
                                 <img src={f1} alt="team"/>    
                             </CaraTotal>
-                            <CaraTotal>
+                            {/* <CaraTotal>
                                 <img src={f2} alt="team"/>    
-                            </CaraTotal>
+                            </CaraTotal> */}
                             <CaraTotal>
                                 <img src={f3} alt="team"/>    
                             </CaraTotal>
@@ -307,7 +307,9 @@ function Team() {
 
             <div className="container">
             <div className="row">
-
+            <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
+    
+                </div>
             <div className="col-md-3 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Mandara} alt=""/>
@@ -450,7 +452,9 @@ function Team() {
             </div>
             <div className="container">
             <div className="row">
+            <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
 
+                </div>
             <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Sushma} alt=""/>
@@ -536,7 +540,8 @@ function Team() {
             </div>
             <div className="container">
             <div className="row">
-
+            <div class="col-md-1" style={{width: '12.499999995%',
+    flex:' 0 0 12.499%',maxWidth: '12.499%'}}></div>
             <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Saswathi} alt=""/>
@@ -638,7 +643,9 @@ function Team() {
             </div>
             <div className="container">
             <div className="row">
-
+            <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
+                    
+                </div>
             <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Snehith} alt=""/>
@@ -670,7 +677,9 @@ function Team() {
         <CommiteeHeading id="b"><img src={Code} alt="code"/>WEB DEVELOPMENT BOARD </CommiteeHeading>
         <div className="container">
             <div className="row">
-
+            <div className="col-md-3 col-sm-6"  data-aos="fade-left" data-aos-duration="2000">
+                 
+                </div>
             <div className="col-md-3 col-sm-6"  data-aos="fade-left" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={Ezu} alt=""/>
@@ -815,6 +824,10 @@ function Team() {
                <div className="container">
                <div className="row">
                <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
+                </div>
+                <div class="col-md-1" style={{width: '12.499999995%',
+    flex:' 0 0 12.499%',maxWidth: '12.499%'}}></div>
+               <div className="col-md-3 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
                         <img src={RASHMI} alt=""/>
                         <ul className="social">
@@ -871,6 +884,7 @@ const CommiteeHeading = styled.div`
     >img{
         width:2rem;
         height:2rem;
+        object-fit: contain;
         margin-right:1rem;
     }
     font-family: 'Merriweather Sans', sans-serif;

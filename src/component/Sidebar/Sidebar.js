@@ -76,28 +76,28 @@ function Sidebar() {
                             <li><a href="/" className="active"  style={{color:'black'}}>Home</a></li>
                             <li className="sub-menu"><a href="javascript:void(0);" onClick={() => setshowDrop1(!showDrop1)} style={{color:'black'}}>Boards</a></li>
                                 <ul style={{display:showDrop1?'block':'none',listStyleType:'none',padding:'0'}}>
-                                    <li><a href="/boards#web" style={{color:'white',textDecoration:'none'}}><img src={Code} alt="code"/>Web Development Board</a></li>
-                                    <li><a href="/boards#editorial" style={{color:'white',textDecoration:'none'}}><img src={Pencil} alt="pencil"/>Editorial Board</a></li>
+                                    <li><a href="/boards" style={{color:'white',textDecoration:'none'}}><img src={Code} alt="code"/>Web Development Board</a></li>
+                                    <li><a href="/boards" style={{color:'white',textDecoration:'none'}}><img src={Pencil} alt="pencil"/>Editorial Board</a></li>
                                 </ul>
                             <li className="sub-menu"><a href="javascript:void(0);" onClick={() => setshowDrop2(!showDrop2)}  style={{color:'black'}}>Societies</a></li>
                                 <ul style={{display:showDrop2?'block':'none',listStyleType:'none',padding:'0'}}>
-                                    <li><a href="/societies#student" style={{color:'white',textDecoration:'none'}}><img src={Shield} alt="shield"/>Student Branch</a></li>
-                                    <li><a href="/societies#eds" style={{color:'white',textDecoration:'none'}}><img src={Dashboard} alt="dashboard"/>Electron Devices Society</a></li>
-                                    <li><a href="/societies#wie" style={{color:'white',textDecoration:'none'}}><img src={Female} alt="female"/>Women in Engineering</a></li>
-                                    <li><a href="/societies#rs" style={{color:'white',textDecoration:'none'}}><img src={Cog} alt="cogs"/>Robotics Society</a></li>
+                                    <li><a href="/societies" style={{color:'white',textDecoration:'none'}}><img src={Shield} alt="shield"/>Student Branch</a></li>
+                                    <li><a href="/societies" style={{color:'white',textDecoration:'none'}}><img src={Dashboard} alt="dashboard"/>Electron Devices Society</a></li>
+                                    <li><a href="/societies" style={{color:'white',textDecoration:'none'}}><img src={Female} alt="female"/>Women in Engineering</a></li>
+                                    <li><a href="/societies" style={{color:'white',textDecoration:'none'}}><img src={Cog} alt="cogs"/>Robotics Society</a></li>
                                 </ul>
                             <li className="sub-menu"><a href="javascript:void(0);" onClick={() => setshowDrop3(!showDrop3)}  style={{color:'black'}}>Team</a></li>
                             <ul style={{display:showDrop3?'block':'none',listStyleType:'none',padding:'0'}}>
-                                    <li ><a href="/team#ec" style={{color:'white',textDecoration:'none'}}><img src={Bulls} alt="bulls"/>Executive Commitee</a></li>
-                                    <li><a href="/team#mc" style={{color:'white',textDecoration:'none'}}><img src={Users} alt="users"/>Membership Commitee</a></li>
-                                    <li><a href="/team#s" style={{color:'white',textDecoration:'none'}}><img src={Sort} alt="sort"/>Societies</a></li>
-                                    <li><a href="/team#b" style={{color:'white',textDecoration:'none'}}><img src={Task} alt="task"/>Boards</a></li>
+                                    <li ><a href="/team" style={{color:'white',textDecoration:'none'}}><img src={Bulls} alt="bulls"/>Executive Commitee</a></li>
+                                    <li><a href="/team" style={{color:'white',textDecoration:'none'}}><img src={Users} alt="users"/>Membership Commitee</a></li>
+                                    <li><a href="/team" style={{color:'white',textDecoration:'none'}}><img src={Sort} alt="sort"/>Societies</a></li>
+                                    <li><a href="/team" style={{color:'white',textDecoration:'none'}}><img src={Task} alt="task"/>Boards</a></li>
                                 </ul>
                             <li><a href="/gallery"  style={{color:'black'}}>Gallery</a></li>
                             <li><a href="/contact"  style={{color:'black'}}>Contact</a></li>
                             <li className="sub-menu"><a href="javascript:void(0);" onClick={() => setshowDrop4(!showDrop4)}  style={{color:'black'}}>Fests</a></li>
                              <ul style={{display:showDrop4?'block':'none',listStyleType:'none',padding:'0'}}>
-                                    <li ><a href="http://www.ieeesjce.com/cyberia/home.php" style={{color:'white',textDecoration:'none'}}><img src={Magic} alt="task"/>Cyberia</a></li>
+                                    <li ><a href="http://www.ieeesjce.com/cyberia/index.html" style={{color:'white',textDecoration:'none'}}><img src={Magic} alt="task"/>Cyberia</a></li>
                                     <li><a href="http://ieeesjce.com/tuxedo/" style={{color:'white',textDecoration:'none'}}><img src={Links} alt="task"/>Tuxedo</a></li>
                                 </ul>
                            

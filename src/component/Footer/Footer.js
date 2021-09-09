@@ -58,7 +58,7 @@ function Footer() {
                 </div>
                 <div className="col-md-3 col-sm-6">
                     <div className="footer-pad">
-                    <h4>Important Links</h4>
+                    <h4>IMPORTANT LINKS</h4>
                     <ul className="list-unstyled">
                         <li><a href="https://jssstuniv.in/">JSS STU</a></li>
                         <li><a href="https://www.ieee.org/">IEEE.org</a></li>
@@ -74,7 +74,7 @@ function Footer() {
                     </div>
                 </div>
                   <div className="col-md-3">
-                        <h4>Follow Us</h4>
+                        <h4>FOLLOW US</h4>
                          <ul className="social-network social-circle"> 
                         <a href="https://www.facebook.com/ieeesjce/"  title="Facebook"><img className="socials" src={fb} alt="fb-link"/></a>
                         <a href="https://www.linkedin.com/company/ieee-sjce/" title="Linkedin"><img className="socials" src={ln} alt="ln-link"/></a>

@@ -53,32 +53,11 @@ function Mentor() {
                                             <span className="message">
                                                 <a href="mailto:rudra.swamy@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a>
                                             </span>
-                                            <h4>DR.S B RUDRASWAMI</h4>
+                                            <h4>DR. S B RUDRASWAMI</h4>
                                             <span>EDS Advisor</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3 single-item"  >
-                                    <div className="item">
-                                        <div className="thumb">
-                                            <img className="img-fluid box2" src={shs} alt="Thumb"/>
-                                        </div>
-                                        <div className="info">
-                                            <span className="message">
-                                                <a href="mailto:rudra.swamy@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a>
-                                            </span>
-                                            <h4>MR. SHASHIDHAR R</h4>
-                                            <span>SBMDC Advisor</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-1" style={{width: "12.499999995%",
-    flex:" 0 0 12.499%", maxWidth: "12.499%"}}></div>
-                            </div>
-                    </div>
-                    <div className="container " >
-                            <div className="row team-items pho">
-                                <div className="col-md-3" ></div>
                                 <div className="col-md-3 single-item"  >
                                     <div className="item" >
                                         <div className="thumb">
@@ -90,6 +69,27 @@ function Mentor() {
                                             </span>
                                             <h4>DR. SUDARSHAN P K</h4>
                                             <span>RAS Advisor</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-1" style={{width: "12.499999995%",
+    flex:" 0 0 12.499%", maxWidth: "12.499%"}}></div>
+                            </div>
+                    </div>
+                    <div className="container " >
+                            <div className="row team-items pho">
+                                <div className="col-md-3" ></div>
+                                <div className="col-md-3 single-item"  >
+                                    <div className="item">
+                                        <div className="thumb">
+                                            <img className="img-fluid box2" src={shs} alt="Thumb"/>
+                                        </div>
+                                        <div className="info">
+                                            <span className="message">
+                                                <a href="mailto:rudra.swamy@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a>
+                                            </span>
+                                            <h4>MR. SHASHIDHAR R</h4>
+                                            <span>SBMDC Advisor</span>
                                         </div>
                                     </div>
                                 </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import CN1 from '../../assests/Main2/CN-1.jpg'
 import CN2 from '../../assests/Main2/CN-2.jpg'
-import SIM2 from '../../assests/Main2/sim2.0.jpg'
+import SIM2 from '../../assests/Main2/sim2.0.png'
 import BangaloreBg from '../../assests/images/bangalore_bg.jpg'
 import fb from '../../assests/images/facebook.png'
 import inn from '../../assests/images/instagram.png'
@@ -51,7 +51,7 @@ function Main2() {
            </SubMain>
            <SubMain >
                 <div data-aos="fade-right" data-aos-duration="2000">
-                    <img src={CN1} alt="pos"/>
+                    <img src={CN2} alt="pos"/>
                 </div>
                 <div className="content_whole" data-aos="fade-left" data-aos-duration="2000">
                     <p className="content_main">
@@ -95,7 +95,7 @@ function Main2() {
                     </p>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="2000">
-                    <img src={CN2} alt="pos"/>
+                    <img src={CN1} alt="pos"/>
                 </div>
            </SubMain>
         </MainContainer>

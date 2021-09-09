@@ -202,7 +202,7 @@ function MileStone() {
         <MainContainer>
         <div><LeftContainer>
                 <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <div className="heading">Lecture by EDS</div>
+                    <Heading>Lecture by EDS</Heading>
                     <img src={Lec} alt="poster"/>
                     <div className="content">
                         IEEE-SJCE EDS hosted a Distinguished Lecture on-<br/>
@@ -222,7 +222,7 @@ function MileStone() {
                     <button onClick={onOpenModalm1}>View Details</button>
                 </div>
                 <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <div className="heading">Code and Simulate</div>
+                    <Heading>Code and Simulate</Heading>
                     <img src={Ard} alt="poster"/>
                     <div className="content">
                             The EDS chapter brought you a 2-day workshop<br/> -
@@ -247,7 +247,7 @@ function MileStone() {
                     <button  onClick={onOpenModalm2}>View Details</button>
                 </div>
                 {/* <div>
-                    <div className="heading">Call for Articles</div>
+                    <Heading>Call for Articles</div>
                     <img src={Calla} alt="poster"/>
                     <div className="content">
                         We at IEEE-SJCE are bringing out our annual edition of the magazine for the year 2021. We are calling for your contribution.
@@ -265,7 +265,7 @@ function MileStone() {
             </LeftContainer>
             <RightContainer>
                 <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <div className="heading">CODEFIESTA by WIE</div>
+                    <Heading>CODEFIESTA by WIE</Heading>
                     <img src={Codfie} alt="poster"/>
                     <div className="content">
                             ◆The top 3 participants will receive cash prizes of INR 6000, 4000 and 2000 respectively <br/>...
@@ -276,7 +276,7 @@ function MileStone() {
                     <button  onClick={onOpenModalm3}>View Details</button>
                 </div>
                 <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <div className="heading">Snap circuit </div>
+                    <Heading>Snap circuit </Heading>
                     <img src={Snap} alt="poster"/>
                     <div className="content">
                                         ▪️To get an idea of basic electronic components and build circuits using them.   
@@ -302,7 +302,7 @@ function MileStone() {
         <div>
         <LeftContainer>
             {/* <div>
-                    <div className="heading">Membership drive</div>
+                    <Heading>Membership drive</div>
                     <img src={Mem} alt="poster"/>
                     <div className="content">
                     Members will get an oppertunity to attend various webinars,workshops,conferences and forums that occur worldwide.
@@ -312,7 +312,7 @@ function MileStone() {
                     <button>View Details</button>
                 </div> */}
                 <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <div className="heading">Image Pro. Workshop </div>
+                    <Heading>Image Pro. Workshop </Heading>
                     <img src={Imp} alt="poster"/>
                     <div className="content">
                     The EDS and RAS societies brought you a workshop on Image Processing !! <br/>
@@ -324,7 +324,7 @@ function MileStone() {
                     <button onClick={onOpenModalm5}>View Details</button>
                 </div>
                 <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <div className="heading">Alumni Podcast</div>
+                    <Heading>Alumni Podcast</Heading>
                     <img src={Alum2} alt="poster"/>
                     <div className="content">
                     IEEE-SJCE brought you the second episode of the series.
@@ -341,7 +341,7 @@ function MileStone() {
             </LeftContainer>
             <RightContainer>
             <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <div className="heading">Webinar on Xplore</div>
+                    <Heading>Webinar on Xplore</Heading>
                     <img src={Exp} alt="poster"/>
                     <div className="content">
                     "Prepare for your career and research through IEEE Xplore New Advanced Tools". The webinar was presented by M ...
@@ -350,7 +350,7 @@ function MileStone() {
                     <button onClick={onOpenModalm7}>View Details</button>
                 </div> 
             <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <div className="heading">Webinar Alert</div>
+                    <Heading>Webinar Alert</Heading>
                     <img src={Res} alt="poster"/>
                     <div className="content">
                             IEEE-SJCE WIE hosted a webinar on one of trending aspects - "RESUME-BUILDING"! The webinar ...
@@ -366,6 +366,16 @@ function MileStone() {
         </> 
     )
 }
+const Heading = styled.div`
+     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            text-align:center;
+            font-size: 1.5rem;
+            margin:2vh auto;
+            color:#4B6587;
+`;
+
 const StyledHr = styled.hr`
     margin: 0 auto 4vh auto;
     width:5rem;

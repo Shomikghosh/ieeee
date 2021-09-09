@@ -82,6 +82,7 @@ const TotalMagazineHead = styled.div`
     align-items:center;
     justify-content: center;
     font-size: 1.5rem;
+    margin-top:32px;
     padding:0 1rem;
     @media only screen and (max-width: 780px) {
         font-size: 1.4rem;

@@ -71,7 +71,7 @@ function Header({active}) {
                           <a href="/societies#student"><img src={Shield} alt="shield"/>Student Branch</a>
                           <a href="/societies#eds"><img src={Dashboard} alt="dashboard"/>Electron Devices Society</a>
                           <a href="/societies#wie"><img src={Female} alt="female"/>Women in Engineering</a>
-                          <a href="/societies#rs"><img src={Cog} alt="cogs"/>Robotics Society</a>
+                          <a href="/societies#rs"><img src={Cog} alt="cogs"/>Robotics and Automation Society</a>
                         </div>
                       </div><div className="dropdown">
                         <button  className={active==="teams"?"active dropbtn":"non-active dropbtn"} ><a style={{color:'inherit'}} href="/team">Team</a>
@@ -91,7 +91,7 @@ function Header({active}) {
                           <img src={Drop} alt="dropdwn"/>
                         </button>
                         <div className="dropdown-content" style={{marginLeft:'-100px',width:'150px'}}>
-                          <a href="http://www.ieeesjce.com/cyberia/home.php" target="_blank" rel="noreferrer"><img src={Magic} alt="task"/>Cyberia</a>
+                          <a href="http://www.ieeesjce.com/cyberia/index.html" target="_blank" rel="noreferrer"><img src={Magic} alt="task"/>Cyberia</a>
                           <a href="http://ieeesjce.com/tuxedo/" target="_blank" rel="noreferrer"><img src={Links} alt="task"/>Tuxedo</a>
                         </div>
                       </div>
@@ -195,7 +195,7 @@ const MainContainer = styled.div`
                     width: 250px;
                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                     z-index: 1;
-                    margin-top: 5px;
+                    margin-top: 0px;
                     cursor:none;
                       >a{
                         font-weight: 800;

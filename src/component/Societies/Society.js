@@ -120,10 +120,13 @@ function Society() {
                 IEEE-SJCE, in addition to the above mentioned societies also houses an eccentric Membership Development Committee and a SBMDC wing.
                 <br/><br/>
 
-                <strong>Membership Development Committee and SBMDC Wing:</strong>
+                <strong>Membership Development Committee and SBMDC Wing</strong>
                 <br/><br/>
                 The Student Branch Membership Development Committee team helps in increasing IEEE Membership by recruiting new members and retaining current members. It also promotes elevations in grade and encourages participation in various society memberships. It contributes to the awareness by members of the values of their IEEE membership and increases IEEE membership quality. In addition, it provides efficient and timely communication to all IEEE management levels of the interests and concerns of our members and identifies membership trends, changes and problems.
-
+                <br/><br/>
+                <strong>IMAGE PROCESSING USING OPEN CV</strong><br/>
+                Image processing is a method to perform operations on image inorder to enhance the image or get useful information from it. Image processing is a fascinating topic with wide applications. IEEE SJCE RAS along with EDS team conducted a 5 day event on image processing wherein basics of python were covered on the initial days followed by image processing concepts.
+                <br id="rs"/><br/>
 
                 </p>
            </RoboticsBoard>
@@ -188,7 +191,8 @@ const WIEBoard = styled.div`
         font-size: 2rem;
         >img{
             width:2.5rem;
-            margin:0 1vw;
+            margin:0 0.5vw;
+            object-fit: contain;
             height:2rem;
         }
     }
