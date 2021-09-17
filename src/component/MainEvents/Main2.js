@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import CN1 from '../../assests/Main2/CN-1.jpg'
-import CN2 from '../../assests/Main2/CN-2.jpg'
+// import CN1 from '../../assests/Main2/CN-1.jpg'
+// import CN2 from '../../assests/Main2/CN-2.jpg'
+import IEEEDay from '../../assests/Main2/ieee-day.jpg'
 import SIM2 from '../../assests/Main2/sim2.0.png'
 import BangaloreBg from '../../assests/images/bangalore_bg.jpg'
 import fb from '../../assests/images/facebook.png'
@@ -12,6 +13,32 @@ function Main2() {
         <MainContainer>
             <HeadingTimeline>Events</HeadingTimeline>
             <StyledHr/>
+            <SubMain >
+                <div data-aos="fade-right" data-aos-duration="2000">
+                    <img src={IEEEDay} alt="pos"/>
+                </div>
+                <div className="content_whole" data-aos="fade-left" data-aos-duration="2000">
+                    <p className="content_main">
+                        <h3 classnName="content_head">IEEE DAY 2021</h3>
+                        Stuck with loads of classes and piling assignments? We're here to change your pace and give you a break from the monotonous routine. IEEE DAY 2021 is just around the corner, and we are excited to present to you IEEE ECLECTIC, a month-long procession of exciting events to amp up our celebrations!
+                        <br/><br/>
+                        To commemorate this special occasion, we have an exclusive assortment of events, covering both Technical and non-Technical domains lined up for y'all.<br/>
+                        There is plenty of knowledge to be taken away, and exciting prizes up for grabs!
+                        <br/><br/>
+                        The events will begin from the 20th of September, and go on till the 17th of October. 
+                        <br/><br/>
+                        Do keep an eye on our Instagram page for links and further updates.<br/>
+                        Make sure not to miss out on any of the events!<br/><br/>
+                        For any queries, contact: <br/>
+                        Chinmaya K - 8762361434<br/>
+                        Shivraj Nath - 8837282287 
+                        <div className="buttons">
+                            <a href="https://www.instagram.com/ieee_sjce/" className="icoInsta" title="Instagram"><img className="socials" src={inn} alt="in-link"/></a>
+                            <a href="https://www.facebook.com/ieeesjce/"  title="Facebook"><img className="socials" src={fb} alt="fb-link"/></a>
+                        </div> 
+                    </p>
+                </div>
+           </SubMain>
             <SubMain >
                 <div className="content_whole"  data-aos="fade-right" data-aos-duration="2000">
                     <p className="content_main">
@@ -49,7 +76,7 @@ function Main2() {
                     <img src={SIM2} alt="pos"/>
                 </div>
            </SubMain>
-           <SubMain >
+           {/* <SubMain >
                 <div data-aos="fade-right" data-aos-duration="2000">
                     <img src={CN2} alt="pos"/>
                 </div>
@@ -97,7 +124,7 @@ function Main2() {
                 <div data-aos="fade-left" data-aos-duration="2000">
                     <img src={CN1} alt="pos"/>
                 </div>
-           </SubMain>
+           </SubMain> */}
         </MainContainer>
     )
 }

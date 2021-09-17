@@ -22,9 +22,9 @@ function BangaloreSection() {
             <p>Student Activities Committee, IEEE Bangalore Section in collaboration with IEEE SIGHT is organising a hackathon! It's free, and it's for everyone. Eligible Participants- IEEE Members Categories: Agriculture and Healthcare, Last date to register: 20th October 2020 Cash Prizes: 10k, 7.5k, and 5k for top three winners.</p>
                 <a target="_blank" rel="noreferrer" href='https://docs.google.com/forms/d/e/1FAIpQLSfAAP-OR4AFJLhdfjTfoERi64TG1f003FQwm1Ra4jDOVgsMsQ/closedform'>Click Here</a>
                 </div>
-                <div data-aos="fade-down" data-aos-duration="2000"><h3>IEEEXTREME MOCK CODING CONTEST</h3>
-            <p>IEEE Bangalore Section presents IEEEXtreme Mock Coding Contest-2. Eligibility: Participants who have registered for IEEE XTREME 14.0 When: 11th October 2020 Duration: The contest will last for 6hours 02:00 PM - 08:00 PM IST. The first three winners will be rewarded with a cash prize of INR 2000, 1500 and 1000 respectively.</p>
-                <a target="_blank" rel="noreferrer" href="https://www.codechef.com/BXT22020">Register</a>
+                <div data-aos="fade-down" data-aos-duration="2000"><h3> IEEEXtreme 15.0 </h3>
+                <p>IEEEXtreme is a global challenge in which teams of IEEE Student members - advised and proctored by an IEEE member, and often supported by an IEEE Student Branch compete in a 24-hour time span against each other to solve a set of programming problems.Don't forget to select school as "A48251 - Sri Jayachamarajendra College of Engineering"</p>
+                <a target="_blank" rel="noreferrer" href="https://xtreme.vtools.ieee.org/">Register</a>
                 </div>
                 <div data-aos="fade-down" data-aos-duration="2000"><h3>WEBINARS BY WIE- BANGALORE SECTION</h3>
             <p>13 July 2020; Time: 7-8 pm- Title of talk: Leadership: leading oneself in uncertain times. Speaker: Ms. Santoshi Kittur, PwC | Managing Director Bangalore.
@@ -63,7 +63,6 @@ const ThreeCards = styled.div`
             justify-content: space-between;
             border: 3px solid rgb(7, 148, 241);
             background-color: #E8F0F2;
-
         >a{
             border: none;
             background-color: rgb(7, 148, 241);

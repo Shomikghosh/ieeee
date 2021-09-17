@@ -45,6 +45,20 @@ function Mentor() {
                                     </div>
                                 </div>
                                 <div className="col-md-3 single-item"  >
+                                    <div className="item" >
+                                        <div className="thumb">
+                                            <img className="img-fluid" src={spk} alt="Thumb"/>
+                                        </div>
+                                        <div className="info">
+                                            <span className="message">
+                                                <a href="mailto:sudarshan_pk@sjce.ac.in"><FontAwesomeIcon icon={faEnvelope}/></a>
+                                            </span>
+                                            <h4>DR. SUDARSHAN P K</h4>
+                                            <span>RAS Advisor</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-3 single-item"  >
                                     <div className="item">
                                         <div className="thumb">
                                             <img className="img-fluid" src={sbk} alt="Thumb"/>
@@ -55,20 +69,6 @@ function Mentor() {
                                             </span>
                                             <h4>DR. S B RUDRASWAMI</h4>
                                             <span>EDS Advisor</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-3 single-item"  >
-                                    <div className="item" >
-                                        <div className="thumb">
-                                            <img className="img-fluid" src={spk} alt="Thumb"/>
-                                        </div>
-                                        <div className="info">
-                                            <span className="message">
-                                                <a href="mailto:veenamaheshn@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a>
-                                            </span>
-                                            <h4>DR. SUDARSHAN P K</h4>
-                                            <span>RAS Advisor</span>
                                         </div>
                                     </div>
                                 </div>
@@ -86,7 +86,7 @@ function Mentor() {
                                         </div>
                                         <div className="info">
                                             <span className="message">
-                                                <a href="mailto:rudra.swamy@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a>
+                                                <a href="mailto:shashidhar.r@sjce.ac.in"><FontAwesomeIcon icon={faEnvelope}/></a>
                                             </span>
                                             <h4>MR. SHASHIDHAR R</h4>
                                             <span>SBMDC Advisor</span>

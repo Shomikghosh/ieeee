@@ -69,6 +69,9 @@ function Society() {
                 <br/><br/>
                 <strong>VACATION PROJECT MANIA</strong><br/>
                 "Whatever we possess becomes of double value when we have the opportunity of sharing it with others", this famous adage of Jean Nicolas embodies the idea of conducting VPM. Vacation Project Mania, an initiative of IEEE-SJCE EDS is conducted during the vacations. VPM is an interactive session in which the seniors and juniors mingle together to share their knowledge, ideas, and most important of all, an experience, but the torch bearers of this successful mania are the seniors without a doubt. VPM gets a huge response from all circuit branches, around 120+ students attend the project sessions every day for 4 hours. VPM plays a prominent role in generating practical impulse in the minds of young budding engineers.
+                <br/><br/>
+                <strong>ROBOTICS WORKSHOP</strong><br/>   
+                As they say, our knowledge is volatile until we apply the concept of our knowledge in a real-time situation. Hence "Robotics", one of the biggest events in SJCE, is conducted annually by the IEEE-SJCE EDS Chapter. The workshop starts from building basic robots and ends with the participants being able to build robots that use collision avoidance and are controlled using mobile phones through DTMF.          
                 </p>
            </EDSBoard>
            <WIEBoard  data-aos="fade-up" >
@@ -106,26 +109,26 @@ function Society() {
                 <div className="heading" ><img src={Cog} alt="cogs"/>ROBOTICS AND AUTOMATION SOCIETY </div>
                 <img src={RoboGif} alt="editorial"/>
                <p>
-                Robotics and Automation Society(RAS) aims to strive towards the advancement of the theory and practice in Robotics and Automation engineering. It aims to impart conceptual clarity among students in topics related to Robotics and Automation, with a focus on sensors and actuators.
-                <br/><br />
-                <strong>ROBOTICS WORKSHOP</strong><br/>
-                As they say, our knowledge is volatile until we apply the concept of our knowledge in a real-time situation. Hence Robotics 8. X, one of the biggest events was conducted by the IEEE-SJCE EDS Chapter.
-                <br id="rs"/><br/>
+               IEEE-SJCE RAS aims to keep the students updated about the trending technology used in automation. Robotics focuses on systems incorporating sensors and actuators that operate autonomously or semi-autonomously in cooperation with humans. Robotics research emphasises intelligence and adaptability to cope with unstructured environments. Automation research emphasises efficiency, quality and reliability, focusing on systems that operate autonomously.The IEEE Robotics and Automation Society's objectives are scientific, literary and educational in character. The Society strives for the advancement of the theory and practice of robotics and automation engineering along with allied arts and sciences, and for the maintenance of high professional standards among its members.
+               <br id="rs"/><br/>
                 <img className="photow" src={Robo} alt="web"/>
-
-                IEEE-SJCE, in addition to the above-mentioned societies, also houses an eccentric Membership Development Committee and a SBMDC wing.
-                <br/><br/>
-
-                <strong>Membership Development Committee and SBMDC Wing:</strong>
-                <br/><br/>
-                The Student Branch Membership Development Committee team helps in increasing IEEE Membership by recruiting new members and retaining current members. It also promotes elevations in grade and encourages participation in various society memberships. It contributes to the awareness by members of the values of their IEEE membership and increases IEEE membership quality. In addition, it provides efficient and timely communication to all IEEE management levels of the interests and concerns of our members and identifies membership trends, changes and problems.
-                <br/><br/>
+                <br/>
                 <strong>IMAGE PROCESSING USING OPEN CV</strong><br/>
                 Image processing is a method to perform operations on image inorder to enhance the image or get useful information from it. Image processing is a fascinating topic with wide applications. IEEE SJCE RAS along with EDS team conducted a 5 day event on image processing wherein basics of python were covered on the initial days followed by image processing concepts.
                 <br id="rs"/><br/>
-
+                <strong>GNU Octave Workshop</strong><br/>
+                GNU octave is a software featuring high level programming language that is primarily intended for numerical calculations. IEEE SJCE RAS had conducted an event on this software called "Introduction to Octave" in virtual mode. Octave is a open source software similar to Matlab. Participants were introduced to the concepts of mathematical computations in GNU Octave. This was a 3 day event in which an interesting application on Image processing was covered on the last day.
                 </p>
            </RoboticsBoard>
+           <SBMDC data-aos="fade-down">
+                <p>IEEE-SJCE, in addition to the above-mentioned societies, also houses an eccentric Membership Development Committee and a SBMDC wing.</p>
+                <br/>
+                <div className="heading" >Membership Development Committee and SBMDC Wing:</div>
+                <p>
+                The Student Branch Membership Development Committee team helps in increasing IEEE Membership by recruiting new members and retaining current members. It also promotes elevations in grade and encourages participation in various society memberships. It contributes to the awareness by members of the values of their IEEE membership and increases IEEE membership quality. In addition, it provides efficient and timely communication to all IEEE management levels of the interests and concerns of our members and identifies membership trends, changes and problems.
+                </p>
+           </SBMDC>
+
         </MainContainer>
     )
 }
@@ -140,6 +143,40 @@ const StyledHr = styled.hr`
         border:none;
         border-top:3px solid #384158;
         height:1px;
+`;
+const SBMDC = styled.div`
+        overflow-x:hidden;
+    .heading{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        >img{
+            width:2.5rem;
+            margin:0 1vw;
+            height:2rem;
+        }
+    }
+    padding:1rem 5rem;
+    >img{
+        float: right;
+        width:20rem;
+        max-width: 100%;
+    }
+    >p{
+        font-size:1.4rem;
+        text-align: justify;
+        >.photow{
+            width: 30rem;
+            max-width: 100%;
+            display:block;
+            float:left;
+            padding:1rem;
+        }
+    }
+    @media only screen and (max-width: 900px) {
+        padding: 1rem 0.5rem;
+    }
 `;
 
 const RoboticsBoard = styled.div`
