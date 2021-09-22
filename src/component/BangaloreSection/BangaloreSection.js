@@ -18,9 +18,9 @@ function BangaloreSection() {
             <hr/>
             <SubHeading>IEEE-SJCE has been successfully recognized by IEEE Bangalore section for completing its Silver Jubilee in flying colours. We have also been able to bag the best website award two times in a row.</SubHeading>
         <ThreeCards>
-            <div data-aos="fade-down" data-aos-duration="2000"><h3>HAC-SAC 1.0 VIRTUAL HACK-A-THON</h3>
-            <p>Student Activities Committee, IEEE Bangalore Section in collaboration with IEEE SIGHT is organising a hackathon! It's free, and it's for everyone. Eligible Participants- IEEE Members Categories: Agriculture and Healthcare, Last date to register: 20th October 2020 Cash Prizes: 10k, 7.5k, and 5k for top three winners.</p>
-                <a target="_blank" rel="noreferrer" href='https://docs.google.com/forms/d/e/1FAIpQLSfAAP-OR4AFJLhdfjTfoERi64TG1f003FQwm1Ra4jDOVgsMsQ/closedform'>Click Here</a>
+            <div data-aos="fade-down" data-aos-duration="2000"><h3>HOUSE OF CARDS</h3>
+            <p>A simulation of a political scenario with real world problems. As citizens, we all have voices, but there comes a moment in history which rarely does, such a this. We give you the stage to come and speak about these problems, voice out your opinion, ideas and question the happenings around you.  Go through the form descriptions very carefully.</p>
+                <a target="_blank" rel="noreferrer" href='https://docs.google.com/forms/d/e/1FAIpQLSdstCW-NPK_sd3n7chovldbZDkAjZFc6d2rtTO8y_VAGluPjQ/viewform'>Register</a>
                 </div>
                 <div data-aos="fade-down" data-aos-duration="2000"><h3> IEEEXtreme 15.0 </h3>
                 <p>IEEEXtreme is a global challenge in which teams of IEEE Student members - advised and proctored by an IEEE member, and often supported by an IEEE Student Branch compete in a 24-hour time span against each other to solve a set of programming problems.Don't forget to select school as "A48251 - Sri Jayachamarajendra College of Engineering"</p>

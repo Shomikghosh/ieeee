@@ -3,7 +3,8 @@ import styled from 'styled-components'
 // import CN1 from '../../assests/Main2/CN-1.jpg'
 // import CN2 from '../../assests/Main2/CN-2.jpg'
 import IEEEDay from '../../assests/Main2/ieee-day.jpg'
-import SIM2 from '../../assests/Main2/sim2.0.png'
+import Py from '../../assests/Main2/py.jpg'
+// import SIM2 from '../../assests/Main2/sim2.0.png'
 import BangaloreBg from '../../assests/images/bangalore_bg.jpg'
 import fb from '../../assests/images/facebook.png'
 import inn from '../../assests/images/instagram.png'
@@ -13,6 +14,41 @@ function Main2() {
         <MainContainer>
             <HeadingTimeline>Events</HeadingTimeline>
             <StyledHr/>
+            <SubMain >
+                <div className="content_whole"  data-aos="fade-right" data-aos-duration="2000">
+                    <p className="content_main">
+                        <h3 classnName="content_head">Python Bootcamp</h3>
+
+                            In 2021, Python is the most widely used multi-purpose programming language. Name a domain, and you'll find Python. In such times, do you wish to learn Python too? And turn your amazing ideas into reality using Python?<br/>
+                            <br/>
+                            The RAS wing brings to you,Python Bootcamp.  
+                            <br/>
+                            This workshop is intended for the beginners and you get to take back the expertise of Python language + several projects + a certificate and not to forget, loads of fun.<br/><br/>
+                            We also have planned quizzes, logic building assignments to make sure you leave no stone unturned whilst learning Python.  
+                            <br/><br/>
+                            Date - 24th-26th September<br/>
+                            Platform - Google Meet<br/>
+                            <br/>
+                            Free registration. Open for all. 
+                            <br/>
+
+                            People without laptops, don't worry! Google Colab works on smartphones too
+                            <br/><br/>
+                            For any queries, contact: <br/>
+                            Raghavendra G - 8073711862<br/>
+                            R Harshith - 8073811955
+
+                        <div className="buttons">
+                            <a href="https://bit.ly/3nEaBmM"  className="reg"  target="_blank" rel="noreferrer">Register</a>
+                            <a href="https://www.instagram.com/ieee_sjce/" className="icoInsta" title="Instagram"><img className="socials" src={inn} alt="in-link"/></a>
+                            <a href="https://www.facebook.com/ieeesjce/"  title="Facebook"><img className="socials" src={fb} alt="fb-link"/></a>
+                        </div> 
+                    </p>
+                </div>
+                <div  data-aos="fade-left" data-aos-duration="2000">
+                    <img src={Py} alt="pos"/>
+                </div>
+           </SubMain>
             <SubMain >
                 <div data-aos="fade-right" data-aos-duration="2000">
                     <img src={IEEEDay} alt="pos"/>
@@ -39,7 +75,7 @@ function Main2() {
                     </p>
                 </div>
            </SubMain>
-            <SubMain >
+            {/* <SubMain >
                 <div className="content_whole"  data-aos="fade-right" data-aos-duration="2000">
                     <p className="content_main">
                         <h3 classnName="content_head">Simtool 2.0</h3>
@@ -75,7 +111,7 @@ function Main2() {
                 <div  data-aos="fade-left" data-aos-duration="2000">
                     <img src={SIM2} alt="pos"/>
                 </div>
-           </SubMain>
+           </SubMain> */}
            {/* <SubMain >
                 <div data-aos="fade-right" data-aos-duration="2000">
                     <img src={CN2} alt="pos"/>
