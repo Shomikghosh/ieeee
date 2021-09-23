@@ -20,11 +20,11 @@ function HomePageCarousel() {
                     // interval={10000}
                     >
                     <Sty>
-                        <img src={g2} alt="ard"/>
+                        <img src={g3} alt="ard"/>
                         <div className="centered"><span className="ieee">IEEE-</span><span className="sjce">SJCE</span><br/>IEEE is a global community to innovate for a better tommorrow and is a trusted voice for engineering and technology around</div>
                     </Sty>
                     <Sty>
-                        <img src={g3} alt="orn"/>
+                        <img src={g2} alt="orn"/>
                         <div className="centered"><span className="normal">GREAT</span> <span className="sjce">PERFORMANCE</span><br/>A
 											driven team that endures challenges for the<br/>
 											overall wellbeing and development of the club</div>
