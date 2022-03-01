@@ -33,7 +33,7 @@
     .team-area .item .thumb .overlay {
     top: -100%;
     left: 0;
-    padding: 20px;
+    padding: 20px 10px;
     position: absolute;
     text-align: center;
     -webkit-transition: all 0.35s ease-in-out;
@@ -96,7 +96,7 @@
     -webkit-box-shadow: 0 0 10px #cccccc;
     -o-box-shadow: 0 0 10px #cccccc;
     box-shadow: 0 0 10px #cccccc;
-    padding: 40px 20px 20px;
+    padding: 30px;
     background-color:#5089C6;
     color:white;
     border-radius:  0 0 10px 10px ;
@@ -175,3 +175,8 @@
     .team-area .social li.instagram a {
     background-color: #cd486b;
     }
+@media only screen and (max-width: 1440px) {
+                .maindes{
+        font-size:1.2rem;
+    }
+            }

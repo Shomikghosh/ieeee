@@ -2,8 +2,19 @@ import React from 'react'
 import styled from 'styled-components'
 // import CN1 from '../../assests/Main2/CN-1.jpg'
 // import CN2 from '../../assests/Main2/CN-2.jpg'
-import IEEEDay from '../../assests/Main2/ieee-day.jpg'
-import Py from '../../assests/Main2/py.jpg'
+// import IEEEDay from '../../assests/Main2/ieee-day.jpg'
+// import Passio from '../../assests/Main2/passio.jpg'
+// import Pod from '../../assests/Main2/pod.jpg'
+import EDS from '../../assests/Main2/edstalk.jpg'
+import Sold from '../../assests/Main2/sold.jpg'
+import sql from '../../assests/Main2/sql.jpg'
+// import BGMI from '../../assests/Main2/bgmi.jpg'
+import ex from '../../assests/Main2/ex.jpg'
+import mem2 from '../../assests/Main2/mem2.jpg'
+// import talk from '../../assests/Main2/talk.png'
+// import imgp from '../../assests/Main2/imgp.jpg'
+// import mem from '../../assests/Main2/mem.jpg'
+// import Py from '../../assests/Main2/py.jpg'
 // import SIM2 from '../../assests/Main2/sim2.0.png'
 import BangaloreBg from '../../assests/images/bangalore_bg.jpg'
 import fb from '../../assests/images/facebook.png'
@@ -17,151 +28,148 @@ function Main2() {
             <SubMain >
                 <div className="content_whole"  data-aos="fade-right" data-aos-duration="2000">
                     <p className="content_main">
-                        <h3 classnName="content_head">Python Bootcamp</h3>
-
-                            In 2021, Python is the most widely used multi-purpose programming language. Name a domain, and you'll find Python. In such times, do you wish to learn Python too? And turn your amazing ideas into reality using Python?<br/>
-                            <br/>
-                            The RAS wing brings to you,Python Bootcamp.  
-                            <br/>
-                            This workshop is intended for the beginners and you get to take back the expertise of Python language + several projects + a certificate and not to forget, loads of fun.<br/><br/>
-                            We also have planned quizzes, logic building assignments to make sure you leave no stone unturned whilst learning Python.  
-                            <br/><br/>
-                            Date - 24th-26th September<br/>
-                            Platform - Google Meet<br/>
-                            <br/>
-                            Free registration. Open for all. 
-                            <br/>
-
-                            People without laptops, don't worry! Google Colab works on smartphones too
-                            <br/><br/>
-                            For any queries, contact: <br/>
-                            Raghavendra G - 8073711862<br/>
-                            R Harshith - 8073811955
+                        <h3 classnName="content_head">EXORDIUM</h3>
+                            
+                        You might have seen us across the campus by now, conducting some amazing events .<br/>
+                        But, that's just the beginning. Because we have a LOT MORE to offer.<br/>
+                        Wondering what we have in store for you guys, and how you can be a part of this amazing community? Well, we have just the right thing for you . <br/>
+                        Presenting to you EXORDIUM-Exclusively for First years where you can meet us virtually for a session assured to be fun along with some exploring and learning.<br/>
+                        <br/>
+                        Platform - Google Meet<br/>
+                        Date - 3rd & 4th February<br/>
+                        Timings - 6:30 PM (3rd February)<br/>
+                        <br/>
+                        Fill the Google form and get yourself registered,Link below!
+                        <br/>
+                        For any queries you can contact us:<br/>
+                        Mukul: 9523453421<br/>
+                        Raghavendra: 8073711862
 
                         <div className="buttons">
-                            <a href="https://bit.ly/3nEaBmM"  className="reg"  target="_blank" rel="noreferrer">Register</a>
-                            <a href="https://www.instagram.com/ieee_sjce/" className="icoInsta" title="Instagram"><img className="socials" src={inn} alt="in-link"/></a>
-                            <a href="https://www.facebook.com/ieeesjce/"  title="Facebook"><img className="socials" src={fb} alt="fb-link"/></a>
+                            <a href="https://bit.ly/ieee_sjce_exordium"  className="reg"  target="_blank" rel="noreferrer">Register</a>
+                            <a href="https://instagram.com/ieee_sjce/" className="iconInsta" title="Instagram" target="_blank" rel="noreferrer"><img className="socials" src={inn} alt="in-link"/></a>
+                            <a href="https://facebook.com/ieeesjce/"  title="Facebook" target="_blank" rel="noreferrer"><img className="socials" src={fb} alt="fb-link"/></a>
+
                         </div> 
                     </p>
                 </div>
                 <div  data-aos="fade-left" data-aos-duration="2000">
-                    <img src={Py} alt="pos"/>
-                </div>
-           </SubMain>
-            <SubMain >
-                <div data-aos="fade-right" data-aos-duration="2000">
-                    <img src={IEEEDay} alt="pos"/>
-                </div>
-                <div className="content_whole" data-aos="fade-left" data-aos-duration="2000">
-                    <p className="content_main">
-                        <h3 classnName="content_head">IEEE DAY 2021</h3>
-                        Stuck with loads of classes and piling assignments? We're here to change your pace and give you a break from the monotonous routine. IEEE DAY 2021 is just around the corner, and we are excited to present to you IEEE ECLECTIC, a month-long procession of exciting events to amp up our celebrations!
-                        <br/><br/>
-                        To commemorate this special occasion, we have an exclusive assortment of events, covering both Technical and non-Technical domains lined up for y'all.<br/>
-                        There is plenty of knowledge to be taken away, and exciting prizes up for grabs!
-                        <br/><br/>
-                        The events will begin from the 20th of September, and go on till the 17th of October. 
-                        <br/><br/>
-                        Do keep an eye on our Instagram page for links and further updates.<br/>
-                        Make sure not to miss out on any of the events!<br/><br/>
-                        For any queries, contact: <br/>
-                        Chinmaya K - 8762361434<br/>
-                        Shivraj Nath - 8837282287 
-                        <div className="buttons">
-                            <a href="https://www.instagram.com/ieee_sjce/" className="icoInsta" title="Instagram"><img className="socials" src={inn} alt="in-link"/></a>
-                            <a href="https://www.facebook.com/ieeesjce/"  title="Facebook"><img className="socials" src={fb} alt="fb-link"/></a>
-                        </div> 
-                    </p>
+                    <img src={ex} alt="pos"/>
                 </div>
            </SubMain>
             {/* <SubMain >
-                <div className="content_whole"  data-aos="fade-right" data-aos-duration="2000">
-                    <p className="content_main">
-                        <h3 classnName="content_head">Simtool 2.0</h3>
-
-                            The EDS chapter of IEEE-SJCE brings you a 3-day workshop, SIMTOOL 2.0 <br/>
-                            <br/>
-                            The workshop focuses mainly on the simulation of various circuits using TINA-TI software and CEDAR logic simulator. Learning these tools will help you simulate various circuits for your projects.  
-                            <br/>
-                            It will be an interactive session and  e-certificates will be given to the participants.  
-                            <br/><br/>
-                            Date - 3rd, 4th & 5th September 2021 <br/>
-                            Platform - Google Meet<br/>
-                            <br/>
-                            Free registration. Open for all! 
-                            <br/>
-                            Limited Seats Only!!
-                            Hurry up and get yourself registered.
-                            <br/>
-
-                            Meeting link and other details will be informed to the registered participants via Whatsapp group.
-                            <br/><br/>
-                            For any queries, contact: <br/>
-                            Mukul - 9523453421<br/>
-                            Sushma BS - 8277133311
-
-                        <div className="buttons">
-                            <a href="https://bit.ly/3krMQv6"  className="reg"  target="_blank" rel="noreferrer">Register</a>
-                            <a href="https://www.instagram.com/ieee_sjce/" className="icoInsta" title="Instagram"><img className="socials" src={inn} alt="in-link"/></a>
-                            <a href="https://www.facebook.com/ieeesjce/"  title="Facebook"><img className="socials" src={fb} alt="fb-link"/></a>
-                        </div> 
-                    </p>
-                </div>
-                <div  data-aos="fade-left" data-aos-duration="2000">
-                    <img src={SIM2} alt="pos"/>
-                </div>
-           </SubMain> */}
-           {/* <SubMain >
                 <div data-aos="fade-right" data-aos-duration="2000">
-                    <img src={CN2} alt="pos"/>
+                    <img src={mem2} alt="pos"/>
                 </div>
                 <div className="content_whole" data-aos="fade-left" data-aos-duration="2000">
                     <p className="content_main">
-                        <h3 classnName="content_head">Webinar by Coding Ninja</h3>
-                        Internships, Placements and Interviews - do these words make you anxious?! Are you searching for sources to accelerate your preparations to ace those technical interviews?
-                        <br/><br/>
-                        Coding Ninjas in association with IEEE-SJCE presents a webinar on "ROADMAP TO CRACK INTERNSHIP AND PLACEMENT INTERVIEWS" followed by "JUST CODE IT", a coding event .
-                        <br/><br/>
-                        The talk will be delivered by Rajat Saxena (SE, Facebook) who will take you through the stages of preparation for internships and placements, and an interactive session with Campus Hero, Hardik Khandelwal (SDE, Amazon). There will be a quiz conducted at the end of the webinar, where the winners will get exciting rewards from Coding Ninjas.
-                        <br/><br/>
-                        🗓️Date - 28th August 2021<br/>
-                        🕰️Time - 4PM - 5PM<br/>
+                        <h3 classnName="content_head">Membership drive</h3>
+
+                        OFFLINE MEMBERSHIP DRIVE IS NOW OPEN<br/>
+                        <br/>
+                        Avail discounts on IEEE workshops and other events.
+                        <br/>
+                        Chance to participate in the world's biggest coding competition IEEEXtreme.
+                        <br/>
+                        Get exclusive access to IEEE Xplore Digital library, newsletters and magazines.
+                        <br/>
+                        Members will get an opportunity to attend various webinars, conferences that occurs worldwide.
+                        <br/>
+                        Members can get their own GSuite account with many other perks.
+                        <br/>
+                        Join IEEE today, build your network and be a part of large international community!
+                        IEEE membership will add value to your portfolio.<br/><br/>
+                        Starting from 29th November, Monday :
+                        <br/>
+                        10:30 AM at NESCAFE<br/>
+                        1:30 PM at ADMIN LOBBY<br/><br/>
+
+                        For any kind of doubts and queries contact:<br/>
+                        Suyash: 9660069101<br/>
+                        Amrutha K R: 9741102124<br/><br/>
                         <div className="buttons">
-                            <a href="http://bit.ly/3gtDvSe"  className="reg" target="_blank" rel="noreferrer">Register</a>
-                            <a href="https://www.instagram.com/ieee_sjce/" className="icoInsta" title="Instagram"><img className="socials" src={inn} alt="in-link"/></a>
-                            <a href="https://www.facebook.com/ieeesjce/"  title="Facebook"><img className="socials" src={fb} alt="fb-link"/></a>
+                            <a href="https://cutt.ly/IEEE_Register"  className="reg"  target="_blank" rel="noreferrer">Join</a>
+                            <a href="https://instagram.com/ieee_sjce/" className="iconInsta" title="Instagram" target="_blank" rel="noreferrer"><img className="socials" src={inn} alt="in-link"/></a>
+                            <a href="https://facebook.com/ieeesjce/"  title="Facebook" target="_blank" rel="noreferrer"><img className="socials" src={fb} alt="fb-link"/></a>
+                        </div> 
+                    </p>
+                </div>
+           </SubMain> */}
+           <SubMain >
+                <div data-aos="fade-right" data-aos-duration="2000">
+                    <img src={sql} alt="pos"/>
+                </div>
+                <div className="content_whole" data-aos="fade-left" data-aos-duration="2000">
+                    <p className="content_main">
+                        <h3 classnName="content_head">SQL BOOTCAMP</h3>
+Quick Question:<br/> 
+How do you fetch the second highest salary in the given database? Or, even simpler, how do you talk with your database? Is it just a bunch of entries, or is there more to it?<br/><br/>
+
+Now, if the above question presents itself to be intriguing, IEEE-SJCE has got your back .<br/>
+
+The WIE wing brings forth SQL BOOTCAMP<br/><br/>
+            
+A 3 - day workshop wherein you can learn the basics of 
+SQL - Structured Query Language, a conventional language that is used to communicate with the database. It has a wide range of applications in today's world especially in data science tools and with minimal code, you can do absolute wonders.<br/> 
+There is also a hands-on project segment, where you will be building a solid backend component for the given frontend.<br/> 
+
+<br/>
+Registration is free!<br/>
+
+Platform: Google Meet <br/>
+Date: 22nd, 23rd & 24th January 2022<br/>
+
+<br/>
+For more details, contact<br/>
+D Saswathi Srichakri - 6366071033 <br/>
+Vanditha M- 9448725150
+                        <div className="buttons">
+                            <a href="https://bit.ly/IEEE_SQL"  className="reg"  target="_blank" rel="noreferrer">Register</a>
+                            <a href="https://instagram.com/ieee_sjce/" className="iconInsta" title="Instagram" target="_blank" rel="noreferrer"><img className="socials" src={inn} alt="in-link"/></a>
+                            <a href="https://facebook.com/ieeesjce/"  title="Facebook" target="_blank" rel="noreferrer"><img className="socials" src={fb} alt="fb-link"/></a>
                         </div> 
                     </p>
                 </div>
            </SubMain>
-           <SubMain>
-                <div className="content_whole" data-aos="fade-right" data-aos-duration="2000">
+           {/* <SubMain >
+                <div className="content_whole"  data-aos="fade-right" data-aos-duration="2000">
                     <p className="content_main">
-                        <h3 classnName="content_head">Just Code It</h3>
-                        To all the geeks out there, it's time to bring out your analytical and problem-solving skills on board. The competitive coding event will comprise of 5 questions with varying levels of difficulty.<br/>
-                        Further instructions will be sent to your respective e-mail IDs upon registration.<br/>
-                        <br/>
-                        🗓️Date - 29th August 2021<br/>
-                        🕰️Time - 6PM - 8PM<br/>
-                        <br/>
-                        Register soon!!<br/><br/>
-                        Do follow our Instagram handle for more updates.<br/><br/>
-                        For further details, contact:<br/>
-                        Chinmaya K - 8762361434<br/>
-                        Shivraj Nath - 8837282287 
+                        <h3 classnName="content_head">SOLDERING AND ETCHING WORKSHOP </h3>
+                            
+                        The Electron Devices Society brings forth yet another one-of-a kind event, SOLDERING AND ETCHING WORKSHOP 
+                        a 3-day Workshop that gives you a hands-on experience of Soldering and Etching with theoretical and practical sessions.
+                            
+                            <br/><br/>
+                            Date: 17, 18 and 19 December 2021<br/><br/>
+                            Registration Fees(Team of two):<br/>
+                            IEEE Members (with EDS): Free <br/>
+                            IEEE Members (without EDS): Rs. 250/-<br/>
+                            Non Members: Rs. 450/-
+                            <br/><br/>
+                            Price of component kit: Rs. 650/-<br/>
+                            Note: One kit is compulsory for every team.
+                            <br/><br/>
+                            Limited seats only‼️<br/>
+                            Priority will be given to IEEE members.<br/><br/>
+
+                            For any kind of doubts and queries contact:<br/>
+                            Mukul - 9523453421<br/>
+                            Sushma BS - 8277133311<br/>
+                            <br/>
+
                         <div className="buttons">
-                            <a href="https://bit.ly/3yeswSK"  className="reg"  target="_blank" rel="noreferrer">Register</a>
-                            <a href="https://www.instagram.com/ieee_sjce/" className="icoInsta" title="Instagram"><img className="socials" src={inn} alt="in-link"/></a>
-                            <a href="https://www.facebook.com/ieeesjce/"  title="Facebook"><img className="socials" src={fb} alt="fb-link"/></a>
+                            <a href="https://bit.ly/soldering_etching"  className="reg"  target="_blank" rel="noreferrer">Register</a>
+                            <a href="https://instagram.com/ieee_sjce/" className="iconInsta" title="Instagram" target="_blank" rel="noreferrer"><img className="socials" src={inn} alt="in-link"/></a>
+                            <a href="https://facebook.com/ieeesjce/"  title="Facebook" target="_blank" rel="noreferrer"><img className="socials" src={fb} alt="fb-link"/></a>
+
                         </div> 
                     </p>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="2000">
-                    <img src={CN1} alt="pos"/>
+                <div  data-aos="fade-left" data-aos-duration="2000">
+                    <img src={Sold} alt="pos"/>
                 </div>
            </SubMain> */}
-        </MainContainer>
+       </MainContainer>
     )
 }
 const StyledHr = styled.hr`
@@ -261,6 +269,7 @@ const SubMain = styled.div`
                 } 
                 width: 100%;
                 margin:2vh 0;
+                min-width: 100%;
                 display: flex;
                 justify-content: flex-start;
             }

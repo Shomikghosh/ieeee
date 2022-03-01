@@ -4,7 +4,7 @@ import mgv from '../../assests/mentor/mgv.jpg'
 import sbk from '../../assests/mentor/sbk.jpg'
 import shs from '../../assests/mentor/shas.jpg'
 import ssp from '../../assests/mentor/ssp.jpg'
-import spk from '../../assests/mentor/spk.jpg'
+import spk from '../../assests/mentor/spk.jpeg'
 import './styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
@@ -28,9 +28,9 @@ function Mentor() {
             <section id="team" className="team-area">
                     <div className="container">
                             <div className="row team-items"  >
-                            <div className="col-md-1" style={{width: "12.499999995%",
-    flex:" 0 0 12.499%", maxWidth: "12.499%"}}></div> 
-                                <div className="col-md-3 single-item" >
+                            {/* <div className="col-md-1" style={{width: "12.499999995%",
+    flex:" 0 0 12.499%", maxWidth: "12.499%"}}></div>  */}
+                                <div className="col-md-4 single-item" >
                                     <div className="item" >
                                         <div className="thumb">
                                             <img className="img-fluid" src={mgv} alt="Thumb"/>
@@ -39,12 +39,12 @@ function Mentor() {
                                             <span className="message">
                                                 <a href="mailto:veenamaheshn@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a>
                                             </span>
-                                            <h4>DR. M G VEENA</h4>
+                                            <h4 className="maindes">DR. M G VEENA</h4>
                                             <span>Branch Counselor</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3 single-item"  >
+                                <div className="col-md-4 single-item"  >
                                     <div className="item" >
                                         <div className="thumb">
                                             <img className="img-fluid" src={spk} alt="Thumb"/>
@@ -53,12 +53,12 @@ function Mentor() {
                                             <span className="message">
                                                 <a href="mailto:sudarshan_pk@sjce.ac.in"><FontAwesomeIcon icon={faEnvelope}/></a>
                                             </span>
-                                            <h4>DR. SUDARSHAN P K</h4>
+                                            <h4 className="maindes">DR. SUDARSHAN P K</h4>
                                             <span>RAS Advisor</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3 single-item"  >
+                                <div className="col-md-4 single-item"  >
                                     <div className="item">
                                         <div className="thumb">
                                             <img className="img-fluid" src={sbk} alt="Thumb"/>
@@ -67,19 +67,19 @@ function Mentor() {
                                             <span className="message">
                                                 <a href="mailto:rudra.swamy@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a>
                                             </span>
-                                            <h4>DR. S B RUDRASWAMI</h4>
+                                            <h4 className="maindes">DR. S B RUDRASWAMY</h4>
                                             <span>EDS Advisor</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-1" style={{width: "12.499999995%",
-    flex:" 0 0 12.499%", maxWidth: "12.499%"}}></div>
+                                {/* <div className="col-md-1" style={{width: "12.499999995%",
+    flex:" 0 0 12.499%", maxWidth: "12.499%"}}></div> */}
                             </div>
                     </div>
                     <div className="container " >
                             <div className="row team-items pho">
-                                <div className="col-md-3" ></div>
-                                <div className="col-md-3 single-item"  >
+                                <div className="col-md-2" ></div>
+                                <div className="col-md-4 single-item"  >
                                     <div className="item">
                                         <div className="thumb">
                                             <img className="img-fluid box2" src={shs} alt="Thumb"/>
@@ -88,12 +88,12 @@ function Mentor() {
                                             <span className="message">
                                                 <a href="mailto:shashidhar.r@sjce.ac.in"><FontAwesomeIcon icon={faEnvelope}/></a>
                                             </span>
-                                            <h4>MR. SHASHIDHAR R</h4>
+                                            <h4 className="maindes">MR. SHASHIDHAR R</h4>
                                             <span>SBMDC Advisor</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3 single-item"  >
+                                <div className="col-md-4 single-item"  >
                                     <div className="item">
                                         <div className="thumb">
                                             <img className="img-fluid" src={ssp} alt="Thumb"/>
@@ -102,12 +102,12 @@ function Mentor() {
                                             <span className="message">
                                                 <a href="mailto:supreetha.manjanna@sjce.ac.in"><FontAwesomeIcon icon={faEnvelope}/></a>
                                             </span>
-                                            <h4>MS. SUPREETHA M</h4>
+                                            <h4 className="maindes">MS. SUPREETHA M</h4>
                                             <span>WIE Advisor</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3" ></div>
+                                <div className="col-md-2" ></div>
                             </div>
                     </div>
                 </section>

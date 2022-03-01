@@ -7,7 +7,7 @@ import WIEGif from '../../assests/images/41620-woman-working-on-laptop-in-office
 import RoboGif from '../../assests/images/42631-mechanical-engineering-setting.gif'
 import Student from '../../assests/GALLERY/tuxedo_talk.jpeg'
 import EDS from '../../assests/GALLERY/e7.jpg'
-import WIE from '../../assests/GALLERY/e8.jpg'
+import WIE from '../../assests/Prayas/prayas_img.jpeg'
 import Robo from '../../assests/GALLERY/g1.jpeg'
 import Cog from '../../assests/icons/cogs-solid.svg'
 import Female from '../../assests/icons/female-solid.svg'
@@ -96,7 +96,7 @@ function Society() {
                 <br/><br/>
 
                 <strong>▪ Kalpana Chawla Memorial Lecture</strong><br/>
-                A distinguished lecture by a woman scientist from the aerospace engineering domain. The main motto of the event was to mark the demise of Indian-born women astronaut, Kalpana Chawla. The initiative to organize this event was taken in the year 2018. The chief guest for the event was Dr. Indra Arumugam, Associate Director ISTRAC, ISRO. A glimpse of missions undertaken by ISRO and challenges in completing those missions was given. WIE team aims to continue organizing this event annually.
+                A distinguished lecture by a woman scientist from the aerospace engineering domain. The main motto of the event was to mark the demise of Indian-born women astronaut, Kalpana Chawla. The initiative to organize this event was taken in the year 2018. The chief guest for the event was Mrs N Valarmathi , Deputy Director , ISRO. A glimpse of missions undertaken by ISRO and challenges in completing those missions was given. WIE team aims to continue organizing this event annually.
                 <br/><br/>
 
                 <strong>▪ Codefiesta</strong><br/>
@@ -111,8 +111,13 @@ function Society() {
                <p>
                IEEE-SJCE RAS aims to keep the students updated about the trending technology used in automation. Robotics focuses on systems incorporating sensors and actuators that operate autonomously or semi-autonomously in cooperation with humans. Robotics research emphasises intelligence and adaptability to cope with unstructured environments. Automation research emphasises efficiency, quality and reliability, focusing on systems that operate autonomously.The IEEE Robotics and Automation Society's objectives are scientific, literary and educational in character. The Society strives for the advancement of the theory and practice of robotics and automation engineering along with allied arts and sciences, and for the maintenance of high professional standards among its members.
                <br id="rs"/><br/>
-                <img className="photow" src={Robo} alt="web"/>
+                {/* <img className="photow" src={Robo} alt="web"/> */}
                 <br/>
+                <strong>PYTHON BOOTCAMP</strong><br/>
+                During the course of the workshop, participants were introduced to the fundamentals of Python starting from the very basics of the language.
+                <br/><br/>
+                The workshop covered the topics like Introduction, Printing Statements, Operators and Variable types on Day-1. Topics such as Strings, Conditional statements, Lists, Tuples and Dictionaries were covered on Day-2, and on Day-3 participants learnt about Loops, Break and Continue statements, Functions, Modules and Libraries along with programming examples and development of Mini Projects.
+                <br/><br/>
                 <strong>IMAGE PROCESSING USING OPEN CV</strong><br/>
                 Image processing is a method to perform operations on image inorder to enhance the image or get useful information from it. Image processing is a fascinating topic with wide applications. IEEE SJCE RAS along with EDS team conducted a 5 day event on image processing wherein basics of python were covered on the initial days followed by image processing concepts.
                 <br id="rs"/><br/>
@@ -123,7 +128,7 @@ function Society() {
            <SBMDC data-aos="fade-down">
                 <p>IEEE-SJCE, in addition to the above-mentioned societies, also houses an eccentric Membership Development Committee and a SBMDC wing.</p>
                 <br/>
-                <div className="heading" >Membership Development Committee and SBMDC Wing:</div>
+                <div className="heading" >Student Branch Membership Development Committee:</div>
                 <p>
                 The Student Branch Membership Development Committee team helps in increasing IEEE Membership by recruiting new members and retaining current members. It also promotes elevations in grade and encourages participation in various society memberships. It contributes to the awareness by members of the values of their IEEE membership and increases IEEE membership quality. In addition, it provides efficient and timely communication to all IEEE management levels of the interests and concerns of our members and identifies membership trends, changes and problems.
                 </p>

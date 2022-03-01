@@ -2,16 +2,16 @@ import React,{useState,useEffect} from 'react'
 import styled from 'styled-components'
 import BangaloreBg from '../../assests/images/bangalore_bg.jpg'
 import Lec from '../../assests/MileStone/lec.jpg'
-import Ard from '../../assests/MileStone/ard.jpg'
-import Calla from '../../assests/MileStone/calla.jpg'
+import Ard from '../../assests/MileStone/CN-1.jpg'
 import Codfie from '../../assests/MileStone/codfie.jpg'
-import Snap from '../../assests/MileStone/sna.jpeg'
-import Mem from '../../assests/MileStone/mem.jpeg'
-import Imp from '../../assests/MileStone/imp.jpeg'
-import Alum2 from '../../assests/MileStone/alum2.jpeg'
-import Exp from '../../assests/MileStone/exp.jpeg'
-import Res from '../../assests/MileStone/res.jpeg'
+import Imp from '../../assests/MileStone/ieee-day.jpg'
+import Alum2 from '../../assests/MileStone/py.jpg'
+import Exp from '../../assests/MileStone/CN-2.jpg'
+import Res from '../../assests/MileStone/sim2.0.png'
 import { Modal } from 'react-responsive-modal';
+import pod from '../../assests/Main2/pod.jpg';
+import eecst from '../../assests/Main2/talk.png';
+import imgp from '../../assests/Main2/imgp.jpg';
 import 'react-responsive-modal/styles.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
@@ -74,20 +74,26 @@ function MileStone() {
         <>
          <Modal open={openm1} onClose={onCloseModalm1} center>
           <div className="modal_whole">
-              <img src={Lec} alt="poster"/>
+              <img src={imgp} alt="poster"/>
                 <p>
-                    IEEE-SJCE EDS  hosted a Distinguished Lecture on-<br/>
-                    <b>"Rethinking computing with neuro-inspired learning
-                    
-                        - device, circuits and algorithms"</b> The talk had been presented by <b>Dr. Kaushik Roy</b> , Fellow IEEE, Edward G. Tiedemann Jr. Distinguished Professor, Purdue University, USA.
-                    <br/><br/>
-                    The talk was moderated by <b>Dr. S.B Rudraswamy</b> , IEEE-SJCE EDS Staff Advisor, Commonwealth Fellow(UK), Assistant Prof., ECE Dept., SJCE , JSS  STU, Mysuru
+                Image processing is everywhere, from editing your photos before you upload it on your Instagram feed to as complex as biomedical image interpretation 
+                            However getting into the basics of it might be overwhelming and confusing, which is why we're here for you. 
+                            <br/><br/>
+                            The RAS wing is back with IMAGE PROCESSING WORKSHOP a 3-day workshop where we plan to take you from a basic understanding of Image Processing
+                            to a self-sufficient one using OpenCV-Python.
+                            
+                                
+                            <br/><br/>
+                            Dates - 3rd, 4th and 5th December 2021<br/>
+                            Platform - Google Meet. <br/>
+                            E-certificates will be provided to all participants.
+                            <br/><br/>
 
-                    <br/><br/>
-                    The meeting link was sent to the registered mail 30 mins prior to the talk. E-certificates had  been provided to all the registered participants!!<br/>
-                    <b>Date: </b>5th June<br/>
-                    <b>Time:</b> 7.30 PM (IST)<br/>
-                    <b>Platform:</b> Google meet
+                            For any kind of doubts and queries contact:<br/>
+                            Raghavendra G:8073711862<br/>
+                            R Harshith:8073811955<br/>
+                            <br/>
+                            No registration fee. Open for all.<br/>
                 </p>
               </div>
             </Modal>
@@ -96,52 +102,62 @@ function MileStone() {
           <div className="modal_whole">
               <img src={Ard} alt="poster"/>
                 <p>
-                    The EDS chapter brings you a 2-day workshop<br/> -
-                    
-                    The workshop  covered the basics of Arduino and it's programming using IDE and implementation of Arduino based circuits on Tinkercad
-                    <br/><br/>
-                    Why learn Arduino?<br/>
-                    It is the basis for amazing projects. With an Arduino, you can do everything from controlling a robot to managing a home automation project
-                    <br/>
-                    
-                    <br/>
-
-                    
-                    <b>Date:</b> 5th & 6th June.
-                    <br/>
-                    <br/><b>Contact :</b><br/>Shrimadh - 8553274758<br/>Akhil - 7483022671
+                To all the geeks out there, it's time to bring out your analytical and problem-solving skills on board. The competitive coding event will comprise of 5 questions with varying levels of difficulty.<br/>
+                        Further instructions will be sent to your respective e-mail IDs upon registration.<br/>
+                        <br/>
+                        🗓️Date - 29th August 2021<br/>
+                        🕰️Time - 6PM - 8PM<br/>
+                        <br/>
+                        Register soon!!<br/><br/>
+                        Do follow our Instagram handle for more updates.<br/><br/>
+                        For further details, contact:<br/>
+                        Chinmaya K - 8762361434<br/>
+                        Shivraj Nath - 8837282287 
                 </p>
               </div>
             </Modal>
 
             <Modal open={openm3} onClose={onCloseModalm3} center>
           <div className="modal_whole">
-              <img src={Codfie} alt="poster"/>
+              <img src={pod} alt="poster"/>
                 <p>
-                    ◆The top 3 participants  received cash prizes of INR 6000, 4000 and 2000 respectively <br/>
-                    ◆Participants who secured 4th and 5th positions will be awarded with cash prize of INR 1000 each <br/>
-                    ◆A special cash prize of INR 100 awarded to top 3 girl participants (excluding the girls among top 5 winners)
-
+                We have witnessed first hand perspectives of a lucrative education overseas and the possible opportunities it spawns but understanding the admission process can be tedious and difficult.
+                        <br/><br/>
+                        Questions like, “How has Covid affected admission policies?” “How important is GRE?” “What are the things I should do in my undergrad to maximize my chances?” and many such questions are bound to arise. 
+                        <br/> <br/>
+                        Well, when you've got us, you got nothing to worry about.
+                        <br/><br/>
+                        IEEE-SJCE is back with the second season of the much-awaited “Alumni Podcast”. <br/><br/> In the Season opener, we will talk to 
+                        Mr. Sushruth Nagesh, an alumnus of our college. <br/> He finished his undergrad in E&C at SJCE in the year 2018 and did his master’s from UC-San Diego in 2021. He is currently working at Ford Autonomous Vehicles LLC. as a Perception Research Engineer. <br/> <br/>
+                        Catch us live on YouTube at 7:00 PM, 9th October<br/>
                 </p>
               </div>
             </Modal>
 
             <Modal open={openm4} onClose={onCloseModalm4} center>
             <div className="modal_whole">
-                <img src={Snap} alt="poster"/>
+                <img src={eecst} alt="poster"/>
                     <p>
-                        ▪️To Get an idea of basic electronic components and build circuits using them. <br/>
-                        ▪️Learn the basics
-                            of breadboard connections. <br/>
-                        ▪️Get hands-on experience by rigging up the circuits
+                    Do you have plans to explore a hardware and software integrated domain and have no idea where to get started? We're here with a one of a kind opportunity.
+                            <br/><br/>
+                            We present to you our first on ground event of 2021,  a technical talk on 
                             <br/>
-                        Entry fee: <br/>
-                        IEEE Members : FREE <br/>
-                        Non IEEE Members: INR 50 <br/> <br/>
-
-                        Date: 19th March - 5:30 PM <br/>
-                        20th March - 2.30PM <br/>
-                        Venue: NPS 001
+                            "Research in EECS- Avenues and opportunities" 
+                            <br/><br/>
+                            Electrical Engineering and Computer Science is everywhere. It combines the rigor of science, the power of engineering, and the thrill of discovery. 
+                            <br/><br/>
+                            The talk will be presented by <br/>
+                            Dr. Prathosh A.P., Assistant Professor, IISc Bangalore.
+                            <br/><br/>
+                            Date - 9 October, 2021<br/>
+                            Time - 12:30 PM <br/>
+                            Venue - IS Seminar Hall<br/><br/>
+                            For any queries, contact: <br/>
+                            Chinmaya K : 8762361434 <br/>
+                            Shivraj Nath : 8837282287
+                            Register using the link below if you are not able to attend the event in person.
+                            <br/>
+                            NOTE: COVID-19 guidelines must be followed and Face Masks are mandatory.
 
                     </p>
                 </div>
@@ -151,11 +167,15 @@ function MileStone() {
             <div className="modal_whole">
                 <img src={Imp} alt="poster"/>
                     <p>
-                    The EDS and RAS societies brought you a workshop on Image Processing !! <br/>
+                    Stuck with loads of classes and piling assignments?We're here to change your pace and give you a break from the monotonous routine. IEEE DAY 2021 is just around the corner, and we are excited to present to you IEEE ECLECTIC, a month-long procession of exciting events to amp up our celebrations!<br/><br/>
 
+                    To commemorate this special occasion, we have an exclusive assortment of events, covering both Technical and non-Technical domains lined up for y'all.
+                    <br/>There is plenty of knowledge to be taken away, and exciting prizes up for grabs!
 
-                    🔹Learn the basics of Python and fundamentalconcepts of Image Processing. <br/>
-                    🔹Implement image processing techniques using OpenCV
+                    <br/><br/>The events will begin from the 20th september, and go on till the 17th of October. 
+
+                    <br/><br/>Do keep an eye on our Instagram page for links and further updates.
+                    <br/>Make sure not to miss out on any of the events!
                     </p>
                 </div>
             </Modal>
@@ -164,13 +184,26 @@ function MileStone() {
             <div className="modal_whole">
                 <img src={Alum2} alt="poster"/>
                     <p>
-                        IEEE-SJCE brought you the second episode of the series.
+                    In 2021, Python is the most widely used multi-purpose programming language. Name a domain, ...
+                    and you'll find Python. In such times, do you wish to learn Python too? And turn your amazing ideas into reality using Python?<br/><br/>
 
-                        Guest: Mr. Samarth Deyagond working as Core Kubernetes Developer at SAP
+                    We, at IEEE-SJCE, have an enticing proposition in store for you.<br/>
+                    The RAS wing brings to you,<br/><br/>
 
+                            💻Python Bootcamp💻<br/><br/>
+                            
+                    This workshop is intended for the beginners and you get to take back the expertise of Python language + several projects + a certificate and not to forget, loads of fun.<br/>
+                    We also have planned quizzes, logic building assignments to make sure you leave no stone unturned whilst learning Python. <br/>
 
-                        Labs,
-                        Bangalore The podcast was  streamed on YouTube .
+                    <br/>People without laptops, don't worry! Google Colab works on smartphones too.<br/>
+                    <br/>
+                    Join us on: 24th-26th September
+                    <br/><br/>
+                    Platform: Google Meet
+                    <br/><br/>
+                    For any queries, contact:<br/>
+                    Raghavendra G - 8073711862<br/>
+                    R Harshith - 8073811955
                     </p>
                 </div>
             </Modal>
@@ -179,8 +212,14 @@ function MileStone() {
             <div className="modal_whole">
                 <img src={Exp} alt="poster"/>
                     <p>
-                    "Prepare for your career and research through IEEE Xplore New Advanced Tools". The webinar was presented by M S Srinivasa- a training manager at
-                     EBSCO Information Services & IEEE Xplore Digital Library for this webinar.
+                    Internships, Placements and Interviews - do these words make you anxious?! Are you searching for sources to accelerate your preparations to ace those technical interviews?
+                        <br/><br/>
+                        Coding Ninjas in association with IEEE-SJCE presents a webinar on "ROADMAP TO CRACK INTERNSHIP AND PLACEMENT INTERVIEWS" followed by "JUST CODE IT", a coding event .
+                        <br/><br/>
+                        The talk will be delivered by Rajat Saxena (SE, Facebook) who will take you through the stages of preparation for internships and placements, and an interactive session with Campus Hero, Hardik Khandelwal (SDE, Amazon). There will be a quiz conducted at the end of the webinar, where the winners will get exciting rewards from Coding Ninjas.
+                        <br/><br/>
+                        🗓️Date - 28th August 2021<br/>
+                        🕰️Time - 4PM - 5PM<br/>
                     </p>
                 </div>
             </Modal>
@@ -189,10 +228,27 @@ function MileStone() {
             <div className="modal_whole">
                 <img src={Res} alt="poster"/>
                     <p>
-                    IEEE-SJCE WIE hosted a webinar on one of trending aspects - "RESUME-BUILDING"! The webinar was presented by Ashwini Holla, working at Canara Engg College<br/>
-                        <br/>
-                            Platform: WebEx Meet<br/>
-                            Date: 13th of September<br/>
+                    The EDS chapter of IEEE-SJCE brings you a 3-day workshop, SIMTOOL 2.0 <br/>
+                            <br/>
+                            The workshop focuses mainly on the simulation of various circuits using TINA-TI software and CEDAR logic simulator. Learning these tools will help you simulate various circuits for your projects.  
+                            <br/>
+                            It will be an interactive session and  e-certificates will be given to the participants.  
+                            <br/><br/>
+                            Date - 3rd, 4th & 5th September 2021 <br/>
+                            Platform - Google Meet<br/>
+                            <br/>
+                            Free registration. Open for all! 
+                            <br/>
+                            Limited Seats Only!!
+                            Hurry up and get yourself registered.
+                            <br/>
+
+                            Meeting link and other details will be informed to the registered participants via Whatsapp group.
+                            <br/><br/>
+                            For any queries, contact: <br/>
+                            Mukul - 9523453421<br/>
+                            Sushma BS - 8277133311
+
                     </p>
                 </div>
             </Modal>
@@ -201,51 +257,39 @@ function MileStone() {
             <StyledHr/>
         <MainContainer>
         <div><LeftContainer>
-                <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <Heading>Lecture by EDS</Heading>
-                    <img src={Lec} alt="poster"/>
+        <div data-aos="zoom-in-up" data-aos-duration="2000">
+                    <Heading>Image Processing</Heading>
+                    <img src={imgp} alt="poster"/>
                     <div className="content">
-                        IEEE-SJCE EDS hosted a Distinguished Lecture on-<br/>
-                        <b>"Rethinking computing with neuro-inspired learning</b>...
-                        {/* <br/><br/>
-                         - device, circuits and algorithms" The talk will be presented by <b>Dr. Kaushik Roy</b> , Fellow IEEE, Edward G. Tiedemann Jr. Distinguished Professor, Purdue University, USA.
-                        <br/><br/>
-                        The talk will be moderated by <b>Dr. S.B Rudraswamy</b> , IEEE-SJCE EDS Staff Advisor, Commonwealth Fellow(UK), Assistant Prof., ECE Dept., SJCE , JSS  STU, Mysuru
+                    Image processing is everywhere, from editing your...
+                    {/* photos before you upload it on your Instagram feed to as complex as biomedical image interpretation 
+                            However getting into the basics of it might be overwhelming and confusing, which is why we're here for you. 
+                            <br/><br/>
+                            The RAS wing is back with IMAGE PROCESSING WORKSHOP a 3-day workshop where we plan to take you from a basic understanding of Image Processing
+                            to a self-sufficient one using OpenCV-Python.
+                            
+                                
+                            <br/><br/>
+                            Dates - 3rd, 4th and 5th December 2021<br/>
+                            Platform - Google Meet. <br/>
+                            E-certificates will be provided to all participants.
+                            <br/><br/>
 
-                        <br/><br/>
-                        The meeting link will be sent to the registered mail 30 mins prior to the talk. E-certificates will be provided to all the registered participants!!
-                        <br/><br/>Don't miss this out, Register now using the below link<br/><br/>
-                        <b>Date: </b>5th June<br/>
-                        <b>Time:</b> 7.30 PM (IST)<br/>
-                        <b>Platform:</b> Google meet */}
+                            For any kind of doubts and queries contact:<br/>
+                            Raghavendra G:8073711862<br/>
+                            R Harshith:8073811955<br/>
+                            <br/>
+                            No registration fee. Open for all.<br/> */}
                     </div>
                     <button onClick={onOpenModalm1}>View Details</button>
                 </div>
-                <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <Heading>Code and Simulate</Heading>
-                    <img src={Ard} alt="poster"/>
-                    <div className="content">
-                            The EDS chapter brought you a 2-day workshop<br/> -
-                            
-                            The workshop will....  
-                            {/* cover the basics
-                                of Arduino and it's programming using IDE and implementation of Arduino based circuits on Tinkercad
-                            <br/><br/>
-                            Why learn Arduino?<br/>
-                            It is the basis for amazing projects. With an Arduino, you can do everything from controlling a robot to managing a home automation project
-                            <br/>
-                            
-                            <br/>
-                            Hurry up and register now for free to learn about this useful tool for your next projects by clicking on the link below<br/>
 
-                            
-                            <br/>Meeting link and details will be sent to the registered participants<br/><br/>
-                            <b>Date:</b> 5th & 6th June.
-                            <br/>
-                            <br/><b>Contact :</b><br/>Shrimadh - 8553274758<br/>Akhil - 7483022671 */}
-                    </div>
-                    <button  onClick={onOpenModalm2}>View Details</button>
-                </div>
+       
+        
+
+        
+        
+                
                 {/* <div>
                     <Heading>Call for Articles</div>
                     <img src={Calla} alt="poster"/>
@@ -262,42 +306,71 @@ function MileStone() {
                     </div>
                     <button>View Details</button>
                 </div> */}
+                <div data-aos="zoom-in-up" data-aos-duration="2000">
+                    <Heading>IEEE ECLECTIC</Heading>
+                    <img src={Imp} alt="poster"/>
+                    <div className="content">
+                    Stuck with loads of classes and piling assignments? We're here to change your ....
+                     {/*pace and give you a break from the monotonous .... routine.IEEE DAY 2021 is just around the corner, and we are excited to present to you IEEE ECLECTIC🎉🎉, a month-long procession of exciting events to amp up our celebrations!🥳
+
+                    To commemorate this special occasion, we have an exclusive assortment of events, covering both Technical and non-Technical domains lined up for y'all.
+                    There is plenty of knowledge to be taken away, and exciting prizes up for grabs!
+
+                    The events will begin from the 20th september, and go on till the 17th of October. 
+
+                    Do keep an eye on our Instagram page for links and further updates.
+                    Make sure not to miss out on any of the events! */}
+                    </div>
+                    <button onClick={onOpenModalm5}>View Details</button>
+                </div>
             </LeftContainer>
             <RightContainer>
-                <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <Heading>CODEFIESTA by WIE</Heading>
-                    <img src={Codfie} alt="poster"/>
+            <div data-aos="zoom-in-up" data-aos-duration="2000">
+                    <Heading>Alumni Podcast</Heading>
+                    <img src={pod} alt="poster"/>
                     <div className="content">
-                            ◆The top 3 participants will receive cash prizes of INR 6000, 4000 and 2000 respectively <br/>...
-                            {/* ◆Participants who secure 4th and 5th positions will be awarded with cash prize of INR 1000 each <br/>
-                            ◆A special cash prize of INR 1000 will be awarded to top 3 girl participants (excluding the girls among top 5 winners) */}
+                    We have witnessed first hand perspectives of a ..
+                    {/* lucrative education overseas */}
+                     {/* and the possible opportunities it spawns but understanding the admission process can be tedious and difficult.
+                        <br/><br/>
+                        Questions like, “How has Covid affected admission policies?” “How important is GRE?” “What are the things I should do in my undergrad to maximize my chances?” and many such questions are bound to arise. 
+                        <br/> <br/>
+                        Well, when you've got us, you got nothing to worry about.
+                        <br/><br/>
+                        IEEE-SJCE is back with the second season of the much-awaited “Alumni Podcast”. <br/><br/> In the Season opener, we will talk to 
+                        Mr. Sushruth Nagesh, an alumnus of our college. <br/> He finished his undergrad in E&C at SJCE in the year 2018 and did his master’s from UC-San Diego in 2021. He is currently working at Ford Autonomous Vehicles LLC. as a Perception Research Engineer. <br/> <br/>
+                        Catch us live on YouTube at 7:00 PM, 9th October<br/> */}
+                    </div>
+                    <button onClick={onOpenModalm3}>View Details</button>
+                </div>
+            <div data-aos="zoom-in-up" data-aos-duration="2000">
+                    <Heading>Simtool 2.0</Heading>
+                    <img src={Res} alt="poster"/>
+                    <div className="content">
+                            The EDS chapter of IEEE-SJCE brings you a 3-day workshop, SIMTOOL 2.0 <br/>
+                            The workshop...   {/* focuses mainly on the simulation of various circuits using TINA-TI software and CEDAR logic simulator. Learning these tools will help you simulate various circuits for your projects.  
+                            <br/>
+                            It will be an interactive session and  e-certificates will be given to the participants.  
+                            <br/><br/>
+                            Date - 3rd, 4th & 5th September 2021 <br/>
+                            Platform - Google Meet<br/>
+                            <br/>
+                            Free registration. Open for all! 
+                            <br/>
+                            Limited Seats Only!!
+                            Hurry up and get yourself registered.
+                            <br/>
+
+                            Meeting link and other details will be informed to the registered participants via Whatsapp group.
+                            <br/><br/>
+                            For any queries, contact: <br/>
+                            Mukul - 9523453421<br/>
+                            Sushma BS - 8277133311 */}
 
                     </div>
-                    <button  onClick={onOpenModalm3}>View Details</button>
+                    <button onClick={onOpenModalm8}>View Details</button>
                 </div>
-                <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <Heading>Snap circuit </Heading>
-                    <img src={Snap} alt="poster"/>
-                    <div className="content">
-                                        ▪️To get an idea of basic electronic components and build circuits using them.   
-                                        
-										▪️Learn the basics....
-										{/*
-                                            of breadboard connections. <br/>
-										▪️Get hands-on experience by rigging up the circuits
-                                         <br/>
-										Entry fee: <br/>
-										IEEE Members : FREE <br/>
-										Non IEEE Members: INR 50 <br/> <br/>
-
-										Date: 19th March - 5:30 PM <br/>
-										20th March - 2.30PM <br/>
-										Venue: NPS 001
-
-										<br/> Get yourself registered with the link below : */}
-                    </div>
-                    <button onClick={onOpenModalm4}>View Details</button>
-                </div>
+              
             </RightContainer></div>
         <div>
         <LeftContainer>
@@ -311,55 +384,116 @@ function MileStone() {
                     </div>
                     <button>View Details</button>
                 </div> */}
+               
+               
+                {/* <div data-aos="zoom-in-up" data-aos-duration="2000">
+                    <Heading>CODEFIESTA by WIE</Heading>
+                    <img src={Codfie} alt="poster"/>
+                    <div className="content"> */}
+                            {/* ◆The top 3 participants will receive cash prizes of INR 6000, 4000 and 2000 respectively <br/> */}
+                            {/* ◆Participants who secure 4th and 5th positions will be awarded with cash prize of INR 1000 each <br/>
+                            ◆A special cash prize of INR 1000 will be awarded to top 3 girl participants (excluding the girls among top 5 winners) */}
+
+                    {/* </div>
+                    <button  onClick={onOpenModalm3}>View Details</button>
+                </div> */}
                 <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <Heading>Image Pro. Workshop </Heading>
-                    <img src={Imp} alt="poster"/>
+                    <Heading>Talk on EECS</Heading>
+                    <img src={eecst} alt="poster"/>
                     <div className="content">
-                    The EDS and RAS societies brought you a workshop on Image Processing !! <br/>
-
-
-                    🔹Learn the basics of Python ..... 
-                    {/* and fundamentalconcepts of Image Processing. 🔹Implement image processing techniques using OpenCV */}
+                    Do you have plans to explore a hardware and software integrated..
+                     {/* domain and have no idea where to get started?  */}
+                    {/* We're here with a one of a kind opportunity. */}
+                            {/* <br/><br/>
+                            We present to you our first on ground event of 2021,  a technical talk on 
+                            <br/>
+                            "Research in EECS- Avenues and opportunities" 
+                            <br/><br/>
+                            Electrical Engineering and Computer Science is everywhere. It combines the rigor of science, the power of engineering, and the thrill of discovery. 
+                            <br/><br/>
+                            The talk will be presented by <br/>
+                            Dr. Prathosh A.P., Assistant Professor, IISc Bangalore.
+                            <br/><br/>
+                            Date - 9 October, 2021<br/>
+                            Time - 12:30 PM <br/>
+                            Venue - IS Seminar Hall<br/><br/>
+                            For any queries, contact: <br/>
+                            Chinmaya K : 8762361434 <br/>
+                            Shivraj Nath : 8837282287
+                            Register using the link below if you are not able to attend the event in person.
+                            <br/> */}
                     </div>
-                    <button onClick={onOpenModalm5}>View Details</button>
+                    <button onClick={onOpenModalm4}>View Details</button>
                 </div>
                 <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <Heading>Alumni Podcast</Heading>
-                    <img src={Alum2} alt="poster"/>
+                    <Heading>Just Code It</Heading>
+                    <img src={Ard} alt="poster"/>
                     <div className="content">
-                    IEEE-SJCE brought you the second episode of the series.
+                        To all the geeks out there, it's time to bring out your analytical and problem-solving skills on board.
 
-                    Guest: Mr. Samarth Deyagond .... 
-
-
-                    {/*working as Core Kubernetes Developer at SAPLabs,
-                    Bangalore The podcast will be streamed on YouTube and you can drop your questions in the
-                    chat. */}
+                         {/* The competitive coding event will comprise of 5 questions with varying levels of difficulty.<br/> */}
+                        {/* Further instructions will be sent to your respective e-mail IDs upon registration.<br/>
+                        <br/>
+                        🗓️Date - 29th August 2021<br/>
+                        🕰️Time - 6PM - 8PM<br/>
+                        <br/>
+                        Register soon!!<br/><br/>
+                        Do follow our Instagram handle for more updates.<br/><br/>
+                        For further details, contact:<br/>
+                        Chinmaya K - 8762361434<br/>
+                        Shivraj Nath - 8837282287  */}
                     </div>
-                    <button onClick={onOpenModalm6}>View Details</button>
+                    <button  onClick={onOpenModalm2}>View Details</button>
                 </div>
             </LeftContainer>
             <RightContainer>
             <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <Heading>Webinar on Xplore</Heading>
+                    <Heading>Python Bootcamp</Heading>
+                    <img src={Alum2} alt="poster"/>
+                    <div className="content">
+                    In 2021, Python is the most widely used multi-purpose programming language. Name a domain, ...
+
+                    {/* and you'll find Python. In such times, do you wish to learn Python too? And turn your amazing ideas into reality using Python?<br/><br/>
+
+                    We, at IEEE-SJCE, have an enticing proposition in store for you.<br/>
+                    The RAS wing brings to you,<br/><br/>
+
+                            💻Python Bootcamp💻<br/><br/>
+                            
+                    This workshop is intended for the beginners and you get to take back the expertise of Python language + several projects + a certificate and not to forget, loads of fun.<br/>
+                    We also have planned quizzes, logic building assignments to make sure you leave no stone unturned whilst learning Python. <br/>
+
+                    <br/>People without laptops, don't worry! Google Colab works on smartphones too.<br/>
+                    <br/>
+                    Join us on: 24th-26th September
+                    <br/><br/>
+                    Platform: Google Meet
+                    <br/><br/>
+                    For any queries, contact:<br/>
+                    Raghavendra G - 8073711862<br/>
+                    R Harshith - 8073811955 */}
+                    </div>
+                    <button onClick={onOpenModalm6}>View Details</button>
+                </div>
+                <div data-aos="zoom-in-up" data-aos-duration="2000">
+
+                    <Heading>Webinar by CN</Heading>
                     <img src={Exp} alt="poster"/>
                     <div className="content">
-                    "Prepare for your career and research through IEEE Xplore New Advanced Tools". The webinar was presented by M ...
-                     {/*S Srinivasa- a training manager at EBSCO Information Services & IEEE Xplore Digital Library for this webinar. */}
+                    Internships, Placements and Interviews - do these words make you anxious?! ..
+                     {/* Are you searching for sources to accelerate your preparations to ace those technical interviews? */}
+                        {/* <br/><br/>
+                        Coding Ninjas in association with IEEE-SJCE presents a webinar on "ROADMAP TO CRACK INTERNSHIP AND PLACEMENT INTERVIEWS" followed by "JUST CODE IT", a coding event .
+                        <br/><br/>
+                        The talk will be delivered by Rajat Saxena (SE, Facebook) who will take you through the stages of preparation for internships and placements, and an interactive session with Campus Hero, Hardik Khandelwal (SDE, Amazon). There will be a quiz conducted at the end of the webinar, where the winners will get exciting rewards from Coding Ninjas.
+                        <br/><br/>
+                        🗓️Date - 28th August 2021<br/>
+                        🕰️Time - 4PM - 5PM<br/> */}
                     </div>
                     <button onClick={onOpenModalm7}>View Details</button>
                 </div> 
-            <div data-aos="zoom-in-up" data-aos-duration="2000">
-                    <Heading>Webinar Alert</Heading>
-                    <img src={Res} alt="poster"/>
-                    <div className="content">
-                            IEEE-SJCE WIE hosted a webinar on one of trending aspects - "RESUME-BUILDING"! The webinar ...
-
-                            {/* was presented by Ashwini Holla, working at Canara Engg College Platform: WebEx Meet
-                            Date: 13th of September */}
-                    </div>
-                    <button onClick={onOpenModalm8}>View Details</button>
-                </div> 
+               
+                
             </RightContainer>
         </div>
         </MainContainer>

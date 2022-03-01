@@ -11,6 +11,7 @@ import s7 from '../../assests/Sponsers/16.png';
 import s8 from '../../assests/Sponsers/17.png';
 import s9 from '../../assests/Sponsers/18.png';
 import s10 from '../../assests/Sponsers/19.png';
+import s11 from '../../assests/Sponsers/20.png';
 import BangaloreBg from '../../assests/images/bangalore_bg.jpg'
 
 
@@ -65,6 +66,9 @@ function Sponsers() {
                 </div>
                 <div>
                    <StyledImg src={s10} alt="spon"/>
+                </div>
+                <div>
+                   <StyledImg src={s11} alt="spon"/>
                 </div>
             </Slider>
             </MainContainer>

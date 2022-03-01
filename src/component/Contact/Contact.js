@@ -63,10 +63,10 @@ function Contact() {
                 </div>
             </ContactFlexDiv>
             <FourContact>
-                <div> <img src={Pin} alt="pin"/><span>IEEE SJCE<br/>SJCE Campus</span></div>
-                <div> <img src={Phone} alt="phone"/><span>PHONE <br/>(+91)6205701439</span></div>
-                <div> <img src={Mail} alt="mail"/><span>GMAIL<br/>ieeesjce2019</span></div>
-                <div><img src={Insta} alt="insta"/><span>FOLLOW<br/>1.5k Followers</span></div>
+                <div> <a href="https://www.google.com/maps/place/JSS+Science+and+Technology+University,+Mysuru./@12.3137222,76.6140702,17z/data=!4m5!3m4!1s0x3baf7ae94fffffff:0x1ad797cbfc78d07a!8m2!3d12.3132715!4d76.6134265"><img src={Pin} alt="pin"/><span>IEEE SJCE<br/>SJCE Campus</span></a></div>
+                <div> <a href="tel:+916205701439"><img src={Phone} alt="phone"/><span>PHONE <br/>(+91)6205701439</span> </a></div>
+                <div><a href="mailto:ieeesjce2019@gmail.com"> <img src={Mail} alt="mail"/><span>GMAIL<br/>ieeesjce2019</span></a></div>
+                <div><a href="https://www.instagram.com/ieee_sjce/"><img src={Insta} alt="insta"/><span>FOLLOW<br/>1.5k Followers</span></a></div>
             </FourContact>
         </>
     )
@@ -89,7 +89,8 @@ const FourContact = styled.div`
         flex-direction: column;
     }
     >div{
-        >img{
+        >a{
+            >img{
             width:5rem;
             border-radius: 50%;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -116,6 +117,8 @@ const FourContact = styled.div`
             width: auto;
             margin:1em 2em;
         }
+        }
+        
     }
 `;
 

@@ -35,6 +35,22 @@ import funday5 from '../../assests/FunDay/IMG_1304.JPG'
 
 import fun_day from '../../assests/posters/fun_day.jpg'
 
+import eecs from '../../assests/eecs/DSC_0394.JPG'
+import eecs1 from '../../assests/eecs/IMG_3393.JPG'
+import eecs3 from '../../assests/eecs/IMG_3395.JPG'
+import eecs4 from '../../assests/eecs/IMG_3448.JPG'
+import eecs5 from '../../assests/eecs/IMG_3453.JPG'
+import eecs6 from '../../assests/eecs/IMG_3360.JPG'
+
+import eecsp from '../../assests/Main2/talk.png'
+
+import snap1 from '../../assests/snap_cir/snap1.jpg'
+import snap2 from '../../assests/snap_cir/snap2.jpg'
+import snap3 from '../../assests/snap_cir/snap3.jpg'
+import snap4 from '../../assests/snap_cir/snap4.jpg'
+import snap5 from '../../assests/snap_cir/snap5.jpg'
+import snap6 from '../../assests/snap_cir/snap6.jpg'
+
 function TimeLine() {
     //Orientation day
     const [open, setOpen] = useState(false);
@@ -57,12 +73,58 @@ function TimeLine() {
 
     const onOpenModal3 = () => setOpen3(true);
     const onCloseModal3 = () => setOpen3(false);
+
+    const [open4, setOpen4] = useState(false);
+
+    const onOpenModal4 = () => setOpen4(true);
+    const onCloseModal4 = () => setOpen4(false);
+
+    const [open5, setOpen5] = useState(false);
+
+    const onOpenModal5 = () => setOpen5(true);
+    const onCloseModal5 = () => setOpen5(false);
     return (
         <MainContainer>
           <HeadingTimeline>Past Events</HeadingTimeline>
           <hr/>
          <VerticalTimeline >
-          <VerticalTimelineElement
+         <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+            date="December 2021"
+            contentStyle={{boxShadow:'none' }}
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            icon={<img style={{width:"100%"}} src={Logo} alt="logo"/>}
+          >
+             <div className="card-vertical"  style={{boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}}>
+            <h3 className="vertical-timeline-element-title" style={{textAlign:'center'}}>Soldering and Etching Workshop</h3>
+            <h4 className="vertical-timeline-element-subtitle"> 17th-19th December 2021</h4>
+            <img className="imagess" src={snap6} alt="tux"/>
+            <div className="bu-cont">
+              <button className="bu" onClick={onOpenModal2}>View Details</button>
+              <button className="bu" onClick={onOpenModal3}>View Photos</button>
+            </div>
+          
+            </div>
+          </VerticalTimelineElement>
+         <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+            date="October 2021"
+            contentStyle={{boxShadow:'none' }}
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            icon={<img style={{width:"100%"}} src={Logo} alt="logo"/>}
+          >
+             <div className="card-vertical"  style={{boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}}>
+            <h3 className="vertical-timeline-element-title">Talk-"Research in EECS"</h3>
+            <h4 className="vertical-timeline-element-subtitle"> 9th Oct 2021</h4>
+            <img className="imagess" src={eecs} alt="tux"/>
+            <div className="bu-cont">
+              <button className="bu" onClick={onOpenModal4}>View Details</button>
+              <button className="bu" onClick={onOpenModal5}>View Photos</button>
+            </div>
+          
+            </div>
+          </VerticalTimelineElement>
+          {/* <VerticalTimelineElement
           className="vertical-timeline-element--work"
             date="March 2021"
             contentStyle={{boxShadow:'none' }}
@@ -79,7 +141,7 @@ function TimeLine() {
             </div>
           
             </div>
-          </VerticalTimelineElement>
+          </VerticalTimelineElement> */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="March 2021"
@@ -139,21 +201,28 @@ function TimeLine() {
 
             <Modal open={open2} onClose={onCloseModal2} center>
               <div className="modal_whole">
-              <img src={fun_day} alt="poster"/>
+              <img src={snap6} alt="poster"/>
               <p>
-                  Everyone needs a little fun and diversion from their orderly college routine right?<br/>
-                  If you agree to that, then IEEE SJCE's Fun day is going to be perfect for you!
-                  <br/><br/>
-                  There'll be games, music and a lot more activities where you get to participate and win some exciting goodies
-                  <br/><br/>
-                  Don't miss this opportunity to explore the culture of IEEE SJCE.<br/>
-                  Join us on 8th March at 5:30 PM.<br/>
-                  Venue : IS Seminar Hall
-                  <br/><br/>
+              The Electron Devices Society brings forth yet another one-of-a kind event, SOLDERING AND ETCHING WORKSHOP 
+                        a 3-day Workshop that gives you a hands-on experience of Soldering and Etching with theoretical and practical sessions.
+                            
+                            <br/><br/>
+                            Date: 17, 18 and 19 December 2021<br/><br/>
+                            Registration Fees(Team of two):<br/>
+                            IEEE Members (with EDS): Free <br/>
+                            IEEE Members (without EDS): Rs. 250/-<br/>
+                            Non Members: Rs. 450/-
+                            <br/><br/>
+                            Price of component kit: Rs. 650/-<br/>
+                            Note: One kit is compulsory for every team.
+                            <br/><br/>
+                            Limited seats only‼️<br/>
+                            Priority will be given to IEEE members.<br/><br/>
 
-                  For any queries, contact:<br/>
-                  Rohit - 8867984429<br/>
-                  Bijwal - 8547070116<br/>
+                            For any kind of doubts and queries contact:<br/>
+                            Mukul - 9523453421<br/>
+                            Sushma BS - 8277133311<br/>
+                            <br/>
               </p>
               </div>
             </Modal>
@@ -164,23 +233,84 @@ function TimeLine() {
                       dynamicHeight={false}
                       >
                       <div className="tot_cara">
-                        <img src={funday1} alt="orien"/>
+                        <img src={snap1} alt="orien"/>
                       </div>
                       <div className="tot_cara">
-                        <img src={funday2} alt="orien"/>
+                        <img src={snap2} alt="orien"/>
                       </div>
                       {/* <div className="tot_cara">
                         <img src={funday3} alt="orien"/>
                       </div> */}
 
                       <div className="tot_cara">
-                        <img src={funday4} alt="orien"/>
+                        <img src={snap3} alt="orien"/>
                       </div>
                       <div className="tot_cara">
-                        <img src={funday5} alt="orien"/>
+                        <img src={snap4} alt="orien"/>
+                      </div>
+                      <div className="tot_cara">
+                        <img src={snap5} alt="orien"/>
+                      </div>
+                      <div className="tot_cara">
+                        <img src={snap6} alt="orien"/>
                       </div>
                     </Carousel>
                 </div>
+            </Modal>
+            <Modal open={open5} onClose={onCloseModal5} center>
+                <div className="image_modal">
+                  <Carousel showThumbs={false}
+                      showStatus={false}
+                      dynamicHeight={false}
+                      >
+                      <div className="tot_cara">
+                        <img src={eecs} alt="orien"/>
+                      </div>
+                      <div className="tot_cara">
+                        <img src={eecs4} alt="orien"/>
+                      </div>
+                      <div className="tot_cara">
+                        <img src={eecs5} alt="orien"/>
+                      </div>
+                      <div className="tot_cara">
+                        <img src={eecs6} alt="orien"/>
+                      </div>
+                      <div className="tot_cara">
+                        <img src={eecs1} alt="orien"/>
+                      </div>
+                      <div className="tot_cara">
+                        <img src={eecs3} alt="orien"/>
+                      </div>
+                    </Carousel>
+                </div>
+            </Modal>
+
+            <Modal open={open4} onClose={onCloseModal4} center>
+              <div className="modal_whole">
+              <img src={eecsp} alt="poster"/>
+              <p>
+              Do you have plans to explore a hardware and software integrated domain and have no idea where to get started? We're here with a one of a kind opportunity.
+                            <br/><br/>
+                            We present to you our first on ground event of 2021,  a technical talk on 
+                            <br/>
+                            "Research in EECS- Avenues and opportunities" 
+                            <br/><br/>
+                            Electrical Engineering and Computer Science is everywhere. It combines the rigor of science, the power of engineering, and the thrill of discovery. 
+                            <br/><br/>
+                            The talk will be presented by <br/>
+                            Dr. Prathosh A.P., Assistant Professor, IISc Bangalore.
+                            <br/><br/>
+                            Date - 9 October, 2021<br/>
+                            Time - 12:30 PM <br/>
+                            Venue - IS Seminar Hall<br/><br/>
+                            For any queries, contact: <br/>
+                            Chinmaya K : 8762361434 <br/>
+                            Shivraj Nath : 8837282287
+                            Register using the link below if you are not able to attend the event in person.
+                            <br/>
+                            NOTE: COVID-19 guidelines must be followed and Face Masks are mandatory.
+              </p>
+              </div>
             </Modal>
       </MainContainer>
     )

@@ -6,6 +6,7 @@ import BangaloreBg from '../../assests/images/bangalore_bg.jpg'
 import './Team.css'
 
 import Abhijeet from '../../assests/team/abhi.jpg'
+import Abhijeet2 from '../../assests/team/abhi2.jpg'
 import Bijwal from '../../assests/team/bijwal.jpg'
 import Dada from '../../assests/team/dada.jpeg'
 import Rohit from '../../assests/team/rohit.jpg'
@@ -138,7 +139,7 @@ function Team() {
             <div className="row">
                <div className="col-md-3 col-sm-6"  data-aos="fade-right" data-aos-duration="2000">
                     <div className="our-team">
-                        <img  src={Abhijeet} alt=""/>
+                        <img  src={Abhijeet2} alt=""/>
                         <ul className="social">
                         <li><a href="mailto:abhijeetbharti@ieee.org"><img src={mail} alt="mail" style={{width:"3rem"}}/></a></li>
                         </ul>
@@ -814,7 +815,7 @@ function Team() {
                             <li><a href="mailto:shuklaparthasarathy@gmail.com"><img src={mail} alt="mail" style={{width:"3rem"}}/></a></li>
                         </ul>
                         <div className="team-content">
-                            <h3 className="title">Shukla P</h3>
+                            <h3 className="title">P Shukla</h3>
                             <span className="post">Graphic Designer</span>
                         </div>
                     </div>

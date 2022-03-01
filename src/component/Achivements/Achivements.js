@@ -21,13 +21,13 @@ function Achivements() {
                 <StyledHr/>
             <MainContainer1>
                     <div>
+                    <div data-aos="fade-right" data-aos-duration="2000"><p className="right">" Outstanding Student Branch " - IEEE Mysore Subsection 2021 </p><img src={Medal} alt="medal"/></div>
                         <div data-aos="fade-left" data-aos-duration="2000" style={{textAlign:'right'}}><p className="right"> " The Best Student Branch Website Award " - IEEE Bangalore Section 2019</p><img src={Medal} alt="medal"/></div>
-                        <div data-aos="fade-left" data-aos-duration="2000" style={{textAlign:'right'}}><p className="right">" The Best Student Branch Website Award " - IEEE Bangalore Section 2017</p> <img src={Medal} alt="medal"/></div>
                     </div>
                     <div><img src={Trophy} alt="trop"/></div>
                     <div>
+                    <div data-aos="fade-left" data-aos-duration="2000" style={{textAlign:'right'}}><img src={Medal} alt="medal"/><p className="left">" The Best Student Branch Website Award " - IEEE Bangalore Section 2017</p> </div>
                         <div data-aos="fade-right" data-aos-duration="2000"><img src={Medal} alt="medal"/><p className="left">" The Best Student Branch Website Award " - IEEE Bangalore Section 2016.</p></div>
-                        <div data-aos="fade-right" data-aos-duration="2000"><img src={Medal} alt="medal"/><p className="left"> One of the <br/>nominees for best<br/> practices</p></div>
                     </div>
             </MainContainer1>
         </Whole>

@@ -5,7 +5,8 @@ import g2 from '../../assests/teamcarasoul/f1.png';
 import g3 from '../../assests/GALLERY/g6.jpeg';
 import g4 from '../../assests/GALLERY/e7.jpg';
 import g5 from '../../assests/GALLERY/g8.jpg';
-// import g6 from '../../assests/homepagecarasoul/g6.jpeg';
+
+import award from '../../assests/homepagecarasoul/award.JPG';
 // import g8 from '../../assests/homepagecarasoul/g8.jpg';
 // import g9 from '../../assests/homepagecarasoul/g9.jpg';
 import styled from 'styled-components'
@@ -20,7 +21,7 @@ function HomePageCarousel() {
                     // interval={10000}
                     >
                     <Sty>
-                        <img src={g3} alt="ard"/>
+                        <img src={award} alt="ard"/>
                         <div className="centered"><span className="ieee">IEEE-</span><span className="sjce">SJCE</span><br/>IEEE is a global community to innovate for a better tommorrow and is a trusted voice for engineering and technology around</div>
                     </Sty>
                     <Sty>
