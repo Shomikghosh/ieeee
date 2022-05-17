@@ -1,7 +1,7 @@
 import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import g2 from '../../assests/teamcarasoul/f1.png';
+import g2 from '../../assests/homepagecarasoul/ori22.jpg';
 import g3 from '../../assests/GALLERY/g6.jpeg';
 import g4 from '../../assests/GALLERY/e7.jpg';
 import g5 from '../../assests/GALLERY/g8.jpg';

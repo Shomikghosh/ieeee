@@ -10,12 +10,15 @@ import Sold from '../../assests/Main2/sold.jpg'
 import sql from '../../assests/Main2/sql.jpg'
 // import BGMI from '../../assests/Main2/bgmi.jpg'
 import ex from '../../assests/Main2/ex.jpg'
+import pc from '../../assests/Main2/pc.jpg'
 import mem2 from '../../assests/Main2/mem2.jpg'
+import iot from '../../assests/Main2/iot.jpg'
 // import talk from '../../assests/Main2/talk.png'
 // import imgp from '../../assests/Main2/imgp.jpg'
 // import mem from '../../assests/Main2/mem.jpg'
 // import Py from '../../assests/Main2/py.jpg'
 // import SIM2 from '../../assests/Main2/sim2.0.png'
+import Web from '../../assests/Main2/web.jpg'
 import BangaloreBg from '../../assests/images/bangalore_bg.jpg'
 import fb from '../../assests/images/facebook.png'
 import inn from '../../assests/images/instagram.png'
@@ -26,6 +29,90 @@ function Main2() {
             <HeadingTimeline>Events</HeadingTimeline>
             <StyledHr/>
             <SubMain >
+                <div data-aos="fade-right" data-aos-duration="2000">
+                    <img src={iot} alt="pos"/>
+                </div>
+                <div className="content_whole" data-aos="fade-left" data-aos-duration="2000">
+                    <p className="content_main">
+                        <h3 classnName="content_head">IoT WORKSHOP</h3>
+
+
+Greetings from IEEE-SJCE!<br/>
+
+
+IEEE-SJCE RAS is thrilled to announce its signature technical event, <br/>
+            
+         "IoT WORKSHOP"<br/>
+
+A 3-day workshop with a lot of learning and interesting hands-on sessions. <br/>
+
+We will be covering protocols and all the other important theories, before moving onto the more exciting part of simulating them using Raspberry Pi and Node MCU. 
+<br/>
+Since we begin with the basics of IoT, it will be the PERFECT way to kickstart your IoT voyage. 
+<br/>
+Kit price: Rs. 900/-<br/>
+It is mandatory for each team to have at least one kit.<br/>
+<br/>
+When: 29th, 30th April & 1st May<br/>
+Where: IS Seminar Hall-2<br/>
+<br/>
+Limited seats only‼️<br/>
+<br/>
+For further queries, contact:<br/>
+Raghavendra G: 8073711862<br/>
+R Harshith: 8073811955
+                        <div className="buttons">
+                            <a href="https://bit.ly/iot_ieee"  className="reg"  target="_blank" rel="noreferrer">Register</a>
+                            <a href="https://instagram.com/ieee_sjce/" className="iconInsta" title="Instagram" target="_blank" rel="noreferrer"><img className="socials" src={inn} alt="in-link"/></a>
+                            <a href="https://facebook.com/ieeesjce/"  title="Facebook" target="_blank" rel="noreferrer"><img className="socials" src={fb} alt="fb-link"/></a>
+                        </div> 
+                    </p>
+                </div>
+           </SubMain>
+            <SubMain >
+                <div className="content_whole"  data-aos="fade-right" data-aos-duration="2000">
+                    <p className="content_main">
+                        <h3 classnName="content_head">IEEE-WDB Recruitment</h3>
+                            
+
+                            Greetings from IEEE-SJCE!<br/>
+
+
+                            Is web development one of your niche?<br/>
+                            It's time to put on your creative caps, you tech geeks.<br/>
+
+                            The Web Development Board of IEEE-SJCE is currently recruiting.<br/> 
+
+                            Skill set expected from the candidates: Good knowledge of HTML, CSS and JS. 
+                            Knowledge of ReactJS is of added value but is not a compulsion.<br/><br/>
+
+                            Exclusive for II year students.<br/><br/>
+
+
+
+                            Please join the WhatsApp group for further updates. <br/>
+                            <br/>
+                            Come be a part of IEEE SJCE and join us to Learn, Teach and Excel!
+                            <br/><br/>
+                            Apply on or before 22nd April 2022.
+                            <br/><br/>
+                            For any queries, contact:<br/>
+                            Shomik Ghosh-8240660072<br/>
+
+
+                        <div className="buttons">
+                            <a href="https://bit.ly/web-devrecruitment2022"  className="reg"  target="_blank" rel="noreferrer">Register</a>
+                            <a href="https://instagram.com/ieee_sjce/" className="iconInsta" title="Instagram" target="_blank" rel="noreferrer"><img className="socials" src={inn} alt="in-link"/></a>
+                            <a href="https://facebook.com/ieeesjce/"  title="Facebook" target="_blank" rel="noreferrer"><img className="socials" src={fb} alt="fb-link"/></a>
+
+                        </div> 
+                    </p>
+                </div>
+                <div  data-aos="fade-left" data-aos-duration="2000">
+                    <img src={Web} alt="pos"/>
+                </div>
+           </SubMain>
+            {/* <SubMain >
                 <div className="content_whole"  data-aos="fade-right" data-aos-duration="2000">
                     <p className="content_main">
                         <h3 classnName="content_head">EXORDIUM</h3>
@@ -56,7 +143,7 @@ function Main2() {
                 <div  data-aos="fade-left" data-aos-duration="2000">
                     <img src={ex} alt="pos"/>
                 </div>
-           </SubMain>
+           </SubMain> */}
             {/* <SubMain >
                 <div data-aos="fade-right" data-aos-duration="2000">
                     <img src={mem2} alt="pos"/>
@@ -95,7 +182,7 @@ function Main2() {
                     </p>
                 </div>
            </SubMain> */}
-           <SubMain >
+           {/* <SubMain >
                 <div data-aos="fade-right" data-aos-duration="2000">
                     <img src={sql} alt="pos"/>
                 </div>
@@ -130,7 +217,45 @@ Vanditha M- 9448725150
                         </div> 
                     </p>
                 </div>
-           </SubMain>
+           </SubMain> */}
+           {/* <SubMain >
+                <div data-aos="fade-right" data-aos-duration="2000">
+                    <img src={pc} alt="pos"/>
+                </div>
+                <div className="content_whole" data-aos="fade-left" data-aos-duration="2000">
+                    <p className="content_main">
+                        <h3 classnName="content_head">WORKSHOP ON PC ASSEMBLY</h3>
+
+Greetings from IEEE-SJCE!!<br/>
+
+Building a computer is fun, affordable and empowering. It's fun being able to choose all of the parts that go into your machine, and it's just so darn cool to DIY! 
+<br/><br/>
+It's time to gear up your computer jargon as the EDS wing of IEEE-SJCE in association with the Department of ECE, JSS STU brings forth, 
+<br/>
+    "WORKSHOP ON PC ASSEMBLY"
+    <br/>
+Right from putting the core components together to the necessary underlying concepts, we got you covered in the journey of building a PC from scratch . 
+<br/>
+You will go from having no idea what's inside a computer to having a full working computer with required OS and software . 
+<br/>
+Dates: 30th and 31st MARCH 2022 <br/>
+Venue: EC SEMINAR HALL<br/>
+
+<br/>
+Don't miss this highly interesting session!!
+<br/><br/>
+For further details, contact <br/>
+Mukul - 9523453421<br/>
+Sushma BS - 8277133311
+                        <div className="buttons">
+                            <a href="https://bit.ly/pc_assembly
+"  className="reg"  target="_blank" rel="noreferrer">Register</a>
+                            <a href="https://instagram.com/ieee_sjce/" className="iconInsta" title="Instagram" target="_blank" rel="noreferrer"><img className="socials" src={inn} alt="in-link"/></a>
+                            <a href="https://facebook.com/ieeesjce/"  title="Facebook" target="_blank" rel="noreferrer"><img className="socials" src={fb} alt="fb-link"/></a>
+                        </div> 
+                    </p>
+                </div>
+           </SubMain> */}
            {/* <SubMain >
                 <div className="content_whole"  data-aos="fade-right" data-aos-duration="2000">
                     <p className="content_main">

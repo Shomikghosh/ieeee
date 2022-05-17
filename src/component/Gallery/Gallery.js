@@ -5,7 +5,7 @@ import CN_Workshop from '../../assests/GALLERY/CN_workshop.jpeg'
 import Tuxedo_Talk from '../../assests/GALLERY/tuxedo_talk.jpeg'
 import Prayas_img from '../../assests/GALLERY/prayas_img.jpeg'
 import Soldering from '../../assests/GALLERY/s and e.jpeg'
-import Orientation from '../../assests/OrientationDay/B.JPG'
+import Orientation from '../../assests/OrientationDay/B.jpg'
 import ImageGallery from 'react-image-gallery';
 import Funday from '../../assests/FunDay/A.JPG'
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -42,7 +42,7 @@ import vid4 from '../../assests/videos/prayas.mp4'
 
 import BangaloreBg from '../../assests/images/bangalore_bg.jpg'
 
-import orientation1 from '../../assests/OrientationDay/B.JPG'
+import orientation1 from '../../assests/OrientationDay/B.jpg'
 import orientation2 from '../../assests/OrientationDay/C.JPG'
 import orientation3 from '../../assests/OrientationDay/DSC02371.JPG'
 import orientation4 from '../../assests/OrientationDay/DSC02384.JPG'

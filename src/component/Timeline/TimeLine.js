@@ -18,13 +18,13 @@ import { Carousel } from 'react-responsive-carousel';
 //Timeline images
 
 //orientation
-import orientation1 from '../../assests/OrientationDay/B.JPG'
-import orientation2 from '../../assests/OrientationDay/C.JPG'
-import orientation3 from '../../assests/OrientationDay/DSC02371.JPG'
-import orientation4 from '../../assests/OrientationDay/DSC02384.JPG'
-import orientation5 from '../../assests/OrientationDay/IMG_1442.JPG'
+import orientation1 from '../../assests/OrientationDay/B.jpg'
+import orientation2 from '../../assests/OrientationDay/IMG_0596.jpg'
+import orientation3 from '../../assests/OrientationDay/IMG_0730.jpg'
+import orientation4 from '../../assests/OrientationDay/IMG_0997.jpg'
+import orientation5 from '../../assests/OrientationDay/IMG_1031.jpg'
 
-import poster_orientation from '../../assests/posters/orientation_poster.jpg'
+import poster_orientation from '../../assests/posters/orie_2022.jpg'
 
 //funday
 import funday1 from '../../assests/FunDay/A.JPG'
@@ -89,6 +89,24 @@ function TimeLine() {
           <hr/>
          <VerticalTimeline >
          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="March 2022"
+            contentStyle={{boxShadow:'none' }}
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            icon={<img style={{width:"100%"}} src={Logo} alt="logo"/>}
+          >
+            <div className="card-vertical"  style={{boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}}>
+            <h3 className="vertical-timeline-element-title">Orientation Day 2022</h3>
+            <h4 className="vertical-timeline-element-subtitle"> 17th March 2022</h4>
+            <img className="imagess" src={orientation1} alt="tux"/>
+            <div className="bu-cont">
+              <button className="bu" onClick={onOpenModal}>View Details</button>
+              <button className="bu" onClick={onOpenModal1}>View Photos</button>
+            </div>
+          
+            </div>
+          </VerticalTimelineElement>
+         <VerticalTimelineElement
           className="vertical-timeline-element--work"
             date="December 2021"
             contentStyle={{boxShadow:'none' }}
@@ -142,7 +160,7 @@ function TimeLine() {
           
             </div>
           </VerticalTimelineElement> */}
-          <VerticalTimelineElement
+          {/* <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="March 2021"
             contentStyle={{boxShadow:'none' }}
@@ -159,17 +177,39 @@ function TimeLine() {
             </div>
           
             </div>
-          </VerticalTimelineElement>
+          </VerticalTimelineElement> */}
         </VerticalTimeline>
           <Modal open={open} onClose={onCloseModal} center>
           <div className="modal_whole">
               <img src={poster_orientation} alt="poster"/>
-                <p>
-                  Curious to know what's IEEE-SJCE and what we do here at IEEE SJCE? An exciting event briefing about our family is awaiting you. Join us for the big day - Orientation day.
-                  <br/><br/>
-                  Date : 9th March<br/>
-                  Venue : IS Seminar Hall<br/>
-                  Time : 5.30pm<br/>
+                <p>Greetings from IEEE-SJCE!<br/>
+
+The strength of the team is each member. The strength of each member is the team.
+<br/>
+<br/>
+
+It is with great delight that we present to you,
+<br/>
+<br/>
+
+ORIENTATION DAY
+<br/>
+<br/>
+
+The orientation will be covering all the details regarding IEEE-SJCE and its working, the benefits of the esteemed membership, the various societies and a peek into what is in store!💫
+<br/>
+<br/>
+
+Date - 17 MARCH 2022<br/>
+
+Time - 5:30 PM<br/>
+
+Venue - IS Seminar Hall<br/>
+<br/>
+
+
+Become a part of the culture, improve on skills that strengthen your arsenal, and most of all become a friend and have fun 🪂.
+
                 </p>
               </div>
             </Modal>

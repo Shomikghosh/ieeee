@@ -34,7 +34,7 @@ function Sponsers() {
     return (
         <> 
             <MainContainer>
-            <HeadingTimeline>Our Sponsers</HeadingTimeline>
+            <HeadingTimeline>Our Sponsors</HeadingTimeline>
             <hr/>
             <Slider {...settings}>
                 <div>
